@@ -1,7 +1,13 @@
 ---
-title: "Course Title"
+title: "DAD 492 - Sound Forensics"
 ---
 
-![placeholder.png](https://loremflickr.com/320/240)
+<img src="../images/audition.png" alt="Audio Forensics" style="width:600px"/>
 
-Veniam anim eiusmod culpa sunt incididunt sint. Anim ex non ad labore ut in velit in non culpa aliquip. Fugiat incididunt esse eu labore ipsum officia. Tempor proident velit duis nostrud laborum reprehenderit laboris ullamco aliqua commodo sint. Nisi laborum sint ex est minim mollit irure veniam commodo ad. Cupidatat id pariatur id veniam non qui elit voluptate non officia.
+
+This course is an introduction to audio forensics, a branch of forensic science. Audio forensics is the application of the science of digital audio to legal matters. This niche field of forensics has grown exponentially in recent years due to the near ubiquity of devices capable of producing audio forensic evidence, such as smartphones and surveillance cameras.
+
+- **Instructor:** Tate Carson
+- **Email:** Tate.carson@dsu.edu
+- **Meeting Time:** Tuesday / Thursday 1:00 pm - 2:15 pm
+- **Location:** TCB 209

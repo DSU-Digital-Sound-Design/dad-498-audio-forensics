@@ -1,7 +1,8 @@
 baseurl = "/"
 languageCode = "en-us"
 theme = ["terminal", "reveal-hugo"]
-paginate = 5
+[pagination]
+  pagerSize = 5
 
 
 [params]
@@ -9,7 +10,7 @@ paginate = 5
   contentTypeName = "home"
 
   # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
+  themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 3
@@ -36,8 +37,8 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Course Name"
-    subtitle = "A simple, retro theme for Hugo"
+    title = "DAD 492 - Sound Forensics"
+    subtitle = "Spring 2026 - Dakota State University"
     owner = "Tate Carson"
     keywords = ""
     copyright = ""
@@ -50,7 +51,7 @@ paginate = 5
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "Course name"
+      logoText = "Sound Forensics"
       logoHomeLink = "/"
 
     [languages.en.menu]

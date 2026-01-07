@@ -1,49 +1,134 @@
 ---
 title: "Schedule"
-date: "2021-01-02"
 author: ""
 ---
 
 {{< toc >}}
 
-# Week 1 
+# Week 1 (1/12)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DjLvraCQiVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Introduction to Forensic Audio**
 
-## Monday
+- Introduction to forensic audio
+- Authenticity, enhancement, interpretation
+- Historical case studies (Watergate, McKeever)
 
-## Wednesday
+# Week 2 (1/19)
 
-## Friday
+**Acoustics and Signal Propagation**
 
-# Week 2
+- Wavelength and frequency
+- Inverse square law
+- Reverberation
 
-just some more stuff
+# Week 3 (1/26)
 
-# Week 3
+**Psychoacoustics and Digital Audio Fundamentals**
 
-# Week 4
+- Hearing and masking
+- Sampling
+- Perceptual coding
 
-# Week 5
+# Week 4 (2/2)
 
-# Week 6
+**The Forensic Workbench**
 
-# Week 7
+- Waveform vs. spectrogram
+- Critical listening
+- Lab: Spectrographic analysis
 
-# Week 8
+# Week 5 (2/9)
 
-# Week 9
+**Authenticity I: Analog Methods**
 
-# Week 10
+- Analog tape
+- Splices and edit detection
+- Lab: Identifying edits
 
-# Week 11
+# Week 6 (2/16)
 
-# Week 12
+**Authenticity II: Digital Methods**
 
-# Week 13
+- ENF analysis
+- Metadata consistency
+- Reverberation continuity
+- Labs: ENF and metadata
 
-# Week 14
+# Week 7 (2/23)
 
-# Week 15
+**Midterm**
 
-# Week 16
+- Midterm examination
+- Midterm project work
+
+# Week 8 (3/2)
+
+**Audio Enhancement I**
+
+- Filtering and dynamics
+- Intelligibility vs. quality
+- Enhancement lab
+
+# Week 9 (3/9)
+
+**Audio Enhancement II**
+
+- Spectral subtraction
+- Click removal
+- Artifact evaluation
+- Enhancement lab
+
+# Week 10 (3/16)
+
+**Forensic Interpretation and Geometry**
+
+- TDOA (Time Difference of Arrival)
+- Doppler effect
+- Distance estimation
+- Problem set
+
+# Week 11 (3/23)
+
+**Speaker Recognition and Probability**
+
+- Likelihood ratios
+- Biometric variability
+- Lab: Disguised voice analysis
+
+# Week 12 (3/30)
+
+**Gunshot Acoustics I**
+
+- Physics of firearm sound signatures
+- Lab: Ballistic spectrogram analysis
+
+# Week 13 (4/6)
+
+**Gunshot Acoustics II**
+
+- Complex shooting incidents
+- Taser analysis
+- Case study
+
+# Week 14 (4/13)
+
+**Cockpit Voice Recorders**
+
+- Aviation investigations
+- Major case studies
+
+# Week 15 (4/20)
+
+**The Expert Witness**
+
+- Expert reports
+- Testimony standards
+- Cross-examination
+- Final project workshop
+
+# Week 16 (4/27)
+
+**Final Examination**
+
+- Final examination
+- Course wrap-up

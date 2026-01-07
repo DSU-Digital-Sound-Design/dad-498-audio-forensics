@@ -1,11 +1,15 @@
 ---
 title: "Projects"
-date: "2018-07-18"
+date: "2026-01-12"
 author: ""
 ---
 
 {{< toc >}}
 
-# Project 1
+# Midterm Project (20%)
 
-# Project 2 
+Details to be provided in class.
+
+# Final Forensic Expert Report (10%)
+
+Details to be provided in class.
