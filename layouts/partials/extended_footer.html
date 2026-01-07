@@ -1,0 +1,56 @@
+<!--
+To add an extended footer section, please create
+`layouts/partials/extended_footer.html` in your Hugo directory.
+
+
+<a href="#toc" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+
+</a>
+-->
+<button onclick="toTop()" class="top-link" id="top-link">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z"/>
+    </svg>
+</button>
+<script>
+
+    function toTop() {
+        console.log('clicking');
+        var elmnt = document.getElementById("toc");
+        elmnt.scrollIntoView({behavior: "smooth"});
+    }
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach(anchor => {
+
+            if (!anchor.getAttribute('id')) {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    var id = this
+                        .getAttribute("href")
+                        .substr(1);
+
+                    document
+                        .querySelector(`[id='${decodeURIComponent(id)}']`)
+                        .scrollIntoView({behavior: "smooth"});
+                });
+            }
+
+        });
+
+    var mybutton = document.getElementById("top-link");
+
+    // mybutton.addEventListener("click", function () {
+    //     console.log('clicked');
+    // }
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>

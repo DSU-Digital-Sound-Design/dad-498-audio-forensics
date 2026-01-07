@@ -1,0 +1,82 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = ["terminal", "reveal-hugo"]
+paginate = 5
+
+
+[params]
+  
+  contentTypeName = "home"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "green"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  centerTheme = true
+  autoCover = true
+  showLastUpdated = false
+
+
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Course Name"
+    subtitle = "A simple, retro theme for Hugo"
+    owner = "Tate Carson"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Course name"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "syllabus"
+        name = "Syllabus"
+        url = "/syllabus"
+      [[languages.en.menu.main]]
+        identifier = "schedule"
+        name = "Schedule"
+        url = "/schedule"  
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"  
+
+[outputFormats.Reveal]
+    baseName = "index"
+    mediaType = "text/html"
+    isHTML = true
+
+[markup]
+  [markup.tableOfContents]
+    ordered = false
+    startLevel = 1
+    endLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
