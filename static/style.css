@@ -58,3 +58,22 @@
 #theme-toggle:focus {
     outline: 0;
 }
+
+/* Homework shortcode styling */
+.homework {
+    background: rgba(35, 176, 255, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.homework-label {
+    display: block;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}

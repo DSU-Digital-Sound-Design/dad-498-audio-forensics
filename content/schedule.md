@@ -14,9 +14,17 @@ author: ""
 - Introduction to forensic audio
 - Authenticity, enhancement, interpretation
 
+{{< homework >}}
+Find a news story from the past few years and discuss how it uses audio forensics. What forensic techniques were applied, and what challenges were faced? Be prepared to present your findings in class.
+{{< /homework >}}
+
 ## Thursday (1/15)
 
 - Historical case studies (Watergate, McKeever)
+
+{{< homework >}}
+Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
+{{< /homework >}}
 
 # Week 2
 
@@ -26,10 +34,15 @@ author: ""
 
 - Wavelength and frequency
 - Inverse square law
+  - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
 
 ## Thursday (1/22)
 
 - Reverberation
+
+{{< homework >}}
+Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating distance attenuation.
+{{< /homework >}}
 
 # Week 3
 
@@ -38,11 +51,17 @@ author: ""
 ## Tuesday (1/27)
 
 - Hearing and masking
+- Lab: Masking and Intelligibility Lab (Forensic Listening Focus)
 
 ## Thursday (1/29)
 
 - Sampling
 - Perceptual coding
+- Lab: Sampling and Aliasing Demonstration
+
+{{< homework >}}
+Lab: Turn in Lab Report for Masking and Intelligibility Lab.
+{{< /homework >}}
 
 # Week 4
 
