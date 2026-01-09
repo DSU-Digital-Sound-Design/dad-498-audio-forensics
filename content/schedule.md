@@ -11,7 +11,8 @@ author: ""
 
 ## Tuesday (1/13)
 
-- Introduction to forensic audio
+- Syllabus review
+- [Introduction to forensic audio](../lectures/week-1/intro-to-forensic-audio/)
 - Authenticity, enhancement, interpretation
 
 {{< homework >}}
