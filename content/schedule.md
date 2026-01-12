@@ -12,6 +12,7 @@ author: ""
 ## Tuesday (1/13)
 
 - Syllabus review
+- [Listening Example](../lectures/week-1/listening-example/)
 
 ## Thursday (1/15)
 
