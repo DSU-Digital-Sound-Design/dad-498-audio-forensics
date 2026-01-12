@@ -27,6 +27,7 @@ Find a news story from the past few years and discuss how it uses audio forensic
 Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
 {{< /homework >}}
 
+<!-- 
 # Week 2
 
 **Acoustics and Signal Propagation**
@@ -229,3 +230,4 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - Final examination
 - Course wrap-up
+ -->
