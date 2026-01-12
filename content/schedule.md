@@ -12,19 +12,14 @@ author: ""
 ## Tuesday (1/13)
 
 - Syllabus review
+
+## Thursday (1/15)
+
 - [Introduction to forensic audio](../lectures/week-1/intro-to-forensic-audio/)
 - Authenticity, enhancement, interpretation
 
 {{< homework >}}
 Find a news story from the past few years and discuss how it uses audio forensics. What forensic techniques were applied, and what challenges were faced? Be prepared to present your findings in class.
-{{< /homework >}}
-
-## Thursday (1/15)
-
-- Historical case studies (Watergate, McKeever)
-
-{{< homework >}}
-Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
 {{< /homework >}}
 
 <!-- 
@@ -34,9 +29,14 @@ Case Study: Write a 1-page summary on the impact of the Watergate tapes on foren
 
 ## Tuesday (1/20)
 
+- Historical case studies (Watergate, McKeever)
 - Wavelength and frequency
 - Inverse square law
   - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
+
+{{< homework >}}
+Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
+{{< /homework >}}
 
 ## Thursday (1/22)
 
