@@ -30,9 +30,6 @@ Find a news story from the past few years and discuss how it uses audio forensic
 ## Tuesday (1/20)
 
 - Historical case studies (Watergate, McKeever)
-- Wavelength and frequency
-- Inverse square law
-  - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
 
 {{< homework >}}
 Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
@@ -40,7 +37,8 @@ Case Study: Write a 1-page summary on the impact of the Watergate tapes on foren
 
 ## Thursday (1/22)
 
-- Reverberation
+- Ethics and false convictions 
+- Audio Forensics in Investigative Journalism
 
 {{< homework >}}
 Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating distance attenuation.
@@ -52,6 +50,10 @@ Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating
 
 ## Tuesday (1/27)
 
+- Wavelength and frequency
+- Inverse square law
+  - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
+- Reverberation
 - Hearing and masking
 - Lab: Masking and Intelligibility Lab (Forensic Listening Focus)
 
