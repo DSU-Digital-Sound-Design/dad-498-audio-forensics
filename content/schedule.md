@@ -17,7 +17,7 @@ author: ""
 ## Thursday (1/15)
 
 - [Introduction to forensic audio](../lectures/week-1/intro-to-forensic-audio/)
-- Authenticity, enhancement, interpretation
+- [In-class activity: What Would You Analyze?](../lectures/week-1/what-would-you-analyze/)
 
 {{< homework >}}
 Find a news story from the past few years and discuss how it uses audio forensics. What forensic techniques were applied, and what challenges were faced? Be prepared to present your findings in class.
