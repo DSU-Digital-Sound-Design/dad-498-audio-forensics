@@ -23,19 +23,19 @@ author: ""
 Find a news story from the past few years and discuss how it uses audio forensics. What forensic techniques were applied, and what challenges were faced? Be prepared to present your findings in class.
 {{< /homework >}}
 
-<!-- 
 # Week 2
 
 **Acoustics and Signal Propagation**
 
 ## Tuesday (1/20)
 
-- Historical case studies (Watergate, McKeever)
+- [Historical case studies (Watergate, McKeever)](../lectures/week-2/historical-case-studies/)
 
-{{< homework >}}
+<!-- {{< homework >}}
 Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
-{{< /homework >}}
+{{< /homework >}} -->
 
+<!-- 
 ## Thursday (1/22)
 
 - meet at EH 003 for Pinnacle Sound presentation 
