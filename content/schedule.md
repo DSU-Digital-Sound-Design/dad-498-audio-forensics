@@ -38,8 +38,7 @@ Case Study: Write a 1-page summary on the impact of the Watergate tapes on foren
 
 ## Thursday (1/22)
 
-- Ethics and false convictions 
-- Audio Forensics in Investigative Journalism
+- meet at EH 003 for Pinnacle Sound presentation 
 
 {{< homework >}}
 Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating distance attenuation.
@@ -51,6 +50,8 @@ Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating
 
 ## Tuesday (1/27)
 
+- Ethics and false convictions 
+- Audio Forensics in Investigative Journalism
 - Wavelength and frequency
 - Inverse square law
   - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
