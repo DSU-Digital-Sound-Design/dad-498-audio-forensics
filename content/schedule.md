@@ -29,6 +29,7 @@ Find a news story from the past few years and discuss how it uses audio forensic
 
 ## Tuesday (1/20)
 
+- Hear from a few of you about the news stories you found
 - [Historical case studies (Watergate, McKeever)](../lectures/week-2/historical-case-studies/)
 
 <!-- {{< homework >}}
