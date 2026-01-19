@@ -59,7 +59,10 @@ How courts learned to trust recordings
 
 ## United States v. McKeever (1958)
 
-Established the **Seven Tenets of Audio Authenticity**  
+<img src="https://tse3.mm.bing.net/th/id/OIP.XXVL5bw_NvQs4lYfYiLI4gHaEd?pid=Api" alt="1950s federal courtroom with judge's bench and witness stand, representing the setting where audio evidence admissibility standards were established" style="float: right; width: 400px; margin-left: 20px; margin-bottom: 10px;">
+
+Established the **Seven Tenets of Audio Authenticity**. 
+
 Core question: **Does this recording have sufficient integrity for court?**
 
 {{% note %}}
@@ -251,12 +254,22 @@ Core question: **Does this recording have sufficient integrity for court?**
 
 ---
 
-## Talker Identification and “Voiceprints”
+### Talker Identification and "Voiceprints"
 
-- “Voiceprint” appears in Bell Labs publications as early as **1944**
-- 1962: Bell Labs’ **Lawrence Kersta** publishes “Voiceprint Identification” (Nature)
-- Claim: vocal-tract anatomy yields uniquely identifying **speech spectrograms**
-- Appealing analogy: “audio fingerprint” for unknown-to-known comparisons
+<div style="overflow: hidden;">
+  <img src="http://languagelog.ldc.upenn.edu/myl/ThePittsburghPress02011936.png" alt="Visual comparison of speech spectrograms showing frequency patterns over time, illustrating the voiceprint identification concept developed by Bell Labs" style="float: left; width: 450px; margin-right: 20px; margin-bottom: 10px;">
+  <div style="float: left; width: 450px; margin-right: 20px; margin-top: -6px; font-size: 0.65em; line-height: 1.1; opacity: 0.85;">
+    Image source: <a href="https://languagelog.ldc.upenn.edu/nll/?p=36412">https://languagelog.ldc.upenn.edu/nll/?p=36412</a>
+  </div>
+  <div style="float: right; width: calc(100% - 490px); min-width: 340px; font-size: 0.85em; line-height: 1.2;">
+    <ul style="margin: 0; padding-left: 1.1em;">
+      <li>"Voiceprint" appears in Bell Labs publications as early as <strong>1944</strong></li>
+      <li>1962: Bell Labs' <strong>Lawrence Kersta</strong> publishes "Voiceprint Identification" (Nature)</li>
+      <li>Claim: vocal-tract anatomy yields uniquely identifying <strong>speech spectrograms</strong></li>
+      <li>Appealing analogy: "audio fingerprint" for unknown-to-known comparisons</li>
+    </ul>
+  </div>
+</div>
 
 {{% note %}}
 * Now let’s zoom in on a specific admissibility problem: identifying who is speaking.
@@ -349,9 +362,16 @@ When audio evidence changed national narratives
 
 ## The Watergate Tapes (1974)
 
-Origin: June 1972 Watergate break-in → widening investigation  
-Key issue: **18½-minute gap** on a Nixon–Haldeman tape (June 20, 1972)  
-Technique: **magnetic development** to visualize **Bitter Patterns**
+<div style="overflow: hidden;">
+  <img src="watergate-tapes.png" alt="Professional reel-to-reel tape recorder with magnetic tape, representing the White House recording system that captured the infamous 18-minute gap" style="float: right; width: 400px; margin-left: 20px; margin-bottom: 10px;">
+  <div style="float: left; width: calc(100% - 440px); min-width: 360px;">
+    <ul style="margin: 0; padding-left: 1.1em;">
+      <li>Origin: June 1972 Watergate break-in → widening investigation</li>
+      <li>Key issue: <strong>18½-minute gap</strong> on a Nixon–Haldeman tape (June 20, 1972)</li>
+      <li>Technique: <strong>magnetic development</strong> to visualize <strong>Bitter Patterns</strong></li>
+    </ul>
+  </div>
+</div>
 
 {{% note %}}
 * Watergate is a classic example of analog authenticity work under enormous public pressure.
@@ -597,10 +617,17 @@ Treating the cockpit as an acoustic sensor array
 
 ## Cockpit Voice Recorders (CVR): What They Capture
 
-- Crew communications
-- Alarms and warnings
-- Engine whine and mechanical tones
-- Airframe vibrations (clunks, rattles)
+<div style="overflow: hidden;">
+  <img src="CVR.png" alt="Aircraft cockpit voice recorder device with multiple audio channels, showing the robust orange casing designed to survive crashes" style="float: left; width: 400px; margin-right: 20px; margin-bottom: 10px;">
+  <div style="overflow: hidden;">
+    <ul style="margin: 0; padding-left: 1.1em;">
+      <li>Crew communications</li>
+      <li>Alarms and warnings</li>
+      <li>Engine whine and mechanical tones</li>
+      <li>Airframe vibrations (clunks, rattles)</li>
+    </ul>
+  </div>
+</div>
 
 {{% note %}}
 * In aviation, the CVR is not just a “microphone in the cockpit.”
@@ -644,9 +671,9 @@ CVR revealed:
 
 ## Execuflight Flight 1526 (2015)
 
-No Flight Data Recorder available  
-Investigators used CVR loop to measure **turbine whine** frequencies  
-Inferred throttle settings and turbine speed before stall/crash
+* No Flight Data Recorder available  
+* Investigators used CVR loop to measure **turbine whine** frequencies  
+* Inferred throttle settings and turbine speed before stall/crash
 
 {{% note %}}
 * Execuflight 1526 demonstrates frequency analysis in a direct way.
@@ -662,10 +689,10 @@ Inferred throttle settings and turbine speed before stall/crash
 
 ## Cross-Cutting Evolution of Methods
 
-**Analog era:** physical media inspection (e.g., Bitter Patterns)  
-**Transition:** auditory-phonetic expertise + documentation standards  
-**Digital era:** metadata, waveform continuity, DSP, statistical inference  
-**Today:** deepfakes and synthetic speech detection pressures
+* **Analog era:** physical media inspection (e.g., Bitter Patterns)
+* **Transition:** auditory-phonetic expertise + documentation standards
+* **Digital era:** metadata, waveform continuity, DSP, statistical inference
+* **Today:** deepfakes and synthetic speech detection pressures
 
 {{% note %}}
 * Stepping back, you can see an arc in methods.
