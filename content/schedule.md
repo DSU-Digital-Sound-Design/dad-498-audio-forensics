@@ -32,19 +32,14 @@ Find a news story from the past few years and discuss how it uses audio forensic
 - Hear from a few of you about the news stories you found
 - [Historical case studies (Watergate, McKeever)](../lectures/week-2/historical-case-studies/)
 
-<!-- {{< homework >}}
-Case Study: Write a 1-page summary on the impact of the Watergate tapes on forensic standards.
-{{< /homework >}} -->
 
-<!-- 
+
 ## Thursday (1/22)
 
-- meet at EH 003 for Pinnacle Sound presentation 
+- meet at East Hall 006 for Pinnacle Sound presentation 
 
-{{< homework >}}
-Lab: Turn in Lab Report for Measuring Sound Pressure Level (SPL) and calculating distance attenuation.
-{{< /homework >}}
 
+<!-- 
 # Week 3
 
 **Psychoacoustics and Digital Audio Fundamentals**
