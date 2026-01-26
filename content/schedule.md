@@ -39,24 +39,25 @@ Find a news story from the past few years and discuss how it uses audio forensic
 - meet at East Hall 006 for Pinnacle Sound presentation 
 
 
-<!-- 
 # Week 3
 
-**Psychoacoustics and Digital Audio Fundamentals**
 
 ## Tuesday (1/27)
 
-- Ethics and false convictions 
+- [Ethics and false convictions](../lectures/week-3/ethics-and-false-convictions/)
 - Audio Forensics in Investigative Journalism
+
+<!-- 
+## Thursday (1/29)
+
+**Psychoacoustics and Digital Audio Fundamentals**
+
 - Wavelength and frequency
 - Inverse square law
   - Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
 - Reverberation
 - Hearing and masking
 - Lab: Masking and Intelligibility Lab (Forensic Listening Focus)
-
-## Thursday (1/29)
-
 - Sampling
 - Perceptual coding
 - Lab: Sampling and Aliasing Demonstration
