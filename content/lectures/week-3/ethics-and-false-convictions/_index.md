@@ -553,6 +553,15 @@ The City of Chicago's contract with ShotSpotter ended Sunday. Police will no lon
 
 ---
 
+## Other ShotSpotter Commentary 
+
+- [listening in on the neighborhood](https://computer.rip/2024-03-01-listening-in-on-the-neighborhood.html) - Article discussing privacy and reliability concerns with ShotSpotter
+- [shotspotter-locations](https://github.com/kevee/shotspotter-locations/tree/main) - GitHub repository mapping ShotSpotter sensor locations
+- [Source Localization with ShotSpotter Audio](https://github.com/ShotSpotter/research.source-location-shotspotter-audio/tree/main) - ShotSpotter's research on audio source localization
+
+
+---
+
 ## Stefan Kiszko (UK)
 
 <div>
