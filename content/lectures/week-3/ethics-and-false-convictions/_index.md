@@ -213,9 +213,19 @@ Real lives destroyed by flawed audio evidence
 
 ## David Eastman (Australia)
 
-- **Convicted:** 1995 for the 1989 murder of a police commissioner
-- **Audio evidence:** Thousands of hours of covert recordings from hidden devices in his home—whispered self-talk
-- **The transcript:** Police claimed he said "I killed Winchester"
+<div>
+  <div style="float: right; width: 380px; margin-left: 20px; margin-bottom: 10px;">
+    <img src="canberra-parliament-house.jpg" alt="Parliament House, Canberra" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: left; width: calc(100% - 400px);">
+    <ul>
+      <li><strong>Convicted:</strong> 1995 for the 1989 murder of a police commissioner</li>
+      <li><strong>Audio evidence:</strong> Thousands of hours of covert recordings from hidden devices in his home—whispered self-talk</li>
+      <li><strong>The transcript:</strong> Police claimed he said &quot;I killed Winchester&quot;</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * David Eastman was convicted for the 1989 murder of Australian Federal Police Assistant Commissioner Colin Winchester.
@@ -223,6 +233,7 @@ Real lives destroyed by flawed audio evidence
 * Much of it was Eastman whispering and talking to himself in his bedroom.
 * Investigators produced transcripts claiming the recordings contained a direct confession: "I killed Winchester."
 * **Source:** Fraser, H. (2023). The Eastman transcripts: A case study calling Australian linguists to action. *Australian Journal of Linguistics*, 43(4), 314–341.
+* Image: Nick Pitsas (CSIRO), “CSIRO ScienceImage 11533 Parliament House Canberra”, CC BY 3.0 (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -278,9 +289,19 @@ Real lives destroyed by flawed audio evidence
 
 ## The "Pact" Case (R v. Clark)
 
-- **Convicted:** Father as "accessory before the fact" for murder committed by his son
-- **Audio evidence:** Whispered covert recording from a hidden device in the family home
-- **The transcript:** "At the start we made a pact"
+<div>
+  <div style="float: left; width: 320px; margin-right: 20px; margin-bottom: 10px;">
+    <img src="covert-listening-device-nsa-loudauto.jpg" alt="Covert listening device (NSA LOUDAUTO)" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: right; width: calc(100% - 340px);">
+    <ul>
+      <li><strong>Convicted:</strong> Father as &quot;accessory before the fact&quot; for murder committed by his son</li>
+      <li><strong>Audio evidence:</strong> Whispered covert recording from a hidden device in the family home</li>
+      <li><strong>The transcript:</strong> &quot;At the start we made a pact&quot;</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * In this case, a father was convicted as an accessory to murder allegedly committed by his son.
@@ -288,6 +309,7 @@ Real lives destroyed by flawed audio evidence
 * Police placed a hidden device in the family home and captured a whispered utterance.
 * They transcribed it as "at the start we made a pact"—implying premeditated agreement to kill.
 * **Source:** Fraser, H. (2017). How Interpretation of Indistinct Covert Recordings Can Lead to Wrongful Conviction. In R. Levy et al. (eds), *New Directions for Law in Australia*. ANU Press.
+* Image: U.S. National Security Agency, “NSA LOUDAUTO”, public domain (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -331,8 +353,18 @@ Real lives destroyed by flawed audio evidence
 
 ## Guy Paul Morin (Canada)
 
-- **Convicted:** 1992 for the 1984 murder of his 9-year-old neighbor
-- **Audio evidence:** "Earwitness" identification—victim's mother claimed she heard Morin's voice crying "Help me, help me, oh God, help me!"
+<div>
+  <div style="float: right; width: 420px; margin-left: 20px; margin-bottom: 10px;">
+    <img src="toronto-courthouse-city-hall.jpg" alt="Ontario Superior Court of Justice and Toronto City Hall" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: left; width: calc(100% - 440px);">
+    <ul>
+      <li><strong>Convicted:</strong> 1992 for the 1984 murder of his 9-year-old neighbor</li>
+      <li><strong>Audio evidence:</strong> &quot;Earwitness&quot; identification—victim’s mother claimed she heard Morin’s voice crying &quot;Help me, help me, oh God, help me!&quot;</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * Guy Paul Morin was wrongfully convicted for the murder of his young neighbor in Canada.
@@ -340,6 +372,7 @@ Real lives destroyed by flawed audio evidence
 * She claimed she heard Morin's voice crying out on the night of her daughter's funeral.
 * This voice identification was used to suggest Morin was having a "fit of remorse."
 * **Source:** Walker Jr., C. (2025). A Guilty Voice: Is Voice Analysis Junk Science or Reliable Evidence? *Criminal Legal News*.
+* Image: Ken Lund, “Ontario Superior Court of Justice and Toronto City Hall, Toronto, Ontario”, CC BY-SA 2.0 (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -366,15 +399,26 @@ Real lives destroyed by flawed audio evidence
 
 ## David Shawn Pope (Texas)
 
-- **Convicted:** 1986 for aggravated sexual assault
-- **Audio evidence:** "Voiceprint" spectrogram analysis comparing phone calls from the rapist to Pope's voice
-- **The analyst:** A police officer with **two weeks of training**
+<div>
+  <div style="float: left; width: 380px; margin-right: 20px; margin-bottom: 10px;">
+    <img src="spectrogram.jpg" alt="Spectrogram example (often misused as 'voiceprint')" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: right; width: calc(100% - 400px);">
+    <ul>
+      <li><strong>Convicted:</strong> 1986 for aggravated sexual assault</li>
+      <li><strong>Audio evidence:</strong> &quot;Voiceprint&quot; spectrogram analysis comparing phone calls from the rapist to Pope’s voice</li>
+      <li><strong>The analyst:</strong> A police officer with <strong>two weeks of training</strong></li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * David Pope was convicted in 1986 for aggravated sexual assault in Dallas, Texas.
 * The prosecution relied on voiceprint analysis—comparing spectrograms of phone calls made by the rapist to samples of Pope's voice.
 * The analysis was performed by a police officer who had received only two weeks of training in the technique.
 * **Source:** Walker Jr., C. (2025). A Guilty Voice: Is Voice Analysis Junk Science or Reliable Evidence? *Criminal Legal News*.
+* Image: Spyrogumas, “Spectrogram”, CC BY-SA 3.0 (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -400,11 +444,19 @@ Real lives destroyed by flawed audio evidence
 
 ## Russell Faria (Missouri)
 
-**Convicted:** 2013 for murdering his wife
-
-**Audio evidence:** 911 call "analysis" claiming to identify guilt based on word choice and tone
-
-**The claim:** Faria was too "me-focused" on the call
+<div>
+  <div style="float: right; width: 380px; margin-left: 20px; margin-bottom: 10px;">
+    <img src="911-dispatch-center.jpg" alt="911 dispatch center" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: left; width: calc(100% - 400px);">
+    <ul>
+      <li><strong>Convicted:</strong> 2013 for murdering his wife</li>
+      <li><strong>Audio evidence:</strong> 911 call &quot;analysis&quot; claiming to identify guilt based on word choice and tone</li>
+      <li><strong>The claim:</strong> Faria was too &quot;me-focused&quot; on the call</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * Russell Faria was wrongfully convicted of murdering his wife Betsy in Missouri.
@@ -412,6 +464,7 @@ Real lives destroyed by flawed audio evidence
 * They claimed Faria's 911 call showed signs of guilt because he was too "me-focused."
 * This was used to override a strong alibi and lack of physical evidence.
 * **Source:** Walker Jr., C. (2025). A Guilty Voice: Is Voice Analysis Junk Science or Reliable Evidence? *Criminal Legal News*.
+* Image: Coldcaffeine, “911dispatchcenter”, public domain (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -437,11 +490,19 @@ Real lives destroyed by flawed audio evidence
 
 ## Michael Williams (Chicago)
 
-**Jailed:** One year for murder he didn't commit
-
-**Audio evidence:** ShotSpotter gunshot detection alert
-
-**The problem:** "Black box" algorithm with minimal human oversight
+<div>
+  <div style="float: left; width: 360px; margin-right: 20px; margin-bottom: 10px;">
+    <img src="gunshot-detection-system.jpg" alt="Gunshot detection system (example hardware)" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: right; width: calc(100% - 380px);">
+    <ul>
+      <li><strong>Jailed:</strong> One year for murder he didn’t commit</li>
+      <li><strong>Audio evidence:</strong> ShotSpotter gunshot detection alert</li>
+      <li><strong>The problem:</strong> &quot;Black box&quot; algorithm with minimal human oversight</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * Michael Williams spent a year in jail falsely accused of murder in Chicago.
@@ -449,6 +510,7 @@ Real lives destroyed by flawed audio evidence
 * ShotSpotter uses sensors and algorithms to detect and locate gunshots.
 * But the system operates as a "black box" with minimal transparency about how decisions are made.
 * **Source:** Max, B. (2023). SoundThinking's Black-Box Gunshot Detection Method: Untested and Unvetted Tech Flourishes in the Criminal Justice System. *Stanford Technology Law Review*, 26, 193.
+* Image: Daderot, “Boomerang gunshot detection system… (DARPA D60 Symposium)”, CC0 (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -493,11 +555,19 @@ The City of Chicago's contract with ShotSpotter ended Sunday. Police will no lon
 
 ## Stefan Kiszko (UK)
 
-**Convicted:** 1976 for the 1975 murder of 11-year-old Lesley Molseed
-
-**Audio evidence:** Coerced confession after three days of interrogation without legal representation
-
-**Key fact:** Kiszko had a mental age of 12
+<div>
+  <div style="float: right; width: 380px; margin-left: 20px; margin-bottom: 10px;">
+    <img src="rochdale-town-hall.jpg" alt="Rochdale Town Hall" style="width: 100%; height: auto;">
+  </div>
+  <div style="float: left; width: calc(100% - 400px);">
+    <ul>
+      <li><strong>Convicted:</strong> 1976 for the 1975 murder of 11-year-old Lesley Molseed</li>
+      <li><strong>Audio evidence:</strong> Coerced confession after three days of interrogation without legal representation</li>
+      <li><strong>Key fact:</strong> Kiszko had a mental age of 12</li>
+    </ul>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 {{% note %}}
 * Stefan Kiszko was wrongfully convicted of a child's murder in Britain.
@@ -505,6 +575,7 @@ The City of Chicago's contract with ShotSpotter ended Sunday. Police will no lon
 * Kiszko had no legal representation during the interrogation.
 * Crucially, he had a mental age of approximately 12, making him highly vulnerable to coercion.
 * **Source:** Thompson, M. (2025). The Stefan Kiszko Case: Britain's Most Devastating Miscarriage of Justice. *Falsely Accused Network*.
+* Image: G-13114, “Rochdale town hall”, CC BY-SA 4.0 (Wikimedia Commons).
 {{% /note %}}
 
 ---
@@ -1031,6 +1102,8 @@ Be suspicious when you see:
 
 ## References
 
+<div style="font-size: 0.9em;">
+
 **Case Studies & Legal Analysis:**
 - Fraser, H. (2023). The Eastman transcripts. *Australian Journal of Linguistics*, 43(4), 314–341.
 - Fraser, H. (2017). How Interpretation of Indistinct Covert Recordings Can Lead to Wrongful Conviction. ANU Press.
@@ -1049,6 +1122,8 @@ Be suspicious when you see:
 
 ## References (continued)
 
+<div style="font-size: 0.8em;">
+
 **Psychology & Perception Research:**
 - Fraser, H., Stevenson, B., & Marks, T. (2011). Interpretation of a crisis call. *International Journal of Speech Language and the Law*, 18(2), 261–292.
 - Fraser, H. & Stevenson, B. (2014). The power and persistence of contextual priming. *International Journal of Evidence and Proof*, 18(3), 205–229.
@@ -1065,6 +1140,8 @@ Be suspicious when you see:
 ---
 
 ## References (continued)
+
+<div style="font-size: 0.7em;">
 
 **Voice Identification & Technical Standards:**
 - Sherrin, C. (2015). Earwitness Evidence. *Osgoode Hall Law Journal*, 52(3), 819–862.
