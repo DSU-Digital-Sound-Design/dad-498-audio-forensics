@@ -52,17 +52,6 @@ Find a news story from the past few years and discuss how it uses audio forensic
 - [Psychoacoustics and Digital Audio Fundamentals](../lectures/week-3/psychoacoustics-and-digital-audio-fundamentals/)
 
 
-
-- Wavelength and frequency
-- Inverse square law
-- Reverberation
-- Hearing and masking
-- Sampling
-- Perceptual coding
--  Lab: Measuring Sound Pressure Level (SPL) and calculating distance attenuation. 
-- Lab: Masking and Intelligibility Lab (Forensic Listening Focus)
-- Lab: Sampling and Aliasing Demonstration
-
 {{< homework >}}
 Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 {{< /homework >}}
