@@ -1752,10 +1752,10 @@ Students should argue whether enhancement would help or harm.
 
 ## Discussion Questions
 
-<div style="font-size: 0.78em;">
+<div style="font-size: 0.9em;">
   <ol>
-    <li>When prioritize perceptual audibility vs. signal evidence?</li>
-    <li>How explain temporal masking to a non-technical jury?</li>
+    <li>When to prioritize perceptual audibility vs. signal evidence?</li>
+    <li>How to explain temporal masking to a non-technical jury?</li>
     <li>Given a 64 kbps MP3, what analyses assess reliability?</li>
     <li>Ethical duties when tampering can’t be ruled in/out?</li>
     <li>How can psychoacoustics help prevent wrongful convictions?</li>
