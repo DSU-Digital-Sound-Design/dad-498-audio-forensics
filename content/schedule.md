@@ -49,7 +49,9 @@ Find a news story from the past few years and discuss how it uses audio forensic
 
 ## Thursday (1/29)
 
-**Psychoacoustics and Digital Audio Fundamentals**
+- [Psychoacoustics and Digital Audio Fundamentals](../lectures/week-3/psychoacoustics-and-digital-audio-fundamentals/)
+
+
 
 - Wavelength and frequency
 - Inverse square law
