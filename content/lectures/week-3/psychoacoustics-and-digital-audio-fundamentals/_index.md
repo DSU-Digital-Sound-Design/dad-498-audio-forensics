@@ -10,7 +10,17 @@ theme = "solarized"
 How human perception and digital systems shape forensic audio analysis
 
 {{% note %}}
-Today we examine the critical intersection between human auditory perception and digital audio systems—and how both directly affect forensic audio analysis, evidence interpretation, and expert testimony. You've already completed foundational work in audio forensics covering authentication, tampering detection, and legal context. Now we dive deeper into how the ear and brain process sound, how digital codecs exploit these perceptual limits, and where forensic analysts must exercise caution. This isn't abstract psychoacoustics—this is about understanding when perceptual audibility matters, when signal evidence dominates, and where misinterpretation can lead to forensic error.
+- Today we examine the critical intersection between human auditory perception and digital audio systems
+- Both directly affect forensic audio analysis, evidence interpretation, and expert testimony
+- Building on foundational work in audio forensics: authentication, tampering detection, and legal context
+- Diving deeper into:
+  - How the ear and brain process sound
+  - How digital codecs exploit perceptual limits
+  - Where forensic analysts must exercise caution
+- This isn't abstract psychoacoustics—this is practical understanding of:
+  - When perceptual audibility matters
+  - When signal evidence dominates
+  - Where misinterpretation can lead to forensic error
 {{% /note %}}
 
 ---
@@ -25,7 +35,23 @@ Today we examine the critical intersection between human auditory perception and
    - When perception matters, courtroom implications, best practices
 
 {{% note %}}
-We'll move through three major sections. First, psychoacoustics—the science of how humans perceive sound. We'll cover auditory masking, critical bands and perceptual frequency scales, equal-loudness contours, temporal resolution, and spatial hearing. Second, digital audio systems viewed through a perceptual lens: sampling theory, lossy codecs, codec artifacts, dither, and time-frequency tradeoffs. Finally, applied forensic context: when does perceptual audibility matter versus when does signal evidence dominate? What are the courtroom implications? What protocols prevent misinterpretation?
+Three major sections:
+- **First: Psychoacoustics** (science of how humans perceive sound)
+  - Auditory masking
+  - Critical bands and perceptual frequency scales
+  - Equal-loudness contours
+  - Temporal resolution
+  - Spatial hearing
+- **Second: Digital audio systems through a perceptual lens**
+  - Sampling theory
+  - Lossy codecs
+  - Codec artifacts
+  - Dither
+  - Time-frequency tradeoffs
+- **Third: Applied forensic context**
+  - When does perceptual audibility matter vs. when does signal evidence dominate?
+  - What are the courtroom implications?
+  - What protocols prevent misinterpretation?
 {{% /note %}}
 
 ---
@@ -46,7 +72,20 @@ Understanding the human auditory system's capabilities and limitations
 - **Expert testimony**: How do you explain perceptual limits to a jury?
 
 {{% note %}}
-Psychoacoustics is not just academic theory—it's foundational to forensic audio work. When evaluating earwitness testimony, you must determine whether a person could have physically heard a specific sound given masking, distance, and noise conditions. When enhancing audio, you need to know whether your processing actually improves intelligibility or just makes it sound "nicer" without helping comprehension. When analyzing lossy-compressed evidence like MP3 or AAC files, you must distinguish between original acoustic information and artifacts introduced by psychoacoustic coding. And when testifying, you must communicate these perceptual limitations clearly to judges and juries who lack this technical background. Every one of these tasks requires deep understanding of how the human auditory system actually works.
+- Psychoacoustics is not just academic theory—it's foundational to forensic audio work
+- **Evaluating earwitness testimony**:
+  - Must determine whether a person could have physically heard a specific sound
+  - Consider masking, distance, and noise conditions
+- **Enhancing audio**:
+  - Does processing actually improve intelligibility?
+  - Or does it just make it sound "nicer" without helping comprehension?
+- **Analyzing lossy-compressed evidence** (MP3, AAC):
+  - Must distinguish between original acoustic information and codec artifacts
+  - Artifacts introduced by psychoacoustic coding
+- **Testifying in court**:
+  - Must communicate perceptual limitations clearly
+  - Audience: judges and juries who lack technical background
+- Every one of these tasks requires deep understanding of how the human auditory system actually works
 
 **Sources**: Forensic audio analysis framework (SWGDE Best Practices for Forensic Audio); psychoacoustic foundations for codec analysis (Brandenburg, 1999).
 {{% /note %}}
@@ -63,7 +102,16 @@ Psychoacoustics is not just academic theory—it's foundational to forensic audi
 3. Informational masking
 
 {{% note %}}
-Auditory masking is a psychoacoustic phenomenon where the presence of one sound raises the threshold of hearing for another sound, potentially rendering it completely inaudible. This is not about volume alone—it's about how the cochlea and brain process overlapping acoustic information. Understanding masking is absolutely critical for forensic work. It determines whether "earwitnesses" could physically perceive a sound, and it's the foundation of how lossy codecs like MP3 and AAC discard data. There are three types we need to understand: simultaneous masking (frequency-domain), temporal masking (time-domain), and informational masking (cognitive-level interference). Each has distinct mechanisms and forensic implications.
+- **Auditory masking**: psychoacoustic phenomenon where one sound raises the threshold of hearing for another sound, potentially rendering it completely inaudible
+- Not about volume alone—about how the cochlea and brain process overlapping acoustic information
+- **Understanding masking is absolutely critical for forensic work**:
+  - Determines whether "earwitnesses" could physically perceive a sound
+  - Foundation of how lossy codecs (MP3, AAC) discard data
+- **Three types to understand**:
+  - Simultaneous masking (frequency-domain)
+  - Temporal masking (time-domain)
+  - Informational masking (cognitive-level interference)
+- Each has distinct mechanisms and forensic implications
 
 **Sources**: Auditory masking overview (Fraser & Stevenson, 2014); forensic masking analysis (Giroux, 2022).
 {{% /note %}}
@@ -77,7 +125,7 @@ Auditory masking is a psychoacoustic phenomenon where the presence of one sound 
     <a href="https://www.researchgate.net/figure/Temporal-masking-from-15_fig11_228772276">
     <img src="Temporal-masking-from-15.png" alt="Simultaneous masking curves showing upward spread of masking" style="width: 100%; height: auto;">
     </a>
-    <p style="font-size: 0.8em; text-align: center;">Simultaneous masking curves illustrating upward spread of masking</p>
+    <p style="font-size: 0.8em; text-align: center;">Simultaneous masking curves illustrating upw```ard spread of masking</p>
   </div>
   <div style="float: left; width: calc(100% - 440px); font-size: 0.7em;">
     <ul>
@@ -91,11 +139,21 @@ Auditory masking is a psychoacoustic phenomenon where the presence of one sound 
 </div>
 
 {{% note %}}
-Simultaneous or spectral masking occurs when the masker and probe are presented at the exact same time. Physiologically, this happens because the cochlea acts as a mechanical Fourier transformer. A strong sound creates a peak of vibration at a specific point on the basilar membrane. If a weaker sound excites the membrane in a nearly identical location, its signal is "drowned out" before it can be independently coded on the auditory nerve.
-
-The most important characteristic is the upward spread of masking: low-frequency sounds are highly effective at masking high-frequency sounds, whereas high-frequency sounds are poor at masking low frequencies. This asymmetry is crucial for forensic interpretation. Masking is strongest within critical bands—the bandwidths of the auditory filters we'll discuss shortly.
-
-Quantitatively, a tonal masker typically requires a Signal-to-Mask Ratio (SMR) of about 14.5 dB to hide noise, while a noise masker can hide a tone with an SMR of only 5 dB. These thresholds are exploited by lossy codecs and must be considered when evaluating whether a witness could have heard a specific sound in a noisy environment.
+- **Simultaneous/spectral masking**: occurs when masker and probe are presented at exact same time
+- **Physiological mechanism**:
+  - Cochlea acts as a mechanical Fourier transformer
+  - Strong sound creates peak of vibration at specific point on basilar membrane
+  - Weaker sound exciting nearly identical location is "drowned out" before it can be independently coded on auditory nerve
+- **Most important characteristic: upward spread of masking**
+  - Low-frequency sounds highly effective at masking high-frequency sounds
+  - High-frequency sounds poor at masking low frequencies
+  - This asymmetry is crucial for forensic interpretation
+- Masking strongest within critical bands (bandwidths of auditory filters)
+- **Quantitative thresholds**:
+  - Tonal masker: requires ~14.5 dB SMR to hide noise
+  - Noise masker: can hide tone with only ~5 dB SMR
+  - Thresholds exploited by lossy codecs
+  - Must be considered when evaluating whether witness could have heard specific sound in noisy environment
 
 **Image source suggestion**: [Auditory masking diagram from ResearchGate](https://www.researchgate.net/figure/Frequency-and-temporal-masking-effects_fig1_3333873) or [Wikipedia Auditory Masking](https://en.wikipedia.org/wiki/Auditory_masking).
 
@@ -117,11 +175,18 @@ Quantitatively, a tonal masker typically requires a Signal-to-Mask Ratio (SMR) o
 - Time window: **100–200 ms** (up to 500 ms for some effects)
 
 {{% note %}}
-Temporal masking occurs when a sound is obscured by a stimulus that immediately precedes or follows it—not simultaneous, but separated in time. Pre-masking or backward masking is counterintuitive: a sound is masked even if it occurs before the masker begins. This happens because the brain processes more energetic and louder signals faster; the loud masker "catches up" to and interferes with the neural processing of the preceding weaker signal. The time window for pre-masking is only about 5 to 20 milliseconds.
-
-Post-masking or forward masking is more intuitive: a sound is masked for a duration after the masker stops. This is caused by the physical "ringing" or continued oscillation of the basilar membrane and the physiological recovery time needed for auditory neurons to adapt. Post-masking typically persists for 100 to 200 milliseconds, though some effects are seen up to 300 to 500 milliseconds.
-
-For forensic audio, temporal masking is critical for gunshot analysis—a muzzle blast (1–3 ms) can be temporally masked by its own reverberant tail, which can last over 700 ms in reflective environments. It's also exploited by lossy codecs: quantization noise from a sharp transient can spread backward in time within an analysis window, appearing as noise before the actual sound (pre-echo). If this pre-echo falls outside the 20 ms pre-masking window, it becomes an audible artifact.
+- **Temporal masking**: A sound is obscured by a stimulus that immediately precedes or follows it (not simultaneous; separated in time).
+- **Pre-masking (backward masking)**:
+  - Counterintuitive: a sound can be masked even if it occurs *before* the masker begins.
+  - Why: the brain processes more energetic/louder signals faster, so the loud masker "catches up" and interferes with processing of the earlier weaker signal.
+  - Time window: ~**5–20 ms**.
+- **Post-masking (forward masking)**:
+  - A sound can remain masked for a duration *after* the masker stops.
+  - Why: basilar membrane "ringing" (continued oscillation) + auditory neuron recovery/adaptation time.
+  - Typical duration: ~**100–200 ms** (some effects up to **300–500 ms**).
+- **Forensic audio implications**:
+  - **Gunshot analysis**: a muzzle blast (**1–3 ms**) can be temporally masked by its reverberant tail (can last **>700 ms** in reflective environments).
+  - **Lossy codecs**: quantization noise from a sharp transient can spread backward within an analysis window, producing **pre-echo** (noise before the actual sound); if it exceeds the **~20 ms** pre-masking window, it becomes an audible artifact.
 
 **Sources**: Pre-masking and post-masking mechanisms; time windows (5–20 ms and 100–200 ms); forensic implications for gunshot analysis and codec pre-echo.
 {{% /note %}}
@@ -140,9 +205,18 @@ For forensic audio, temporal masking is critical for gunshot analysis—a muzzle
 - Example: "Cocktail party effect"—brain can't separate voices even when physically distinguishable
 
 {{% note %}}
-Informational masking is a higher-level perceptual interference that is not caused by energetic overlap in the cochlea. This occurs within the central nervous system and relates to interactions between separate neural inputs. Even if a sound is not "energetically" masked—the signals are physically distinct on the basilar membrane—the brain may fail to process it due to similarity between the target and masker, attention factors, or limitations in Auditory Scene Analysis.
-
-The "cocktail party effect" is related: in a room full of conversations, the brain uses binaural separation (the Binaural Masking Level Difference) to hear a voice that would be masked if heard monaurally. This allows a person to use two ears to hear a voice that would be masked with one ear. Forensically, this matters when evaluating earwitness testimony: a witness with hearing loss may have different forward-masking recovery rates, affecting their ability to hear speech in a "gap" of noise. A listener's testimony may be physically audible to everyone in the room but "legally masked"—rendered irrelevant—if the judge perceives political bias or if it fails to meet admissible standards.
+- **Informational masking**: higher-level perceptual interference (not energetic overlap in the cochlea).
+- **Where it happens**: central nervous system; interactions between separate neural inputs.
+- **Key idea**: even when signals are physically distinct on the basilar membrane (not "energetically" masked), the brain may still fail to process the target due to:
+  - similarity between target and masker
+  - attention limitations
+  - Auditory Scene Analysis (ASA) limits/failures
+- **Cocktail party effect (related)**:
+  - in a room full of conversations, the brain can use binaural separation (Binaural Masking Level Difference) to hear a voice that would be masked if heard monaurally
+  - two ears can recover a voice that would be masked with one ear
+- **Forensic relevance**:
+  - earwitness evaluation: hearing loss may change forward-masking recovery rates, affecting ability to hear speech in a noise “gap”
+  - testimony may be physically audible yet effectively “masked” (treated as irrelevant) if perceived as biased or if it fails admissibility standards
 
 **Sources**: Informational masking mechanisms; Auditory Scene Analysis limitations; cocktail party effect and Binaural Masking Level Difference; forensic implications for earwitness reliability.
 {{% /note %}}
@@ -159,9 +233,12 @@ When analyzing audio evidence, ask:
 4. Would enhancement shift the masking relationship and make inaudible sounds audible?
 
 {{% note %}}
-When you're working with audio evidence, masking should always be on your mind. First: could the witness have heard this sound given the noise floor and simultaneous sounds? Use masking thresholds to determine whether their claim is physically plausible. Second: if speech is described as "inaudible," is it actually below the masking threshold, or is it just quiet and would be audible with proper playback levels? These are not the same thing. Third: has lossy compression (MP3, AAC) exploited masking to discard data that might have been subtle background evidence—distant voices, environmental sounds? Fourth: if you enhance the audio to improve intelligibility, are you shifting the masking relationship in a way that makes previously inaudible sounds audible? If so, you need to document this clearly, because it changes what the evidence "says."
-
-Masking is the foundation of perceptual audio coding and a critical consideration for earwitness evaluation, enhancement assessment, and codec artifact identification.
+- When working with audio evidence, keep masking in mind:
+  - **Earwitness plausibility**: could the witness have heard the sound given the noise floor and simultaneous sounds? Use masking thresholds to assess physical plausibility.
+  - **“Inaudible” vs. quiet**: is speech truly below the masking threshold, or just quiet and potentially audible with proper playback level? These are not the same.
+  - **Lossy compression** (MP3/AAC): did masking allow the codec to discard subtle background evidence (distant voices, environmental sounds)?
+  - **Enhancement effects**: does processing shift masking relationships and make previously masked sounds audible? If so, document it clearly because it changes what the evidence “says.”
+- Masking underlies perceptual audio coding and is central to earwitness evaluation, enhancement assessment, and codec artifact identification.
 
 **Sources**: Forensic audio analysis protocols; masking threshold calculations; earwitness reliability and masking (Giroux, 2022); lossy codec exploitation of masking (Brandenburg, 1999).
 {{% /note %}}
@@ -186,11 +263,22 @@ Masking is the foundation of perceptual audio coding and a critical consideratio
 </div>
 
 {{% note %}}
-The human auditory system doesn't process sound as a linear frequency range—it uses a series of "critical bands," overlapping bandpass filters implemented by the mechanical structure of the cochlea. Within the fluid-filled cochlea, the basilar membrane is narrow and stiff at its base (near the oval window) and wider and more flexible at its apex. This physical structure creates tonotopic organization: high-frequency sounds excite the stiff base, while low-frequency sounds travel further to excite the flexible apex. This spatial frequency mapping allows the brain to distinguish frequencies based on the location of maximum displacement along the membrane.
-
-Critical bands define the bandwidth within which signal components interact perceptually. Within a critical band, the ear integrates sound energy as a single unit, making it difficult to distinguish individual tones that are closely spaced. The width of auditory filters is not uniform across the hearing range. Below 500 Hz, critical bands remain relatively constant at approximately 100 Hz in width. Above 500 Hz, the bandwidth increases significantly—often reaching several thousand Hz—and is generally approximated as 20% of the center frequency. Despite the change in frequency bandwidth, each critical band covers roughly the same physical distance (1.3 mm) along the basilar membrane and stimulates about 1300 neurons.
-
-Understanding critical bands is essential for forensic spectral interpretation and for understanding how lossy codecs allocate bits across the spectrum.
+- The auditory system does not process sound as a linear frequency range; it uses **critical bands** (overlapping bandpass filters created by cochlear mechanics).
+- **Basilar membrane mechanics**:
+  - narrow/stiff at the base near the oval window → responds to high frequencies
+  - wide/flexible toward the apex → responds to low frequencies
+- **Tonotopic organization**:
+  - high frequencies excite the stiff base
+  - low frequencies travel further and excite the flexible apex
+  - the brain infers frequency from the location of maximum displacement along the membrane
+- **What critical bands do**:
+  - define the bandwidth within which components interact perceptually
+  - within a band, the ear integrates energy as a single unit → closely spaced tones are harder to separate
+- **Auditory filter bandwidth varies with frequency**:
+  - below **500 Hz**: ~**100 Hz** wide
+  - above **500 Hz**: bandwidth increases; often approximated as ~**20%** of center frequency
+- Despite bandwidth changes in Hz, each critical band spans ~**1.3 mm** on the basilar membrane and stimulates ~**1300 neurons**.
+- Forensics: critical bands matter for **spectral interpretation** and for how **lossy codecs** allocate bits across the spectrum.
 
 **Image source suggestion**: [Cochlea tonotopic mapping from ResearchGate](https://www.researchgate.net/figure/Tonotopic-maps-of-the-basilar-membrane-and-cochlear-nucleus_fig3_257775085) or [Wikipedia Tonotopy](https://en.wikipedia.org/wiki/Tonotopy).
 
@@ -217,9 +305,25 @@ Understanding critical bands is essential for forensic spectral interpretation a
 - ERB: ERB = 21.4 log₁₀(0.00437f + 1)
 
 {{% note %}}
-While all three scales map frequencies non-linearly to match the human auditory system, they serve different specialized roles in audio analysis. The Bark scale is based on the first 24 critical bands of hearing, where 1 Bark equals 1 critical band. It's fundamental for audio compression—the MP3 standard uses it—and for modeling loudness. The Mel scale is based on the perception of pitch and is defined so that 1000 mels is the pitch of a 1000 Hz tone at 40 dB SPL. It's standard for speech recognition and speaker identification, particularly in Mel-Frequency Cepstral Coefficients (MFCCs). The ERB scale provides a smoother refinement for auditory filters using the concept of Equivalent Rectangular Bandwidth. It's used in noise reduction algorithms and high-resolution psychoacoustic research.
-
-Forensically, these scales are critical for spectral interpretation. By viewing a spectrogram on a Bark or Mel scale, an analyst sees the recording as the human ear hears it, emphasizing informative ranges like speech and compressing less relevant high frequencies. The Mel scale is highly effective at capturing phonetic identity and pitch contours in human speech. However, recent research indicates the Bark scale may be more effective for identifying speakers in certain dialects because its center frequencies map more closely to the first formant (F1), which reveals language structure and individual speaking style. Analysts also use these models to determine if a specific sound would be perceptually audible or if it was hidden by auditory masking.
+- All three scales map frequency **non-linearly** to better match human hearing, but they serve different analysis goals.
+- **Bark scale**:
+  - based on the first **24 critical bands**
+  - **1 Bark = 1 critical band**
+  - used for **audio compression** (e.g., MP3) and **loudness modeling**
+- **Mel scale**:
+  - based on **pitch perception**
+  - defined so **1000 mels** is the pitch of a **1000 Hz** tone at **40 dB SPL**
+  - used for **speech recognition** and **speaker identification** (e.g., **MFCCs**)
+- **ERB scale**:
+  - based on **Equivalent Rectangular Bandwidth**
+  - smoother refinement for auditory filters
+  - used in **noise reduction** and **high-resolution psychoacoustic research**
+- **Forensic significance**:
+  - critical for **spectral interpretation**
+  - Bark/Mel-scaled spectrograms approximate what the **ear emphasizes** (e.g., speech ranges) and compress less-informative regions
+  - Mel is effective for **phonetic identity** and **pitch contours**
+  - some research suggests Bark may better identify speakers in certain dialects because its center frequencies align more closely with **F1** (first formant), reflecting language structure and speaking style
+  - helps assess whether a sound would be **perceptually audible** or **hidden by masking**
 
 **Image source suggestion**: [Bark scale diagram from ResearchGate](https://www.researchgate.net/figure/18-Critical-bandwidth-Bark-scale-and-equivalent-rectangular-bandwidth-ERB-as-a_fig12_266136545) or [Stanford CCRMA Bark scale](https://ccrma.stanford.edu/courses/120-fall-2003/lecture-5.html).
 
@@ -247,11 +351,18 @@ Forensically, these scales are critical for spectral interpretation. By viewing 
 </div>
 
 {{% note %}}
-Equal-loudness contours are graphical representations of the sound pressure level (SPL), measured in decibels, required across the frequency spectrum for an average listener to perceive a constant level of loudness when presented with pure steady tones. Originally characterized by Fletcher and Munson in 1933, these curves have been refined and standardized as ISO 226:2003, which serves as the modern reference for human auditory sensitivity.
-
-To quantify subjective loudness, psychoacousticians use two distinct units. Phon is loudness level: by definition, 1 phon is equal to 1 dB SPL at a frequency of 1 kHz. Two sounds of different frequencies have the same phon level if an average young person without hearing impairment perceives them as equally loud. Sone is subjective loudness: this is a linear scale where 1 sone is defined as the loudness of a 40-phon tone. Subjectively, an increase of 10 phons corresponds to a doubling of perceived loudness (e.g., 2 sones = 50 phons).
-
-The human auditory system is not a linear detector; its sensitivity varies drastically depending on frequency and absolute volume. Humans are most acute in the 2 kHz to 5 kHz range due to the physical resonance of the ear canal and the mechanical efficiency of the middle ear's ossicles. Sensitivity drops sharply at very low frequencies (below 100 Hz) and very high frequencies (above 10 kHz). As the overall sound level increases, the equal-loudness curves become flatter, meaning the ear's response becomes more consistent across frequencies at high volumes.
+- **Equal-loudness contours**:
+  - show the **sound pressure level (SPL)** (in dB) needed at each frequency for an average listener to perceive **equal loudness** for pure steady tones
+  - originally characterized by **Fletcher & Munson (1933)**
+  - modern reference standardized as **ISO 226:2003**
+- **Loudness units**:
+  - **Phon** (loudness level): by definition, **1 phon = 1 dB SPL at 1 kHz**; two sounds have the same phon level if they are perceived as equally loud by an average young listener without hearing impairment
+  - **Sone** (subjective loudness, linear scale): **1 sone = 40 phons**; an increase of **10 phons ≈ 2×** perceived loudness (e.g., **2 sones = 50 phons**)
+- **Frequency + level dependence**:
+  - hearing sensitivity varies with frequency and absolute level (not a linear detector)
+  - most sensitive: **2–5 kHz** (ear canal resonance + middle-ear efficiency)
+  - least sensitive: **<100 Hz** and **>10 kHz**
+  - as overall level increases, curves **flatten** → response becomes more consistent across frequencies at high volumes
 
 **Image source suggestion**: [ISO 226 equal-loudness contours from Wikipedia](https://en.wikipedia.org/wiki/Equal-loudness_contour) or [iZotope Fletcher-Munson article](https://www.izotope.com/en/learn/what-is-fletcher-munson-curve-equal-loudness-curves).
 
@@ -276,13 +387,29 @@ The human auditory system is not a linear detector; its sensitivity varies drast
 - "Birdie noise" or artifacts in these bands can be misinterpreted as original evidence
 
 {{% note %}}
-Understanding equal-loudness contours is vital for the acquisition, enhancement, and presentation of audio evidence. Audio often sounds "thin" at low volumes because the bass and treble components fall below the threshold of audibility sooner than the midrange. Forensic examiners use Automatic Gain Control (AGC) or dynamic range compression to normalize levels for court, ensuring quiet utterances are audible without louder sounds becoming painful.
+**Equal-loudness contours and audio evidence**:
+- Understanding equal-loudness contours is vital for acquisition, enhancement, and presentation of audio evidence
+- Audio sounds "thin" at low volumes because bass and treble components fall below threshold of audibility sooner than midrange
+- Forensic examiners use Automatic Gain Control (AGC) or dynamic range compression to normalize levels for court
+  - Ensures quiet utterances are audible without louder sounds becoming painful
 
-However, examiners must be cautious when normalizing levels, as relative loudness is a key cue for determining the distance or orientation of a sound source—such as a shooter. Excessive processing can obscure these spatial relationships. Standard sound level measurements in investigations often use A-weighting, which is the inverse of the 40-phon curve, to better reflect how environmental noise actually impacts human listeners.
+**Cautions with normalization**:
+- Examiners must be cautious when normalizing levels
+- Relative loudness is a key cue for determining distance or orientation of sound source (e.g., shooter)
+- Excessive processing can obscure spatial relationships
+- Standard sound level measurements use A-weighting (inverse of 40-phon curve) to better reflect how environmental noise impacts human listeners
 
-Lossy formats like MP3 exploit equal-loudness contours to hide quantization noise in frequency bands where it will be masked by stronger signals. Analysts must ensure that "birdie noise" or other artifacts introduced by this process are not misinterpreted as original scene evidence. When presenting evidence to a jury, be aware that judges and laypeople lack the experience to "listen through" noise; therefore, providing an appropriately enhanced version alongside the original is often necessary for clarity.
+**Lossy codec artifacts**:
+- Lossy formats like MP3 exploit equal-loudness contours to hide quantization noise in frequency bands where it will be masked by stronger signals
+- Analysts must ensure "birdie noise" or other artifacts are not misinterpreted as original scene evidence
+- Judges and laypeople lack experience to "listen through" noise
+- Providing appropriately enhanced version alongside original is often necessary for clarity
 
-**Forensic best practices**: Periodic hearing screening (auditory acuity tracking); iterative critical listening in quiet environments with high-quality, spectrally flat headphones; moderate monitoring levels to prevent acoustic reflex (involuntary muscle contraction that reduces sensitivity by up to 20 dB); playback context awareness when presenting to juries.
+**Forensic best practices**:
+- Periodic hearing screening (auditory acuity tracking)
+- Iterative critical listening in quiet environments with high-quality, spectrally flat headphones
+- Moderate monitoring levels to prevent acoustic reflex (involuntary muscle contraction reducing sensitivity by up to 20 dB)
+- Playback context awareness when presenting to juries
 
 **Sources**: Forensic gain normalization practices; AGC and spatial cue preservation; A-weighting standards; lossy codec exploitation of equal-loudness; best practices for hearing screening and playback (SWGDE Core Competencies for Forensic Audio).
 {{% /note %}}
@@ -305,11 +432,25 @@ Lossy formats like MP3 exploit equal-loudness contours to hide quantization nois
 - Minimum detectable discontinuity: ~2 ms cross-fade can conceal clicks from listeners (but not spectral analysis)
 
 {{% note %}}
-Temporal resolution in forensic audio refers to the auditory system's ability to detect changes in sound over time, such as gaps, transients, or abrupt signal discontinuities. Understanding these temporal limits is essential for forensic authentication, as it defines the thresholds at which edits—such as deletions or insertions—become audible to a listener or detectable through specialized software.
+**Temporal resolution in forensic audio**:
+- Refers to auditory system's ability to detect changes in sound over time (gaps, transients, abrupt signal discontinuities)
+- Understanding temporal limits is essential for forensic authentication
+- Defines thresholds at which edits (deletions or insertions) become audible or detectable through specialized software
 
-Human hearing does not process sound instantaneously; instead, it integrates acoustic information over specific time windows. The loudness integration window is approximately 200 ms. The ear integrates sound energy over this interval. Brief sounds shorter than this window may be perceived as quieter than their actual sound pressure level suggests. The temporal fusion and pitch integration window is approximately 30 ms. If two sounds are separated by less than this interval, the brain may perceive them as a single fused event rather than discrete sounds.
+**Human hearing integration windows**:
+- Human hearing does not process sound instantaneously; integrates acoustic information over specific time windows
+- Loudness integration window: approximately 200 ms
+  - Ear integrates sound energy over this interval
+  - Brief sounds shorter than this window may be perceived as quieter than their actual sound pressure level
+- Temporal fusion and pitch integration window: approximately 30 ms
+  - Sounds separated by less than this interval may be perceived as single fused event rather than discrete sounds
 
-For forensic audio, transients are brief, high-energy sounds such as clicks, pops, or the onset of a gunshot, which serve as critical markers in analysis. A handgun's muzzle blast is an extremely brief impulsive event lasting only 1 to 3 milliseconds. Supersonic projectiles produce an "N-wave" shock wave with a duration of only a few hundred microseconds. Clicks or pops occur when a signal behaves discontinuously with large differences between adjacent samples. While 2-ms cross-fades can often conceal these discontinuities from a listener, they remain detectable through spectral analysis.
+**Transients in forensic audio**:
+- Transients are brief, high-energy sounds (clicks, pops, gunshot onset) serving as critical markers in analysis
+- Handgun's muzzle blast: extremely brief impulsive event lasting only 1–3 milliseconds
+- Supersonic projectiles produce "N-wave" shock wave with duration of only a few hundred microseconds
+- Clicks or pops occur when signal behaves discontinuously with large differences between adjacent samples
+- 2-ms cross-fades can often conceal discontinuities from a listener, but remain detectable through spectral analysis
 
 **Sources**: Loudness integration window (~200 ms); temporal fusion window (~30 ms); muzzle blast duration (1–3 ms); ballistic shock wave duration (μs); cross-fade concealment thresholds.
 {{% /note %}}
@@ -332,11 +473,24 @@ For forensic audio, transients are brief, high-energy sounds such as clicks, pop
 - Background shifts: Abrupt changes in noise texture or disappearance of continuous tones (60 Hz hum)
 
 {{% note %}}
-Forensic analysts use the visual and spectral signatures of transients to identify if a recording has been tampered with. An unsophisticated edit, known as a butt splice, occurs when a section is abruptly deleted or inserted. Spectrally, a butt splice creates a "vertical line" across the spectrogram, indicating broadband energy released at the point of the discontinuity. If the splice occurs during a loud passage, it produces an audible click. If it occurs in a silent passage, it may be inaudible but still detectable visually.
+**Detecting tampering using transient signatures**:
+- Forensic analysts use visual and spectral signatures of transients to identify if recording has been tampered with
+- Butt splice: unsophisticated edit where section is abruptly deleted or inserted
+  - Spectrally creates "vertical line" across spectrogram (broadband energy released at discontinuity point)
+  - If splice occurs during loud passage: produces audible click
+  - If splice occurs in silent passage: may be inaudible but still detectable visually
 
-Skilled forgers use cross-fades (typically around 2 ms) to smoothly blend samples and eliminate the click. However, the most reliable way to detect micro-edits is often by analyzing the "aleatoric" or background sounds that are nearly impossible to maintain during an edit. Inserting "dry" speech into a reverberant recording leaves an unnatural gap in the reverberant tail of the preceding sound. Edits are often revealed by abrupt changes in background noise texture or the sudden disappearance of continuous tones like a 60 Hz hum.
+**Cross-fades and background analysis**:
+- Skilled forgers use cross-fades (typically around 2 ms) to smoothly blend samples and eliminate click
+- Most reliable way to detect micro-edits: analyze "aleatoric" or background sounds nearly impossible to maintain during edit
+- Inserting "dry" speech into reverberant recording leaves unnatural gap in reverberant tail of preceding sound
+- Edits often revealed by abrupt changes in background noise texture or sudden disappearance of continuous tones (e.g., 60 Hz hum)
 
-Analysts must also account for temporal masking: pre-masking window (5–20 ms) means a loud masker can hide a sound that occurs up to 20 ms before the masker begins; post-masking window (100–200 ms) means masking persists after a loud sound ceases. In lossy formats like MP3, quantization noise from a sharp transient can spread backward in time, appearing before the actual sound (pre-echo). If this pre-echo falls outside the 20 ms pre-masking window, it becomes an audible artifact that can be misinterpreted as an edit.
+**Temporal masking considerations**:
+- Pre-masking window (5–20 ms): loud masker can hide sound that occurs up to 20 ms before masker begins
+- Post-masking window (100–200 ms): masking persists after loud sound ceases
+- In lossy formats like MP3, quantization noise from sharp transient can spread backward in time, appearing before actual sound (pre-echo)
+- If pre-echo falls outside 20 ms pre-masking window, it becomes audible artifact that can be misinterpreted as edit
 
 **Sources**: Butt splice vs. cross-fade detection; background consistency analysis; reverb gap identification; temporal masking and pre-echo artifacts in lossy codecs.
 {{% /note %}}
@@ -360,13 +514,30 @@ Analysts must also account for temporal masking: pre-masking window (5–20 ms) 
 - Resolved by spectral cues from pinna (directional bands, notches 5–10 kHz)
 
 {{% note %}}
-Spatial hearing is the human auditory system's ability to analyze the spatial attributes of sound, including the localization of sources and the perception of environmental acoustics. In forensic audio analysis, spatial cues are vital for reconstructing events, as they provide an objective record of source positions and potential evidence of tampering.
+**Spatial hearing in forensic audio**:
+- Spatial hearing: human auditory system's ability to analyze spatial attributes of sound (localization of sources, perception of environmental acoustics)
+- In forensic audio analysis, spatial cues are vital for reconstructing events
+- Provide objective record of source positions and potential evidence of tampering
 
-Human sound localization in the horizontal (azimuthal) plane primarily depends on the comparison of signals arriving at the two ears. Interaural Time Difference (ITD) is the difference in arrival time caused by the different distances sound must travel to reach each ear. In natural hearing, the maximum ITD is approximately 0.6 ms, which is sufficient to displace an auditory image completely to one side. ITDs are most effective for low-frequency signals (typically below 1.5 kHz) because the ear is highly sensitive to the fine-structure phase of the waveform in this range.
+**Interaural Time Difference (ITD)**:
+- Human sound localization in horizontal (azimuthal) plane depends on comparison of signals arriving at two ears
+- ITD: difference in arrival time caused by different distances sound must travel to reach each ear
+- Maximum ITD: approximately 0.6 ms (sufficient to displace auditory image completely to one side)
+- Most effective for low-frequency signals (typically below 1.5 kHz)
+  - Ear is highly sensitive to fine-structure phase of waveform in this range
 
-Interaural Level Difference (ILD), also known as Interaural Amplitude Difference, is caused by the head shadowing effect, where the head and pinnae diffraction partially reduce sound intensity reaching the far ear. An ILD of 10 to 20 dB is generally sufficient to move an auditory image entirely to one side. This cue is dominant for high-frequency sounds (above 1 kHz) where the wavelength is small relative to the head's dimensions.
+**Interaural Level Difference (ILD)**:
+- ILD (also known as Interaural Amplitude Difference): caused by head shadowing effect
+  - Head and pinnae diffraction partially reduce sound intensity reaching far ear
+- ILD of 10–20 dB generally sufficient to move auditory image entirely to one side
+- Dominant for high-frequency sounds (above 1 kHz) where wavelength is small relative to head's dimensions
 
-The cone of confusion refers to a set of spatial locations that produce identical ITD and ILD cues, making them ambiguous to the listener. These locations typically form a cone centered on the interaural axis, leading to difficulties in distinguishing between sounds coming from the front versus the back or directly above versus below. To resolve this, the brain relies on directional bands—spectral colorations (notches and peaks) created by the physical folds of the pinna (outer ear). A moving spectral notch in the 5–10 kHz range helps identify a source's elevation.
+**Cone of confusion**:
+- Set of spatial locations that produce identical ITD and ILD cues, making them ambiguous to listener
+- Locations typically form cone centered on interaural axis
+- Leads to difficulties distinguishing between sounds from front vs. back or directly above vs. below
+- Brain resolves using directional bands: spectral colorations (notches and peaks) created by physical folds of pinna (outer ear)
+- Moving spectral notch in 5–10 kHz range helps identify source's elevation
 
 **Image source suggestion**: [ITD and ILD diagram from ResearchGate](https://www.researchgate.net/figure/nteraural-Time-Difference-ITD-and-Interaural-Level-Difference-ILD_fig1_276473132) or [Frontiers in Psychology localization article](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1408073/full).
 
@@ -388,11 +559,22 @@ The cone of confusion refers to a set of spatial locations that produce identica
 - Multilateration uses measured TDOA (time difference of arrival), not perceived location
 
 {{% note %}}
-The precedence effect, also known as the law of the first wavefront, states that the first sound to reach the ear dominates the listener's perception of localization. If a direct sound is followed by a reflection within a specific time window, the brain fuses them into a single auditory event localized at the position of the first arrival. This effect occurs for delays between 1 ms and 30 ms. Within this range, a reflected sound can be up to 10 dB louder than the direct sound before it is perceived as a discrete echo.
+**Precedence effect (law of the first wavefront)**:
+- First sound to reach ear dominates listener's perception of localization
+- If direct sound is followed by reflection within specific time window, brain fuses them into single auditory event localized at position of first arrival
+- Effect occurs for delays between 1 ms and 30 ms
+- Within this range, reflected sound can be up to 10 dB louder than direct sound before being perceived as discrete echo
 
-For forensic analysts, this means a shooter's location is determined by the direct path, even if reflections from nearby walls are energetic. However, when performing geometric reconstruction via multilateration, analysts use measurable time differences of arrival (TDOA) for sound reflections, not the perceived fused location. Even though perceptually the reflections are fused with the direct sound, the measurable TDOA data can be used to determine the geometry of a crime scene, such as the distance to a reflecting surface or the location of a shooter.
+**Forensic implications**:
+- Shooter's location is determined by direct path, even if reflections from nearby walls are energetic
+- When performing geometric reconstruction via multilateration, analysts use measurable time differences of arrival (TDOA) for sound reflections, not perceived fused location
+- Even though perceptually reflections are fused with direct sound, measurable TDOA data can determine geometry of crime scene
+  - Distance to reflecting surface
+  - Location of shooter
 
-This is a key example of when measurable signal evidence (TDOA) matters more than perceptual audibility (fused localization). The analyst must understand both the perceptual phenomenon (precedence effect) and the signal processing approach (multilateration) to correctly interpret the evidence.
+**Key principle**:
+- Measurable signal evidence (TDOA) matters more than perceptual audibility (fused localization)
+- Analyst must understand both perceptual phenomenon (precedence effect) and signal processing approach (multilateration) to correctly interpret evidence
 
 **Sources**: Precedence effect mechanism; time window (1–30 ms); level threshold (up to 10 dB louder reflection); forensic implications for shooter localization and multilateration.
 {{% /note %}}
@@ -416,9 +598,22 @@ This is a key example of when measurable signal evidence (TDOA) matters more tha
 - Background noise audibly "pumps" as AGC tries to keep speech constant
 
 {{% note %}}
-Digital signal processing and lossy compression introduce unique artifacts that can be misinterpreted as original evidence. Analysts examine the spatial "logic" of a recording to detect alterations. Abrupt changes in a talker's perceived level or orientation without a corresponding visual or logical movement can indicate an edit. If a "dry" recording (low reverb) is inserted into a reverberant original, the lack of a reverberant tail in the inserted segment becomes visually obvious on a spectrogram and aurally detectable. Edits are often revealed by discontinuities in aleatoric background sounds, such as the sudden disappearance of a continuous 60 Hz electrical hum.
+**Digital signal processing and compression artifacts**:
+- Digital signal processing and lossy compression introduce unique artifacts that can be misinterpreted as original evidence
+- Analysts examine spatial "logic" of recording to detect alterations
 
-Binaural Masking Level Difference (BMLD) means that uncorrelated quantization noise that is masked in a monaural channel can become audible when presented in stereo (unmasking effect), potentially creating a "fizzing" sound in fade-outs. Automatic Gain Control can cause the background noise level to audibly "pump" or fluctuate as the system tries to keep speech volume constant. These artifacts are introduced during recording or processing and must not be confused with original acoustic events.
+**Spatial discontinuity indicators**:
+- Abrupt changes in talker's perceived level or orientation without corresponding visual or logical movement can indicate edit
+- "Dry" recording (low reverb) inserted into reverberant original: lack of reverberant tail in inserted segment becomes visually obvious on spectrogram and aurally detectable
+- Edits often revealed by discontinuities in aleatoric background sounds (e.g., sudden disappearance of continuous 60 Hz electrical hum)
+
+**Binaural Masking Level Difference (BMLD)**:
+- Uncorrelated quantization noise that is masked in monaural channel can become audible when presented in stereo (unmasking effect)
+- Potentially creates "fizzing" sound in fade-outs
+
+**AGC pumping**:
+- Automatic Gain Control can cause background noise level to audibly "pump" or fluctuate as system tries to keep speech volume constant
+- These artifacts are introduced during recording or processing and must not be confused with original acoustic events
 
 **Sources**: Spatial discontinuity detection; reverberant mismatch identification; Binaural Masking Level Difference unmasking effect; AGC pumping artifacts.
 {{% /note %}}
@@ -437,15 +632,32 @@ Binaural Masking Level Difference (BMLD) means that uncorrelated quantization no
 {{% note %}}
 **Exercise details for speaker notes:**
 
-This exercise provides hands-on experience with auditory masking principles. Students should listen to an audio file containing a masker tone (e.g., 500 Hz at 70 dB SPL) and a probe tone at a nearby frequency (e.g., 1000 Hz) with varying levels.
+**Overview**:
+- Exercise provides hands-on experience with auditory masking principles
+- Students listen to audio file containing:
+  - Masker tone (e.g., 500 Hz at 70 dB SPL)
+  - Probe tone at nearby frequency (e.g., 1000 Hz) with varying levels
 
-**Part 1**: Determine the SMR threshold. Start with the probe inaudible and gradually increase its level until it becomes audible. Note the level difference between masker and probe at the threshold of audibility. Compare your measured threshold to the theoretical values discussed in lecture (tonal masker ~14.5 dB SMR, noise masker ~5 dB SMR).
+**Part 1: Determine SMR threshold**:
+- Start with probe inaudible and gradually increase level until it becomes audible
+- Note level difference between masker and probe at threshold of audibility
+- Compare measured threshold to theoretical values discussed in lecture:
+  - Tonal masker: ~14.5 dB SMR
+  - Noise masker: ~5 dB SMR
 
-**Part 2**: Test upward vs. downward masking. Repeat the experiment with the probe below the masker frequency (e.g., 250 Hz probe with 500 Hz masker) and compare. You should find that low frequencies mask high frequencies much more effectively than high frequencies mask low frequencies—this is the upward spread of masking.
+**Part 2: Test upward vs. downward masking**:
+- Repeat experiment with probe below masker frequency (e.g., 250 Hz probe with 500 Hz masker) and compare
+- Expected finding: low frequencies mask high frequencies much more effectively than high frequencies mask low frequencies (upward spread of masking)
 
-**Part 3**: Courtroom communication. Write a 2-3 sentence explanation of your findings suitable for a jury with no technical background. Avoid jargon; use analogies. This skill is essential for expert testimony.
+**Part 3: Courtroom communication**:
+- Write 2-3 sentence explanation of findings suitable for jury with no technical background
+- Avoid jargon; use analogies
+- This skill is essential for expert testimony
 
-**Suggested audio files**: Generate synthetic tones using Audacity, MATLAB, or Python. Masker: 500 Hz sine wave at 70 dB SPL. Probe: 1000 Hz sine wave starting at 50 dB SPL, increasing in 2 dB steps.
+**Suggested audio files**:
+- Generate synthetic tones using Audacity, MATLAB, or Python
+- Masker: 500 Hz sine wave at 70 dB SPL
+- Probe: 1000 Hz sine wave starting at 50 dB SPL, increasing in 2 dB steps
 {{% /note %}}
 
 {{% /section %}}
@@ -476,11 +688,30 @@ How sampling, quantization, and perceptual coding affect forensic evidence
 - Prevented by anti-aliasing filters before sampling
 
 {{% note %}}
-Digital audio forensics relies on the accurate transformation of continuous analog sound into discrete digital data. This process is defined by two primary dimensions: sampling (resolution in time) and quantization (resolution in amplitude). The Nyquist-Shannon Sampling Theorem establishes the fundamental requirement for accurately reconstructing an analog signal from digital samples. To avoid the loss of information, a signal must be sampled at a rate (F_s) that is at least twice the highest frequency component (F_max) present within that signal. The value F_s / 2 is known as the Nyquist frequency; all meaningful frequency components must exist below this threshold to be properly represented.
+**Digital audio fundamentals**:
+- Digital audio forensics relies on accurate transformation of continuous analog sound into discrete digital data
+- Process defined by two primary dimensions:
+  - Sampling (resolution in time)
+  - Quantization (resolution in amplitude)
 
-Because the human hearing range extends to approximately 20 kHz, a sample rate of at least 40 kHz is required to capture all audible sounds. Standard rates like 44.1 kHz (CD) and 48 kHz (professional video) provide a slight buffer to facilitate effective filtering. Higher rates like 96 kHz are used for specialized forensic analysis where ultrasonic content or extreme precision is required.
+**Nyquist-Shannon Sampling Theorem**:
+- Establishes fundamental requirement for accurately reconstructing analog signal from digital samples
+- To avoid loss of information: signal must be sampled at rate (F_s) that is at least twice the highest frequency component (F_max) present within signal
+- F_s / 2 is known as Nyquist frequency
+- All meaningful frequency components must exist below this threshold to be properly represented
 
-When a signal is "undersampled"—meaning it contains frequencies higher than the Nyquist frequency—a specific form of distortion called aliasing occurs. High-frequency components are misinterpreted by the digital system as lower-frequency "ghost" signals. This manifests as audible distortion that was not present in the original acoustic scene. A common visual analogy is the "wagon-wheel effect" in films, where a fast-moving wheel appears to spin backward because the frame rate is insufficient to capture its true speed. To prevent aliasing, engineers use low-pass anti-aliasing filters before the sampling process to remove any energy above the Nyquist frequency.
+**Sample rates and human hearing**:
+- Human hearing range extends to approximately 20 kHz
+- Sample rate of at least 40 kHz required to capture all audible sounds
+- Standard rates like 44.1 kHz (CD) and 48 kHz (professional video) provide slight buffer to facilitate effective filtering
+- Higher rates like 96 kHz used for specialized forensic analysis where ultrasonic content or extreme precision is required
+
+**Aliasing**:
+- Occurs when signal is "undersampled" (contains frequencies higher than Nyquist frequency)
+- High-frequency components misinterpreted by digital system as lower-frequency "ghost" signals
+- Manifests as audible distortion not present in original acoustic scene
+- Visual analogy: "wagon-wheel effect" in films (fast-moving wheel appears to spin backward because frame rate is insufficient)
+- Prevention: engineers use low-pass anti-aliasing filters before sampling process to remove any energy above Nyquist frequency
 
 **Sources**: Nyquist-Shannon Sampling Theorem (F_s ≥ 2F_max); Nyquist frequency definition; standard sample rates (44.1 kHz, 48 kHz, 96 kHz); aliasing mechanism and prevention via anti-aliasing filters.
 {{% /note %}}
@@ -502,13 +733,37 @@ When a signal is "undersampled"—meaning it contains frequencies higher than th
 - Extremely low resolution → correlated error produces harmonic distortion
 
 {{% note %}}
-While sampling discretizes the time axis, quantization discretizes the amplitude (loudness) axis. Bit depth determines the precision of amplitude measurements. Dynamic range is the difference between the quietest and loudest sounds a system can represent. The 6 dB rule states that each additional bit in the bit depth increases the theoretical dynamic range by approximately 6 dB.
+**Quantization fundamentals**:
+- While sampling discretizes time axis, quantization discretizes amplitude (loudness) axis
+- Bit depth determines precision of amplitude measurements
+- Dynamic range: difference between quietest and loudest sounds a system can represent
+- 6 dB rule: each additional bit in bit depth increases theoretical dynamic range by approximately 6 dB
 
-16-bit audio offers 65,536 discrete amplitude levels and a dynamic range of roughly 96 dB—this is CD quality and covers the full audible range for most applications. 24-bit provides over 16.7 million levels and a dynamic range of 144 dB, which is the standard for professional studio recording and forensic work. 32-bit float offers an effectively infinite dynamic range (over 1500 dB) and is used for internal digital signal processing to prevent clipping during intermediate calculations.
+**Bit depth performance levels**:
+- 16-bit audio:
+  - 65,536 discrete amplitude levels
+  - Dynamic range of roughly 96 dB
+  - CD quality, covers full audible range for most applications
+- 24-bit:
+  - Over 16.7 million levels
+  - Dynamic range of 144 dB
+  - Standard for professional studio recording and forensic work
+- 32-bit float:
+  - Effectively infinite dynamic range (over 1500 dB)
+  - Used for internal digital signal processing to prevent clipping during intermediate calculations
 
-Low bit depths result in fewer amplitude levels, leading to quantization noise—the error between the actual analog value and the rounded digital step. In quiet passages or fade-outs, low bit depths create a "fizzing" or "grainy" quality. If the resolution is extremely low, the rounding error becomes correlated with the signal, producing unpleasant harmonic distortion. Forensic audio analysis requires sufficient bit depth to ensure that the noise floor is below the level of evidence sounds; otherwise, critical quiet evidence may be obscured by quantization noise.
+**Quantization noise**:
+- Low bit depths result in fewer amplitude levels, leading to quantization noise (error between actual analog value and rounded digital step)
+- In quiet passages or fade-outs, low bit depths create "fizzing" or "grainy" quality
+- If resolution is extremely low, rounding error becomes correlated with signal, producing unpleasant harmonic distortion
+- Forensic audio analysis requires sufficient bit depth to ensure noise floor is below level of evidence sounds
+- Otherwise, critical quiet evidence may be obscured by quantization noise
 
-**Forensically acceptable standards**: Consumer/general evidence: 16-bit / 44.1 kHz (CD quality, covers full audible range). Professional/studio work: 24-bit / 48 kHz or 96 kHz (lower noise floor, greater headroom for enhancement). Gunshot analysis (lab): 500 kHz sample rate required to capture extremely brief transients like muzzle blasts (1–3 ms) and shock waves. Speech intelligibility minimum: 8-bit / 8 kHz (recognizable speech, but generally insufficient for high-end forensics).
+**Forensically acceptable standards**:
+- Consumer/general evidence: 16-bit / 44.1 kHz (CD quality, covers full audible range)
+- Professional/studio work: 24-bit / 48 kHz or 96 kHz (lower noise floor, greater headroom for enhancement)
+- Gunshot analysis (lab): 500 kHz sample rate required to capture extremely brief transients like muzzle blasts (1–3 ms) and shock waves
+- Speech intelligibility minimum: 8-bit / 8 kHz (recognizable speech, but generally insufficient for high-end forensics)
 
 **Sources**: 6 dB per bit rule; bit depth performance (16-bit: 96 dB, 24-bit: 144 dB, 32-bit float: >1500 dB); quantization noise mechanisms; forensically acceptable standards (SWGDE Best Practices for Forensic Audio).
 {{% /note %}}
@@ -539,13 +794,52 @@ Low bit depths result in fewer amplitude levels, leading to quantization noise�
 </div>
 
 {{% note %}}
-Dithering and noise shaping are critical signal processing techniques used during the quantization of digital audio to preserve low-level detail and mitigate the harsh effects of quantization distortion. For a forensic audio analyst, understanding these processes is essential for evaluating the integrity of a recording and distinguishing between original acoustic noise and artifacts introduced during digital post-processing.
+**Dithering and Noise Shaping Overview**:
+- Critical signal processing techniques used during quantization of digital audio
+- Preserve low-level detail and mitigate harsh effects of quantization distortion
+- Essential for forensic analysts to evaluate recording integrity and distinguish original acoustic noise from digital post-processing artifacts
 
-Dithering is the intentional addition of low-amplitude random noise to an audio signal before it is quantized or reduced in bit depth. It acts as a form of "vibration" that prevents the quantization process from "sticking" to a specific level, which would otherwise cause the rounding error to become correlated with the signal, resulting in unpleasant harmonic distortion. Rectangular PDF (RPDF) means the noise values have an equal probability across a specific range. While effective at reducing distortion, RPDF dither is prone to noise modulation, where the background hiss audibly "pumps" in sync with the signal. Triangular PDF (TPDF) is the industry standard, achieved by summing two independent RPDF sources to concentrate noise probability near zero. TPDF completely eliminates noise modulation and harmonic distortion, providing a stable, linear noise floor down to the theoretical limits of the bit depth. The purpose of dither is to ensure that quantization noise is converted from harsh, signal-dependent distortion into a constant, innocuous hiss. This is particularly vital in quiet passages or fade-outs where bit depth resolution is limited.
+**Dithering**:
+- Intentional addition of low-amplitude random noise before quantization or bit depth reduction
+- Acts as "vibration" preventing quantization from "sticking" to specific level
+- Prevents rounding error correlation with signal that causes unpleasant harmonic distortion
+- **Rectangular PDF (RPDF)**:
+  - Noise values have equal probability across specific range
+  - Effective at reducing distortion but prone to noise modulation
+  - Background hiss audibly "pumps" in sync with signal
+- **Triangular PDF (TPDF)**:
+  - Industry standard achieved by summing two independent RPDF sources
+  - Concentrates noise probability near zero
+  - Completely eliminates noise modulation and harmonic distortion
+  - Provides stable, linear noise floor down to theoretical limits of bit depth
+- **Purpose**: Convert quantization noise from harsh, signal-dependent distortion into constant, innocuous hiss
+- Particularly vital in quiet passages or fade-outs where bit depth resolution is limited
 
-Noise shaping is an advanced technique that works in conjunction with dither to optimize the audible noise floor. It operates by computing the error from quantizing a sample and adding that specific error to the next sample before it is quantized. This feedback loop causes the error wave to oscillate more rapidly, effectively increasing its frequency. The goal is to "shape" the noise spectrum to match the inverse of the Fletcher-Munson curves. By moving noise energy out of the mid-range frequencies (2 kHz–5 kHz), where human hearing is most sensitive, and into high-frequency ranges (above 15 kHz), engineers can achieve a perceived dynamic range in 16-bit audio that rivals 20-bit performance.
+**Noise Shaping**:
+- Advanced technique working in conjunction with dither to optimize audible noise floor
+- **Operation**:
+  - Computes error from quantizing a sample
+  - Adds that specific error to next sample before quantization
+  - Feedback loop causes error wave to oscillate more rapidly, increasing frequency
+- **Goal**: Shape noise spectrum to match inverse of Fletcher-Munson curves
+- Moves noise energy out of mid-range frequencies (2 kHz–5 kHz) where hearing is most sensitive
+- Shifts energy into high-frequency ranges (above 15 kHz)
+- 16-bit audio with noise shaping can achieve perceived dynamic range rivaling 20-bit performance
 
-**Forensic implications**: Analysts must separate the "artificial" noise floor created by TPDF from the original "aleatoric" background noise of the acoustic scene. Dither appears as a statistically uniform hiss across the spectrum, whereas genuine environmental noise (like tape hiss or room tone) often has unique spectral colorations or fluctuations. Dither provides a continuous, predictable background signal. Butt splices or edits often create an abrupt break or discontinuity in this dither noise, which becomes visible in a spectrographic view as a vertical line or an unnatural gap in the high-frequency noise floor. Lossy formats like MP3 exploit these psychoacoustic principles. If a recording has been re-quantized or re-encoded multiple times, the buildup of dither and noise-shaping artifacts can obscure subtle evidence or create "birdie noise"—tonal whistling artifacts caused by spectral holes.
+**Forensic Implications**:
+- Analysts must separate "artificial" noise floor created by TPDF from original "aleatoric" background noise of acoustic scene
+- **Dither characteristics**:
+  - Appears as statistically uniform hiss across spectrum
+  - Provides continuous, predictable background signal
+- **Genuine environmental noise characteristics**:
+  - Tape hiss or room tone has unique spectral colorations or fluctuations
+- **Detecting tampering**:
+  - Butt splices or edits create abrupt break/discontinuity in dither noise
+  - Visible in spectrographic view as vertical line or unnatural gap in high-frequency noise floor
+- **Re-encoding concerns**:
+  - Lossy formats like MP3 exploit psychoacoustic principles
+  - Multiple re-quantizations or re-encodings cause buildup of dither and noise-shaping artifacts
+  - Can obscure subtle evidence or create "birdie noise" (tonal whistling artifacts from spectral holes)
 
 **Sources**: TPDF and RPDF dither mechanisms; noise shaping algorithm and spectral distribution; forensic implications for distinguishing dither from original noise; detection of tampering via dither discontinuities.
 {{% /note %}}
@@ -566,11 +860,20 @@ Noise shaping is an advanced technique that works in conjunction with dither to 
 - Critically sampled: M spectral coefficients for M new input samples
 
 {{% note %}}
-Lossy codecs like MP3, AAC, and Opus are designed to achieve high data compression by exploiting the physiological and psychological limitations of the human auditory system. Unlike lossless formats that only remove statistical redundancy, these codecs remove perceptual irrelevancy, meaning they discard information that a human listener is unlikely to hear.
-
-Lossy codecs use a psychoacoustic model to determine the masking threshold of a signal—the level below which sounds are inaudible due to the presence of louder sounds. The codec identifies loud "maskers" and allows the quantization noise in nearby frequency bands to increase, provided it remains below the masking threshold. This allows the encoder to use fewer bits for those bands without the listener perceiving the added noise. Codecs exploit both simultaneous (spectral) masking and temporal masking. If the available bitrate is too low to keep noise below the threshold, the encoder uses noise shaping to prioritize the most critical frequencies (typically 2 kHz–5 kHz) while sacrificing detail in less sensitive areas.
-
-The Modified Discrete Cosine Transform (MDCT) is the standard filter bank used in modern codecs to convert time-domain audio into spectral coefficients. The MDCT uses a "lapped" block transform where each 2M-sample window overlaps the next by M samples (50% overlap). This overlap is critical because it eliminates blocking artifacts (audible clicks or pops at frame boundaries) that occur in non-overlapping transforms via Time-Domain Aliasing Cancellation (TDAC). Despite the 50% overlap, the MDCT is "critically sampled," meaning it generates exactly M spectral coefficients for M new input samples, maintaining data efficiency.
+- **Goal of lossy codecs (MP3, AAC, Opus)**:
+  - achieve high compression by exploiting physiological/psychological limits of hearing
+  - unlike lossless coding (removes statistical redundancy), lossy coding removes **perceptual irrelevancy** (discards what listeners are unlikely to hear)
+- **Psychoacoustic model + masking threshold**:
+  - estimate the **masking threshold**: level below which sounds become inaudible in the presence of louder sounds
+  - identify loud **maskers** and allow more **quantization noise** in nearby bands as long as it stays below the threshold
+  - enables fewer bits in those bands without audible noise
+  - exploits both **simultaneous (spectral)** masking and **temporal** masking
+  - when bitrate is too low, use **noise shaping** to prioritize critical frequencies (typically **2–5 kHz**) while sacrificing less sensitive regions
+- **MDCT (Modified Discrete Cosine Transform)**:
+  - standard filter bank to convert time-domain audio into spectral coefficients
+  - uses a **lapped** block transform: each **2M-sample** window overlaps the next by **M samples** (**50% overlap**)
+  - overlap enables **Time-Domain Aliasing Cancellation (TDAC)** to eliminate blocking artifacts (frame-boundary clicks/pops)
+  - still **critically sampled**: produces exactly **M** spectral coefficients for **M** new input samples (efficient)
 
 **Image source suggestion**: [MDCT diagram from Aalto University](https://speechprocessingbook.aalto.fi/Transmission/Modified_discrete_cosine_transform_MDCT.html) or [Wikipedia MDCT](https://en.wikipedia.org/wiki/Modified_discrete_cosine_transform). [Psychoacoustic model block diagram from Columbia University (Brandenburg)](https://www.ee.columbia.edu/~dpwe/papers/Brand99-mp3.pdf).
 
@@ -597,13 +900,46 @@ The Modified Discrete Cosine Transform (MDCT) is the standard filter bank used i
 - Opus: YouTube uses ~130 kbps VBR stereo; supports 8 kbps (speech) to 510 kbps
 
 {{% note %}}
-Modern codecs use specialized techniques beyond basic psychoacoustic masking to achieve extreme compression ratios. Spectral Band Replication (SBR) is a hybrid technique that removes the high-frequency range during encoding and reconstructs it in the decoder by transposing the low-frequency content. Forensically, SBR can make gunshots or high-pitched speech sound "natural" even if the actual HF data was never recorded. This is critical for authentication—if a sound "sounds right" but the high-frequency data doesn't match expectations, SBR may be the explanation.
+**Advanced Codec Techniques Overview**:
+- Modern codecs use specialized techniques beyond basic psychoacoustic masking
+- Achieve extreme compression ratios
 
-Perceptual Noise Substitution (PNS) identifies noise-like frequency bands and replaces them with random noise parameters rather than actual samples. This can result in the loss of subtle background "fingerprints" used to identify a recording location. For example, a specific room tone or environmental noise signature may be replaced by generic noise, making location identification difficult.
+**Spectral Band Replication (SBR)**:
+- Hybrid technique removing high-frequency range during encoding
+- Reconstructs in decoder by transposing low-frequency content
+- **Forensic implications**:
+  - Can make gunshots or high-pitched speech sound "natural" even if actual HF data never recorded
+  - Critical for authentication—if sound "sounds right" but high-frequency data doesn't match expectations, SBR may be explanation
 
-Joint Stereo Coding includes Mid/Side (M/S) coding, which converts Left/Right channels into Sum (M) and Difference (S) to save bits. This is efficient because correlated content (most music and speech) is concentrated in the M channel. Intensity Stereo replaces correlated high-frequency signals with a single envelope and directional cues. While perceptually effective, these techniques can create stereo artifacts that must be distinguished from original spatial information.
+**Perceptual Noise Substitution (PNS)**:
+- Identifies noise-like frequency bands
+- Replaces them with random noise parameters rather than actual samples
+- **Forensic implications**:
+  - Loss of subtle background "fingerprints" used to identify recording location
+  - Specific room tone or environmental noise signature may be replaced by generic noise
+  - Makes location identification difficult
 
-Standard bitrates provide context for forensic quality assessment. MP3 achieves good quality at 128–192 kbps and is considered transparent (indistinguishable from original) at 256 kbps. AAC is more efficient: near CD quality at 128 kbps and used for 5.1 surround sound at 320 kbps. Opus is extremely versatile, used by YouTube at approximately 130 kbps VBR for stereo, and supports bitrates as low as 8 kbps for speech and as high as 510 kbps for archival quality.
+**Joint Stereo Coding**:
+- **Mid/Side (M/S) coding**:
+  - Converts Left/Right channels into Sum (M) and Difference (S) to save bits
+  - Efficient because correlated content (most music and speech) concentrated in M channel
+- **Intensity Stereo**:
+  - Replaces correlated high-frequency signals with single envelope and directional cues
+  - Perceptually effective but can create stereo artifacts
+- **Forensic consideration**: Must distinguish stereo artifacts from original spatial information
+
+**Standard Bitrates for Forensic Quality Assessment**:
+- **MP3**:
+  - Good quality: 128–192 kbps
+  - Transparent (indistinguishable from original): 256 kbps
+- **AAC**:
+  - Near CD quality: 128 kbps
+  - 5.1 surround sound: 320 kbps
+  - More efficient than MP3
+- **Opus**:
+  - Extremely versatile
+  - YouTube uses ~130 kbps VBR for stereo
+  - Supports 8 kbps (speech) to 510 kbps (archival quality)
 
 **Sources**: SBR, PNS, and Joint Stereo mechanisms and forensic implications; standard bitrates for MP3, AAC, and Opus codecs.
 {{% /note %}}
@@ -632,13 +968,37 @@ Standard bitrates provide context for forensic quality assessment. MP3 achieves 
 - Can obscure subtle background speech or timestamps
 
 {{% note %}}
-Analysts must distinguish between original acoustic evidence and "bugs" introduced by compression. Pre-echo is one of the most distinctive artifacts: quantization noise from a sharp transient (e.g., a snare drum or gunshot) can spread backward within an analysis window, appearing as noise before the actual sound. Modern codecs use Temporal Noise Shaping (TNS) or shorter windows to minimize this, but it remains a tell-tale sign of lossy processing. If you see noise preceding a sharp transient on a spectrogram, suspect pre-echo from lossy coding.
+**Critical Distinction**: Analysts must distinguish between original acoustic evidence and "bugs" introduced by compression
 
-Spectral holes or "birdie noise" occur at low bitrates when encoders "run out of bits" and fail to encode certain spectral lines, causing tonal whistling or tinkling artifacts that move across the spectrum. This is a clear indicator of aggressive lossy compression and can be mistaken for original acoustic content if analysts aren't careful.
+**Pre-echo**:
+- One of most distinctive artifacts
+- Quantization noise from sharp transient (e.g., snare drum or gunshot) spreads backward within analysis window
+- Appears as noise before actual sound
+- **Mitigation**: Modern codecs use Temporal Noise Shaping (TNS) or shorter windows to minimize
+- Remains tell-tale sign of lossy processing
+- **Detection**: If you see noise preceding sharp transient on spectrogram, suspect pre-echo from lossy coding
 
-Aliasing can occur if the sample rate is too low or if a codec's filter bank is poorly implemented. High-frequency components may be misinterpreted as lower-frequency "ghost" signals. This manifests as distortion that wasn't in the original scene.
+**Spectral Holes ("Birdie Noise")**:
+- Occur at low bitrates when encoders "run out of bits"
+- Fail to encode certain spectral lines
+- Causes tonal whistling or tinkling artifacts that move across spectrum
+- Clear indicator of aggressive lossy compression
+- Can be mistaken for original acoustic content if analysts aren't careful
 
-Re-encoding buildup is a serious concern: every time a lossy file is edited and re-saved (e.g., as another MP3), audible artifacts and distortion accumulate. This can obscure subtle background speech, environmental sounds, or timestamps. Forensic analysts should always request the earliest-generation recording available and avoid re-encoding whenever possible.
+**Aliasing**:
+- Occurs if sample rate too low or codec's filter bank poorly implemented
+- High-frequency components misinterpreted as lower-frequency "ghost" signals
+- Manifests as distortion that wasn't in original scene
+
+**Re-encoding Buildup**:
+- Serious concern: every time lossy file edited and re-saved (e.g., as another MP3), audible artifacts and distortion accumulate
+- **Consequences**:
+  - Obscures subtle background speech
+  - Obscures environmental sounds
+  - Obscures timestamps
+- **Best practice**:
+  - Always request earliest-generation recording available
+  - Avoid re-encoding whenever possible
 
 **Sources**: Pre-echo mechanism and TNS mitigation; spectral hole ("birdie noise") artifacts; aliasing in poor filter banks; re-encoding artifact accumulation.
 {{% /note %}}
@@ -667,15 +1027,50 @@ Re-encoding buildup is a serious concern: every time a lossy file is edited and 
 - **Auditory filterbanks (non-uniform)**: Assessing audibility, masking analysis, earwitness evaluation
 
 {{% note %}}
-The time-frequency tradeoff is a fundamental constraint in audio analysis, governed by the uncertainty principle. This principle states that it is mathematically impossible to achieve arbitrarily high resolution in both the time and frequency domains simultaneously. For a forensic analyst, choosing the right tool—whether the Short-Time Fourier Transform (STFT), Wavelets, or Auditory Filterbanks—depends on whether the investigation requires identifying when an event happened (temporal resolution) or exactly what frequencies were involved (spectral resolution).
+**Time-Frequency Tradeoff Overview**:
+- Fundamental constraint in audio analysis governed by uncertainty principle
+- Mathematically impossible to achieve arbitrarily high resolution in both time and frequency domains simultaneously
+- For forensic analysts: choosing right tool depends on whether investigation requires identifying when event happened (temporal resolution) or exactly what frequencies involved (spectral resolution)
 
-Spectral (frequency) resolution: to distinguish between two closely spaced frequencies, a long analysis window is required. This allows the system to observe more cycles of a waveform, which is essential for capturing harmonic details and steady-state tones. However, this "blurs" the time domain, making it difficult to pinpoint the exact start or end of a sound. Temporal (time) resolution: to identify the precise timing of a brief event, such as a gunshot or a click, a short analysis window is required. This provides sharp "edges" in the analysis but results in poor frequency resolution, as there is not enough data within the window to define specific frequency lines accurately.
+**Spectral (Frequency) Resolution**:
+- To distinguish between two closely spaced frequencies, long analysis window required
+- Allows system to observe more cycles of waveform
+- Essential for capturing harmonic details and steady-state tones
+- **Tradeoff**: "Blurs" time domain, making it difficult to pinpoint exact start or end of sound
 
-The STFT uses a fixed window size for all frequencies in a single analysis, resulting in a constant tradeoff across the spectrum. It's best for analyzing stationary signals, such as continuous electrical hums (ENF analysis) or identifying the harmonics of a sustained voice. It struggles with transients; if the window is too large, a sharp attack will cause "pre-echo" distortion, where quantization noise is spread throughout the block and appears to precede the actual sound.
+**Temporal (Time) Resolution**:
+- To identify precise timing of brief event (gunshot or click), short analysis window required
+- Provides sharp "edges" in analysis
+- **Tradeoff**: Results in poor frequency resolution—not enough data within window to define specific frequency lines accurately
 
-Wavelets provide a signal-adaptive tiling of the time-frequency plane, using varying window sizes: shorter windows for high frequencies and longer windows for low frequencies. They have a "compact impulse response" at high frequencies, meaning they naturally localize transients in time without sacrificing low-frequency detail. They're ideally suited for gunshot classification and identifying the onset of percussive "attacks" like muzzle blasts or mechanical actions. They avoid the "pre-echo" artifacts that plague STFT-based methods when processing non-stationary signals.
+**Short-Time Fourier Transform (STFT)**:
+- Uses fixed window size for all frequencies in single analysis
+- Results in constant tradeoff across spectrum
+- **Best for**:
+  - Analyzing stationary signals
+  - Continuous electrical hums (ENF analysis)
+  - Identifying harmonics of sustained voice
+- **Limitations**: Struggles with transients
+  - If window too large, sharp attack causes "pre-echo" distortion
+  - Quantization noise spread throughout block and appears to precede actual sound
 
-Auditory Filterbanks (e.g., Gammatone) are designed based on the tonotopic organization of the cochlea. They typically use a series of bandpass filters spaced according to the ERB or Bark scale, mimicking the human ear's "critical bands," which are narrow at low frequencies and wide at high frequencies. They're critical for assessing audibility and masking. Analysts use these to determine if a specific sound (like a distant shout or alarm) was physically capable of being heard by a human witness in a noisy environment.
+**Wavelets**:
+- Provide signal-adaptive tiling of time-frequency plane
+- Use varying window sizes: shorter windows for high frequencies, longer windows for low frequencies
+- Have "compact impulse response" at high frequencies
+- Naturally localize transients in time without sacrificing low-frequency detail
+- **Ideally suited for**:
+  - Gunshot classification
+  - Identifying onset of percussive "attacks" (muzzle blasts or mechanical actions)
+- Avoid "pre-echo" artifacts that plague STFT-based methods when processing non-stationary signals
+
+**Auditory Filterbanks (e.g., Gammatone)**:
+- Designed based on tonotopic organization of cochlea
+- Typically use series of bandpass filters spaced according to ERB or Bark scale
+- Mimic human ear's "critical bands": narrow at low frequencies, wide at high frequencies
+- **Critical for**:
+  - Assessing audibility and masking
+  - Determining if specific sound (distant shout or alarm) was physically capable of being heard by human witness in noisy environment
 
 **Image source suggestion**: [Time-frequency tradeoff diagram from ResearchGate](https://www.researchgate.net/figure/An-intuitive-explanation-of-the-trade-off-between-time-and-frequency-resolution-in-STFT_fig5_346510613).
 
@@ -700,11 +1095,36 @@ Auditory Filterbanks (e.g., Gammatone) are designed based on the tonotopic organ
 - Understand that quality ≠ intelligibility
 
 {{% note %}}
-Modern software allows analysts to "read" sound via spectrograms, which can lead to over-reliance on visual patterns without corresponding auditory verification. Spectrograms suffer from the time-frequency resolution tradeoff: short analysis windows provide better temporal resolution (sharp edges of a gunshot) but blur the frequency detail, while long windows provide spectral resolution (harmonic partials) but blur the beginning and end of sounds.
+**The Problem of Over-Reliance on Visual Analysis**:
+- Modern software allows analysts to "read" sound via spectrograms
+- Can lead to over-reliance on visual patterns without corresponding auditory verification
+- Spectrograms suffer from time-frequency resolution tradeoff:
+  - Short analysis windows: better temporal resolution (sharp edges of gunshot) but blur frequency detail
+  - Long windows: spectral resolution (harmonic partials) but blur beginning and end of sounds
 
-Visual-only analysis might mistake a codec's pre-echo (quantization noise appearing before a transient) for a physical event in the room. Relying purely on visual peaks can isolate a sound from its context. For example, a "gold pixel" in a video of a soldier firing a rifle can corroborate the acoustic "pop" heard on a microphone to prove live ammunition was used, a conclusion that requires the oscillation between sight and sound. Analysts must understand that listeners often judge quality (how nice it sounds) differently than intelligibility (understandability). Processed or filtered audio may sound "cleaner" (higher quality) but actually result in lower speech intelligibility for the listener.
+**Visual-Only Analysis Risks**:
+- **Mistaking codec artifacts for physical events**:
+  - Might mistake codec's pre-echo (quantization noise appearing before transient) for physical event in room
+- **Isolating sound from context**:
+  - Relying purely on visual peaks can isolate sound from context
+  - Example: "gold pixel" in video of soldier firing rifle can corroborate acoustic "pop" heard on microphone to prove live ammunition was used
+  - Conclusion requires oscillation between sight and sound
+- **Quality vs. intelligibility confusion**:
+  - Listeners often judge quality (how nice it sounds) differently than intelligibility (understandability)
+  - Processed or filtered audio may sound "cleaner" (higher quality) but actually result in lower speech intelligibility
 
-Best practice for forensic audio analysis involves oscillating between visual (spectrogram) and aural (critical listening) analysis. Use visual analysis to guide listening—to identify regions of interest, detect discontinuities, or measure specific parameters—but never replace listening entirely. Always verify visual findings with auditory checks, and always verify auditory impressions with visual and quantitative measurements. The FBI's historic 12-step protocol remains a benchmark: it includes both overall aural review and FFT/spectral review as distinct, complementary steps.
+**Best Practice for Forensic Audio Analysis**:
+- Oscillate between visual (spectrogram) and aural (critical listening) analysis
+- Use visual analysis to guide listening:
+  - Identify regions of interest
+  - Detect discontinuities
+  - Measure specific parameters
+- Never replace listening entirely
+- **Verification protocol**:
+  - Always verify visual findings with auditory checks
+  - Always verify auditory impressions with visual and quantitative measurements
+- FBI's historic 12-step protocol remains benchmark:
+  - Includes both overall aural review and FFT/spectral review as distinct, complementary steps
 
 **Sources**: Pitfalls of visual-only analysis; time-frequency resolution tradeoffs in spectrograms; quality vs. intelligibility distinction; FBI 12-step forensic audio processing protocol.
 {{% /note %}}
@@ -723,19 +1143,39 @@ Best practice for forensic audio analysis involves oscillating between visual (s
 **Forensic question**: If this were evidence, how would you explain these artifacts to a jury? Would you recommend enhancement or caution against it?
 
 {{% note %}}
-**Exercise details for speaker notes:**
+**Exercise Details for Speaker Notes:**
 
-This exercise provides hands-on experience identifying codec artifacts that could be misinterpreted as original acoustic content. Students should work with an uncompressed audio file (24-bit WAV) containing a sharp transient (e.g., hand clap, gunshot recording, or synthetic impulse) and several MP3 encodings at different bitrates (64 kbps, 128 kbps, 256 kbps).
+**Overview**:
+- Provides hands-on experience identifying codec artifacts that could be misinterpreted as original acoustic content
+- **Materials needed**:
+  - Uncompressed audio file (24-bit WAV) containing sharp transient (hand clap, gunshot recording, or synthetic impulse)
+  - Several MP3 encodings at different bitrates (64 kbps, 128 kbps, 256 kbps)
 
-**Part 1: Pre-echo detection**. Open each file in a spectrogram view with a short analysis window (e.g., 256 samples at 44.1 kHz ≈ 5.8 ms). Look for quantization noise appearing before the sharp transient in the lossy versions but not in the original. Measure the temporal extent of the pre-echo—does it fall within the 20 ms pre-masking window, or is it audible?
+**Part 1: Pre-echo Detection**:
+- Open each file in spectrogram view with short analysis window (e.g., 256 samples at 44.1 kHz ≈ 5.8 ms)
+- Look for quantization noise appearing before sharp transient in lossy versions but not in original
+- Measure temporal extent of pre-echo
+- **Analysis question**: Does it fall within 20 ms pre-masking window, or is it audible?
 
-**Part 2: Spectral hole identification**. Use a longer analysis window for better frequency resolution (e.g., 2048 samples ≈ 46 ms). Compare the spectrograms of the original and the 64 kbps version. Identify frequency bands where energy is present in the original but missing or replaced by tonal artifacts ("birdies") in the lossy version. Listen to these regions—do the artifacts sound like whistling or tinkling?
+**Part 2: Spectral Hole Identification**:
+- Use longer analysis window for better frequency resolution (e.g., 2048 samples ≈ 46 ms)
+- Compare spectrograms of original and 64 kbps version
+- Identify frequency bands where energy present in original but missing or replaced by tonal artifacts ("birdies") in lossy version
+- **Listening test**: Do artifacts sound like whistling or tinkling?
 
-**Part 3: Noise floor analysis**. Measure the noise floor in a silent region before and after the transient for each encoding. Use FFT analysis to compare the spectral distribution of noise. The original should have a flat or TPDF-dithered noise floor. Lossy versions may have shaped noise floors or spectral holes.
+**Part 3: Noise Floor Analysis**:
+- Measure noise floor in silent region before and after transient for each encoding
+- Use FFT analysis to compare spectral distribution of noise
+- **Expected results**:
+  - Original should have flat or TPDF-dithered noise floor
+  - Lossy versions may have shaped noise floors or spectral holes
 
-**Forensic question**: Write a brief expert statement (3-4 sentences) explaining how you would communicate these findings to a jury. Would you recommend enhancement of the lossy file, or would you caution against it due to artifact accumulation? Consider whether enhancement would help intelligibility or simply amplify codec artifacts.
+**Forensic Question**:
+- Write brief expert statement (3-4 sentences) explaining how you would communicate these findings to jury
+- Would you recommend enhancement of lossy file, or caution against it due to artifact accumulation?
+- Consider whether enhancement would help intelligibility or simply amplify codec artifacts
 
-**Suggested software**: Audacity (free, cross-platform), Adobe Audition, iZotope RX, or MATLAB/Python with librosa for programmatic analysis.
+**Suggested Software**: Audacity (free, cross-platform), Adobe Audition, iZotope RX, or MATLAB/Python with librosa for programmatic analysis.
 {{% /note %}}
 
 {{% /section %}}
@@ -765,11 +1205,45 @@ When does perception matter? When does signal evidence dominate?
 **Key principle**: Use perceptual analysis for testimony evaluation and enhancement assessment; use signal analysis for geometric and physical reconstruction
 
 {{% note %}}
-A core challenge in forensics is balancing what is perceptually audible to a human against the objective signal evidence detected by machines. Perceptual audibility is primarily used for evaluating earwitness testimony and detecting codec artifacts. When assessing whether a witness could have heard a specific sound, you must account for masking, distance, and the ear's integration window (~200 ms for loudness). Very brief sounds like a 1 ms muzzle blast may seem quieter than they actually are due to this integration. Perceptual analysis is also critical for enhancement assessment: does the processed audio actually improve intelligibility, or does it just sound "nicer" while potentially reducing comprehension?
+**Core challenge**:
+- Balancing what is perceptually audible to human against objective signal evidence detected by machines
 
-Signal evidence is primarily used for geometric reconstruction via multilateration (using time differences of arrival) and calculating speed via the Doppler effect. These calculations rely on measurable signal properties—arrival times, frequency shifts—that are independent of human perception. However, signal evidence has limitations: high-amplitude sounds can be clipped or distorted by common recorders, obscuring the true acoustic signature. Also, processed or filtered audio may sound "cleaner" (higher perceived quality) but actually result in lower speech intelligibility for the listener.
+**Perceptual audibility**:
+- **Primary uses**:
+  - Evaluating earwitness testimony
+  - Detecting codec artifacts
+- **When assessing if witness could have heard specific sound**:
+  - Must account for masking
+  - Must account for distance
+  - Must account for ear's integration window (~200 ms for loudness)
+  - Very brief sounds (1 ms muzzle blast) may seem quieter than actually are due to integration
+- **Enhancement assessment**:
+  - Does processed audio actually improve intelligibility?
+  - Or does it just sound "nicer" while potentially reducing comprehension?
 
-The key principle for forensic analysts: use perceptual analysis when evaluating testimony, assessing audibility, or determining whether enhancement actually helps comprehension. Use signal analysis when reconstructing geometry, identifying sources via physical signatures (like ENF or ballistic shock waves), or performing authentication. Often, both approaches are needed in tandem—for example, determining whether a witness could have heard a sound (perceptual) and then using TDOA to confirm the source location (signal).
+**Signal evidence**:
+- **Primary uses**:
+  - Geometric reconstruction via multilateration (using time differences of arrival)
+  - Calculating speed via Doppler effect
+- **Basis**:
+  - Rely on measurable signal properties (arrival times, frequency shifts)
+  - Independent of human perception
+- **Limitations**:
+  - High-amplitude sounds can be clipped or distorted by common recorders
+  - Obscures true acoustic signature
+  - Processed or filtered audio may sound "cleaner" (higher perceived quality) but result in lower speech intelligibility
+
+**Key principle for forensic analysts**:
+- **Use perceptual analysis when**:
+  - Evaluating testimony
+  - Assessing audibility
+  - Determining whether enhancement actually helps comprehension
+- **Use signal analysis when**:
+  - Reconstructing geometry
+  - Identifying sources via physical signatures (ENF or ballistic shock waves)
+  - Performing authentication
+- **Often both approaches needed in tandem**:
+  - Example: Determining whether witness could have heard sound (perceptual) and then using TDOA to confirm source location (signal)
 
 **Sources**: Perceptual vs. signal evidence distinction; loudness integration window (~200 ms); quality vs. intelligibility; forensic applications for each approach.
 {{% /note %}}
@@ -797,15 +1271,41 @@ The key principle for forensic analysts: use perceptual analysis when evaluating
    - May be missed in casual listening but detectable in waveform
 
 {{% note %}}
-Forensic conclusions often rely on signal data that the human ear cannot detect or that it ignores due to psychoacoustic masking. These phenomena are critical for reconstruction and authentication.
+- Forensic conclusions often rely on signal data that the human ear cannot detect or that it ignores due to psychoacoustic masking
+- These phenomena are critical for reconstruction and authentication
 
-Electrical Network Frequency (ENF) is a residual "hum" from the power grid (60 Hz in the U.S., 50 Hz in Europe). While often undesirable or inaudible in noisy recordings, its unpredictable fluctuations serve as a digital timestamp to verify when and where a recording was made. ENF analysis can verify date and time, detect butt-splices and edits, and identify broad geographic location (different grids have different patterns). However, the recording must have been near power grid or electromagnetic field, extraction is difficult with low SNR, heavily compressed audio may not retain the signal, and analysis requires access to specialized reference databases.
+**Electrical Network Frequency (ENF)**:
+- Residual "hum" from power grid (60 Hz in U.S., 50 Hz in Europe)
+- Often undesirable or inaudible in noisy recordings
+- Unpredictable fluctuations serve as digital timestamp to verify when and where recording was made
+- **Capabilities**:
+  - Verify date and time
+  - Detect butt-splices and edits
+  - Identify broad geographic location (different grids have different patterns)
+- **Limitations**:
+  - Recording must have been near power grid or electromagnetic field
+  - Extraction difficult with low SNR
+  - Heavily compressed audio may not retain signal
+  - Analysis requires access to specialized reference databases
 
-Multilateration uses measurable time differences of arrival (TDOA) for sound reflections to determine the geometry of a crime scene, such as the distance to a reflecting surface or the location of a shooter. Even though reflections are perceptually fused with the direct sound by the precedence effect (the listener hears a single event localized at the first arrival), the measurable TDOA data provides objective geometric information independent of perception.
+**Multilateration (TDOA)**:
+- Uses measurable time differences of arrival for sound reflections
+- Determines geometry of crime scene (distance to reflecting surface, shooter location)
+- Reflections perceptually fused with direct sound by precedence effect (listener hears single event at first arrival)
+- Measurable TDOA data provides objective geometric information independent of perception
 
-Ballistic shock waves from supersonic projectiles produce an "N-wave" with a duration of only a few hundred microseconds. These can be temporally masked by the louder muzzle blast or reverberations, but wavelet analysis with high temporal resolution can isolate and measure them, providing information about projectile speed and trajectory.
+**Ballistic shock waves**:
+- Supersonic projectiles produce "N-wave" with duration of only few hundred microseconds
+- Can be temporally masked by louder muzzle blast or reverberations
+- Wavelet analysis with high temporal resolution can isolate and measure them
+- Provides information about projectile speed and trajectory
 
-Spectral signatures like the off-axis impulsive sound from a revolver's cylinder gap can distinguish revolvers from pistols. This detail might be missed in casual listening but is measurable in the waveform and spectrogram. Similarly, "gold pixels" in synchronized video can reveal ballistic details—such as whether a firearm fired live ammunition or a rubber bullet—that are initially inaudible but visible as distinct frequency energy distributions.
+**Spectral signatures**:
+- Off-axis impulsive sound from revolver's cylinder gap distinguishes revolvers from pistols
+- Detail might be missed in casual listening but measurable in waveform and spectrogram
+- "Gold pixels" in synchronized video reveal ballistic details
+  - Whether firearm fired live ammunition or rubber bullet
+  - Initially inaudible but visible as distinct frequency energy distributions
 
 **Sources**: ENF analysis for timestamp verification (Jenkins, 2011; Grigoras, 2005); multilateration and TDOA despite precedence effect; ballistic shock wave detection via wavelets; spectral signature identification (revolver cylinder gap, ballistic analysis).
 {{% /note %}}
@@ -829,13 +1329,39 @@ Spectral signatures like the off-axis impulsive sound from a revolver's cylinder
 - Watergate Procedure
 
 {{% note %}}
-The courtroom and legal implications of psychoacoustics and digital audio are centered on the scientific reliability of evidence and the expert's ability to navigate the gap between physical signal data and human perception. Experts face the challenge of the "CSI Effect," where juries expect low-quality recordings to be "magically" transformed into perfect audio. Experts must act as educators, explaining that perfect enhancement is seldom possible and that fictions of TV do not align with the material limitations of forensic science.
+**Core challenge**:
+- Courtroom implications centered on scientific reliability of evidence
+- Expert must navigate gap between physical signal data and human perception
+- "CSI Effect": juries expect low-quality recordings to be "magically" transformed into perfect audio
+- Experts must act as educators, explaining material limitations of forensic science
 
-Expert responsibilities include: (1) Managing expectations by explaining what can and cannot be achieved with enhancement. (2) Using layman's language so that complicated acoustical principles are understandable to the triers of fact (judge or jury). (3) Clearly stating what cannot be determined scientifically from the evidence provided. The National Academy of Sciences specifically recommends that the limitations of methods, such as aural-visual voice identification, be thoroughly explained. (4) Avoiding the "golden ear" fallacy—experts must eschew claims that they possess superior hearing that allows them to perceive things others cannot; all findings must be verifiable and reproducible by other experts. (5) Maintaining neutrality—the expert is not an advocate for a particular side but testifies solely regarding the facts and interpretation of the audio evidence.
+**Expert responsibilities**:
+1. **Managing expectations**: Explain what can and cannot be achieved with enhancement
+2. **Using layman's language**: Make complicated acoustical principles understandable to triers of fact (judge or jury)
+3. **Clearly stating limitations**: What cannot be determined scientifically from evidence
+   - National Academy of Sciences recommends thorough explanation of method limitations (e.g., aural-visual voice identification)
+4. **Avoiding "golden ear" fallacy**:
+   - Eschew claims of superior hearing that allows perception others cannot achieve
+   - All findings must be verifiable and reproducible by other experts
+5. **Maintaining neutrality**:
+   - Expert is not advocate for particular side
+   - Testifies solely regarding facts and interpretation of audio evidence
 
-Standards for admissibility of audio evidence include: Seven Tenets of Authenticity (derived from U.S. v. McKeever, 1958), requiring proof of device capability, operator competence, lack of alterations, and speaker identification. FBI 12-Step Procedure, a standardized model for processing evidence, ranging from physical inspection to FFT review and reporting. Watergate Procedure, a model for judging authenticity that includes physical observation, verification of continuity, and critical listening.
+**Standards for admissibility**:
+- **Seven Tenets of Authenticity** (U.S. v. McKeever, 1958):
+  - Proof of device capability, operator competence, lack of alterations, speaker identification
+- **FBI 12-Step Procedure**:
+  - Standardized model for processing evidence
+  - Ranges from physical inspection to FFT review and reporting
+- **Watergate Procedure**:
+  - Model for judging authenticity
+  - Includes physical observation, verification of continuity, critical listening
 
-When handling perceptual ambiguity: when no evidence of tampering is found, the examiner must ethically state that this does not guarantee the recording is authentic, as skilled forgeries may defy detection. The legal term "reasonable degree of scientific certainty" is often required in reports but lacks a precise scientific definition. Experts should provide meaningful scientific justification for their findings rather than relying on this phrase as an implicit "trust me."
+**Handling perceptual ambiguity**:
+- When no evidence of tampering found, examiner must ethically state this does not guarantee authenticity
+- Skilled forgeries may defy detection
+- "Reasonable degree of scientific certainty" often required in reports but lacks precise scientific definition
+- Experts should provide meaningful scientific justification rather than relying on this phrase as implicit "trust me"
 
 **Sources**: CSI Effect and jury expectations; expert witness responsibilities; Seven Tenets of Authenticity (U.S. v. McKeever); FBI 12-Step Procedure; Watergate Procedure; NAS recommendations for limitations disclosure; "reasonable degree of scientific certainty" critique.
 {{% /note %}}
@@ -860,13 +1386,37 @@ When handling perceptual ambiguity: when no evidence of tampering is found, the 
 - Use Linear Sequential Unmasking (LSU) when possible—analyze audio before learning case context
 
 {{% note %}}
-Forensic listening is the disciplined application of psychoacoustic knowledge and controlled auditory protocols to interpret audio evidence for legal proceedings. It moves beyond casual hearing to evaluate the material qualities of sound—such as reverberation, distortion, and noise—to reconstruct events or identify talkers.
+**Definition**:
+- Disciplined application of psychoacoustic knowledge and controlled auditory protocols
+- Interprets audio evidence for legal proceedings
+- Moves beyond casual hearing to evaluate material qualities of sound (reverberation, distortion, noise)
+- Used to reconstruct events or identify talkers
 
-Laboratory setup: analysis must occur in an acoustically isolated and quiet environment with ambient noise below 25 dBA SPL, using high-quality, spectrally flat headphones and amplifiers to minimize room interference. Playback should be kept at moderate levels. High volumes can trigger the acoustic reflex, an involuntary muscle contraction in the middle ear that temporarily reduces hearing sensitivity by as much as 20 dB.
+**Laboratory setup**:
+- Acoustically isolated and quiet environment with ambient noise below 25 dBA SPL
+- High-quality, spectrally flat headphones and amplifiers to minimize room interference
+- Moderate playback levels to avoid acoustic reflex
+  - High volumes trigger acoustic reflex (involuntary muscle contraction in middle ear)
+  - Temporarily reduces hearing sensitivity by as much as 20 dB
 
-Iterative audition: best practices require listening to the entire recording first to gain context, followed by multiple replays of specific segments. Analysts should focus on foreground sounds like speech and then deliberately shift attention to "aleatoric" background sounds—room tone, distant sirens, mechanical rattles—which are harder for a forger to manipulate consistently.
+**Iterative audition best practices**:
+1. Listen to entire recording first to gain context
+2. Multiple replays of specific segments
+3. Focus on foreground sounds (speech)
+4. Deliberately shift attention to "aleatoric" background sounds:
+   - Room tone, distant sirens, mechanical rattles
+   - Harder for forger to manipulate consistently
 
-Cognitive bias mitigation: extraneous information about a case, such as a suspect's arrest history, can pre-condition an analyst's perception, leading them to "hear" what they expect rather than what is present. Modern forensics rejects the "trust me, I'm an expert" approach. Claims of superior perception must be replaced by verifiable, testable scientific statements based on standard techniques. Linear Sequential Unmasking (LSU) is a protocol where the analyst examines raw audio in complete isolation from case information, documents initial findings, and only then reveals context in controlled stages. This prevents case theory from shaping what the analyst "hears."
+**Cognitive bias mitigation**:
+- Extraneous case information (suspect's arrest history) can pre-condition analyst's perception
+- Leads to "hearing" what you expect rather than what is present
+- Modern forensics rejects "trust me, I'm an expert" approach
+- Claims of superior perception must be replaced by verifiable, testable scientific statements
+- **Linear Sequential Unmasking (LSU)**:
+  - Analyst examines raw audio in complete isolation from case information
+  - Documents initial findings
+  - Only then reveals context in controlled stages
+  - Prevents case theory from shaping what analyst "hears"
 
 **Sources**: Forensic listening protocols (SWGDE); laboratory setup standards (ambient noise < 25 dBA SPL, moderate playback levels); acoustic reflex effects (up to 20 dB sensitivity reduction); cognitive bias and LSU protocol (Dror et al., 2015).
 {{% /note %}}
@@ -895,11 +1445,36 @@ Cognitive bias mitigation: extraneous information about a case, such as a suspec
 - Avoid lossy re-encoding during processing
 
 {{% note %}}
-When presenting audio evidence in court, careful attention to playback calibration and processing documentation is essential. Playback calibration requires verifying that the listening environment is appropriate (quiet, no echo), using calibrated monitoring equipment (not laptop speakers), and providing both original and enhanced versions so the jury can compare. All processing steps must be documented in detail—software used, version numbers, parameter settings—so that another analyst could replicate the work.
+**Playback calibration**:
+- Verify listening environment is appropriate (quiet, no echo)
+- Use calibrated monitoring equipment (not laptop speakers)
+- Provide both original and enhanced versions for jury comparison
+- Document all processing steps in detail:
+  - Software used, version numbers, parameter settings
+  - Enable another analyst to replicate work
 
-Enhancement caution is critical: courts should require objective evidence that enhancement actually improves intelligibility, not just "clarity." "Clearer" sounding audio can paradoxically boost the credibility of an inaccurate transcript. Research shows that when transcript and audio are mismatched, listeners primed by the transcript will insist they heard the transcript words—the transcript becomes the perception. Enhancement that makes the audio sound more confident can reinforce this false perception. Analysts must distinguish between making audio sound better (increasing quality) and actually improving comprehension (increasing intelligibility).
+**Enhancement caution**:
+- Courts should require objective evidence that enhancement improves intelligibility, not just "clarity"
+- "Clearer" sounding audio can paradoxically boost credibility of inaccurate transcript
+- **Transcript priming phenomenon**:
+  - When transcript and audio mismatched, listeners primed by transcript insist they heard transcript words
+  - Transcript becomes the perception
+  - Enhancement making audio sound more confident reinforces this false perception
+- Analysts must distinguish between:
+  - Making audio sound better (increasing quality)
+  - Actually improving comprehension (increasing intelligibility)
 
-Hash verification uses cryptographic hash functions (MD5 or SHA) to confirm that no data has changed during transfer or storage. Chain of custody must be documented for every transfer and access to prevent challenges to admissibility. Format standards require that audio be recorded and maintained as uncompressed PCM data (WAV format) with at least 16-bit samples and minimum 16 kHz sampling. Lossy re-encoding during processing should be avoided at all costs—every lossy re-save accumulates artifacts and distortion.
+**Hash verification**:
+- Uses cryptographic hash functions (MD5 or SHA)
+- Confirms no data changed during transfer or storage
+- Chain of custody documented for every transfer and access
+- Prevents challenges to admissibility
+
+**Format standards**:
+- Audio recorded and maintained as uncompressed PCM data (WAV format)
+- At least 16-bit samples and minimum 16 kHz sampling
+- Avoid lossy re-encoding during processing at all costs
+- Every lossy re-save accumulates artifacts and distortion
 
 **Sources**: Playback calibration and enhancement caution (SWGDE Best Practices for Forensic Audio); hash verification and chain of custody (SWGDE Best Practices for Digital Audio Authentication); format standards (16-bit minimum, ≥16 kHz sampling, uncompressed PCM).
 {{% /note %}}
@@ -917,21 +1492,65 @@ Hash verification uses cryptographic hash functions (MD5 or SHA) to confirm that
 4. If asked to enhance, would you recommend it? Why or why not?
 
 {{% note %}}
-**Exercise details for speaker notes:**
+**Exercise context**:
+- Based on David Eastman case (Ethics and False Convictions lecture)
+- Police transcripts of whispered self-talk found inconsistent with phonetic analysis
+- Students apply psychoacoustic and digital audio principles to make forensic decisions
 
-This exercise is based on the David Eastman case discussed in the Ethics and False Convictions lecture, where police transcripts of whispered self-talk were later found to be inconsistent with phonetic analysis. Here, students must apply the psychoacoustic and digital audio principles learned in this lecture to make forensic decisions.
+**Part 1: Perceptual and signal analyses**
+Students should propose:
+1. Spectral analysis to identify formant structure and phonetic consistency with claimed words
+2. Temporal analysis to measure rhythmic structure and syllable count
+3. Critical listening in controlled conditions:
+   - Isolated, quiet lab
+   - Spectrally flat headphones
+   - No transcript priming
+4. Lossy codec artifact assessment:
+   - Identify pre-echo, spectral holes, noise floor characteristics
+   - Assess impact on intelligibility
+5. Comparison with reference samples of speaker saying both phrases to assess phonetic plausibility
 
-**Part 1: Perceptual and signal analyses**. Students should propose: (1) Spectral analysis to identify formant structure and phonetic consistency with the claimed words. (2) Temporal analysis to measure rhythmic structure and syllable count. (3) Critical listening in controlled conditions (isolated, quiet lab; spectrally flat headphones; no transcript priming). (4) Lossy codec artifact assessment—identify pre-echo, spectral holes, and noise floor characteristics that might affect intelligibility. (5) Comparison with reference samples of the speaker saying both phrases to assess phonetic plausibility.
+**Part 2: Transcript reliability assessment**
+Students should consider:
+1. Who produced transcript?
+   - If investigators with case knowledge, subject to contextual priming and confirmation bias
+2. Was transcription done independently or with case context?
+   - LSU would require isolation from case information
+3. Audio quality assessment:
+   - 128 kbps MP3 introduces codec artifacts
+   - Is phrase in region affected by pre-echo or spectral holes?
+4. Does transcript match acoustic evidence?
+   - Phonetic analysis reveals whether claimed words are acoustically consistent with signal
 
-**Part 2: Transcript reliability assessment**. Students should consider: (1) Who produced the transcript? If it was investigators with case knowledge, it's subject to contextual priming and confirmation bias. (2) Was the transcription done independently or with case context? LSU would have required isolation from case information. (3) What is the audio quality? 128 kbps MP3 has introduced codec artifacts; is the phrase in a region affected by pre-echo or spectral holes? (4) Does the transcript match the acoustic evidence? Phonetic analysis should reveal whether the claimed words are acoustically consistent with the signal.
+**Part 3: Limitations statement**
+Students should draft statement explaining:
+1. Recording is lossy-compressed:
+   - Discarded data via psychoacoustic masking
+   - Subtle speech details may be lost
+2. Acoustic signal is ambiguous; multiple interpretations phonetically plausible
+3. Transcript priming is documented psychological phenomenon:
+   - Once you read transcript, perception is shaped by it
+4. Objective phonetic analysis shows signal consistent with "[alternative phrase]" but not necessarily exclusive of "[prosecution phrase]"
 
-**Part 3: Limitations statement**. Students should draft a statement explaining: (1) The recording is lossy-compressed, which has discarded data via psychoacoustic masking; subtle speech details may be lost. (2) The acoustic signal is ambiguous; multiple interpretations are phonetically plausible. (3) Transcript priming is a documented psychological phenomenon; once you read a transcript, your perception is shaped by it. (4) Objective phonetic analysis shows the signal is consistent with "[alternative phrase]" but not necessarily exclusive of "[prosecution phrase]."
+**Part 4: Enhancement recommendation**
+Students should argue whether enhancement would help or harm.
 
-**Part 4: Enhancement recommendation**. Students should argue whether enhancement would help or harm. Arguments against: (1) Enhancement may amplify codec artifacts, making them sound like original speech. (2) Enhancement may increase perceived confidence in an inaccurate transcript. (3) The issue is not volume or audibility—it's linguistic ambiguity. Arguments for (with caveats): (1) Enhancement might improve intelligibility if the problem is noise masking rather than ambiguity. (2) Must be done by an independent analyst using LSU protocol. (3) Must provide original and enhanced versions for comparison, with full documentation of processing.
+**Arguments against**:
+1. Enhancement may amplify codec artifacts, making them sound like original speech
+2. Enhancement may increase perceived confidence in inaccurate transcript
+3. Issue is not volume or audibility—it's linguistic ambiguity
 
-This exercise forces students to integrate psychoacoustic knowledge (masking, temporal limits), digital audio understanding (codec artifacts, lossy compression), and forensic protocols (LSU, transcript priming, expert testimony limitations).
+**Arguments for (with caveats)**:
+1. Enhancement might improve intelligibility if problem is noise masking rather than ambiguity
+2. Must be done by independent analyst using LSU protocol
+3. Must provide original and enhanced versions for comparison, with full documentation of processing
 
-**Discussion**: Compare responses as a class. What assumptions did different students make? How did their decisions change based on what they prioritized—perceptual audibility vs. signal evidence, transcript credibility vs. acoustic analysis?
+**Integration objective**:
+- Forces students to integrate psychoacoustic knowledge (masking, temporal limits)
+- Digital audio understanding (codec artifacts, lossy compression)
+- Forensic protocols (LSU, transcript priming, expert testimony limitations)
+
+**Discussion**: Compare responses as class. What assumptions did different students make? How did decisions change based on what they prioritized—perceptual audibility vs. signal evidence, transcript credibility vs. acoustic analysis?
 {{% /note %}}
 
 {{% /section %}}
@@ -950,13 +1569,58 @@ This exercise forces students to integrate psychoacoustic knowledge (masking, te
 8. **Experts must communicate limits clearly**—avoid "golden ear" fallacy, manage jury expectations
 
 {{% note %}}
-Let's recap the essential principles. Auditory masking—simultaneous, temporal, and informational—determines what is perceptually audible. This is critical for evaluating earwitness testimony, understanding lossy codec operation, and assessing whether enhancement can make masked sounds audible. Critical bands and perceptual frequency scales (Bark, Mel, ERB) shape how we hear the spectrum. Using these scales for spectral interpretation allows analysts to see recordings as the ear hears them, emphasizing informative ranges and compressing less relevant high frequencies.
+**Auditory masking**:
+- Simultaneous, temporal, and informational masking determines what is perceptually audible
+- Critical for:
+  - Evaluating earwitness testimony
+  - Understanding lossy codec operation
+  - Assessing whether enhancement can make masked sounds audible
 
-Equal-loudness contours explain why audio sounds "thin" at low playback volumes—bass and treble fall below the threshold of audibility before midrange. This affects forensic gain normalization and explains why A-weighting is used in sound level measurements. Sampling and quantization define digital precision. Forensically adequate standards include 16-bit / 44.1 kHz minimum, with 24-bit / 48 kHz or higher for professional work. Gunshot analysis requires extremely high sample rates (500 kHz) to capture brief transients.
+**Critical bands and perceptual frequency scales**:
+- Bark, Mel, ERB scales shape how we hear spectrum
+- Allow analysts to see recordings as ear hears them
+- Emphasize informative ranges and compress less relevant high frequencies
 
-Lossy codecs exploit psychoacoustics to achieve high compression ratios. They discard data below the masking threshold, use MDCT with 50% overlap and TDAC, and employ advanced techniques like SBR, PNS, and Joint Stereo. Analysts must distinguish codec artifacts (pre-echo, spectral holes, aliasing, re-encoding buildup) from original evidence. Time-frequency tradeoffs require choosing the right analytical tool: STFT for stationary signals and ENF analysis, wavelets for transient detection and gunshot classification, auditory filterbanks for assessing audibility and masking.
+**Equal-loudness contours**:
+- Explain why audio sounds "thin" at low playback volumes
+- Bass and treble fall below threshold of audibility before midrange
+- Affects forensic gain normalization
+- Explains why A-weighting used in sound level measurements
 
-Perceptual audibility and signal evidence serve different forensic purposes. Use perceptual analysis for earwitness evaluation and enhancement assessment. Use signal analysis for geometric reconstruction (multilateration) and physical measurements (ENF, Doppler). Experts must communicate limitations clearly to juries, avoid the "golden ear" fallacy by ensuring all findings are verifiable and reproducible, and manage expectations shaped by the "CSI Effect."
+**Sampling and quantization**:
+- Define digital precision
+- Forensically adequate standards:
+  - 16-bit / 44.1 kHz minimum
+  - 24-bit / 48 kHz or higher for professional work
+  - Gunshot analysis requires extremely high sample rates (500 kHz) to capture brief transients
+
+**Lossy codecs**:
+- Exploit psychoacoustics to achieve high compression ratios
+- Discard data below masking threshold
+- Use MDCT with 50% overlap and TDAC
+- Employ advanced techniques: SBR, PNS, Joint Stereo
+- Analysts must distinguish codec artifacts from original evidence:
+  - Pre-echo, spectral holes, aliasing, re-encoding buildup
+
+**Time-frequency tradeoffs**:
+- Require choosing right analytical tool:
+  - STFT for stationary signals and ENF analysis
+  - Wavelets for transient detection and gunshot classification
+  - Auditory filterbanks for assessing audibility and masking
+
+**Perceptual audibility vs. signal evidence**:
+- Serve different forensic purposes
+- **Use perceptual analysis for**:
+  - Earwitness evaluation
+  - Enhancement assessment
+- **Use signal analysis for**:
+  - Geometric reconstruction (multilateration)
+  - Physical measurements (ENF, Doppler)
+
+**Expert responsibilities**:
+- Communicate limitations clearly to juries
+- Avoid "golden ear" fallacy by ensuring all findings verifiable and reproducible
+- Manage expectations shaped by "CSI Effect"
 
 **Sources**: Summary of psychoacoustic principles for forensic audio; SWGDE standards and best practices; expert witness responsibilities and limitations communication.
 {{% /note %}}
@@ -972,19 +1636,51 @@ Perceptual audibility and signal evidence serve different forensic purposes. Use
 5. How can understanding psychoacoustics prevent wrongful convictions?
 
 {{% note %}}
-Let's discuss these questions to solidify your understanding and prepare you for real-world forensic scenarios.
+- Discuss these questions to solidify understanding and prepare for real-world forensic scenarios
 
-**Question 1**: When should you prioritize perceptual audibility over signal evidence, and vice versa? Think about specific case types: earwitness testimony, enhancement decisions, geometric reconstruction, tampering detection. What determines which approach is more appropriate?
+**Question 1: Prioritizing perceptual audibility vs. signal evidence**
+- When should you prioritize one over the other?
+- Consider specific case types:
+  - Earwitness testimony
+  - Enhancement decisions
+  - Geometric reconstruction
+  - Tampering detection
+- What determines which approach is more appropriate?
 
-**Question 2**: How would you explain temporal masking to a jury with no technical background? Remember, you cannot use jargon like "pre-masking" or "basilar membrane ringing." Practice explaining the concept using everyday analogies or examples that a layperson would understand.
+**Question 2: Explaining temporal masking to jury**
+- How to explain without technical jargon?
+- Cannot use terms like "pre-masking" or "basilar membrane ringing"
+- Practice using everyday analogies or examples layperson would understand
 
-**Question 3**: If you receive a 64 kbps MP3 as evidence, what specific analyses would you perform? Consider codec artifact identification, spectral analysis for "birdie noise," temporal analysis for pre-echo, comparison with higher-bitrate versions if available, and assessment of whether critical evidence might have been discarded by the psychoacoustic model.
+**Question 3: Analyzing 64 kbps MP3 evidence**
+- What specific analyses to perform?
+- Consider:
+  - Codec artifact identification
+  - Spectral analysis for "birdie noise"
+  - Temporal analysis for pre-echo
+  - Comparison with higher-bitrate versions if available
+  - Assessment of whether critical evidence might have been discarded by psychoacoustic model
 
-**Question 4**: What are the ethical responsibilities when you cannot definitively determine whether a recording has been tampered with? Consider the difference between "no evidence of tampering found" and "proven authentic." How do you communicate uncertainty without undermining your credibility? What standards guide your statement?
+**Question 4: Ethical responsibilities with uncertain tampering determination**
+- What are responsibilities when cannot definitively determine tampering?
+- Consider difference between "no evidence of tampering found" vs. "proven authentic"
+- How to communicate uncertainty without undermining credibility?
+- What standards guide your statement?
 
-**Question 5**: How can understanding psychoacoustics prevent wrongful convictions? Reflect back on the Ethics and False Convictions lecture. Consider how transcript priming, contextual bias, and misunderstanding of perceptual limits led to cases like David Eastman and the "Pact" case. How do the principles we covered today—masking, temporal limits, codec artifacts, perceptual vs. signal evidence—provide tools to prevent these tragedies?
+**Question 5: Psychoacoustics preventing wrongful convictions**
+- How can understanding psychoacoustics prevent wrongful convictions?
+- Reflect on Ethics and False Convictions lecture
+- Consider how these factors led to cases like David Eastman and "Pact" case:
+  - Transcript priming
+  - Contextual bias
+  - Misunderstanding of perceptual limits
+- How do today's principles provide prevention tools?
+  - Masking
+  - Temporal limits
+  - Codec artifacts
+  - Perceptual vs. signal evidence
 
-The goal of these discussions is to internalize these principles so deeply that you apply them automatically in your forensic work. Psychoacoustics isn't abstract theory—it's the foundation of reliable, ethical, scientifically sound forensic audio analysis.
+**Goal**: Internalize these principles so deeply that you apply them automatically in forensic work. Psychoacoustics isn't abstract theory—it's the foundation of reliable, ethical, scientifically sound forensic audio analysis.
 {{% /note %}}
 
 ---
@@ -1009,13 +1705,36 @@ The goal of these discussions is to internalize these principles so deeply that 
 - ITU-R BS.1770 (Loudness measurement)
 
 {{% note %}}
-These resources provide comprehensive coverage of the topics discussed today. For psychoacoustics, Zwicker and Fastl's "Psychoacoustics: Facts and Models" is the definitive reference, covering critical bands, masking, loudness, and perceptual scales in detail. Moore's "An Introduction to the Psychology of Hearing" provides physiological and perceptual foundations.
+**Psychoacoustics & Perception**:
+- **Zwicker & Fastl (1999). "Psychoacoustics: Facts and Models"**:
+  - Definitive reference
+  - Covers critical bands, masking, loudness, and perceptual scales in detail
+- **Moore (2012). "An Introduction to the Psychology of Hearing"**:
+  - Provides physiological and perceptual foundations
 
-For digital audio and codecs, Brandenburg's 1999 paper "MP3 and AAC Explained" remains one of the clearest explanations of psychoacoustic coding principles. Bosi and Goldberg's "Introduction to Digital Audio Coding and Standards" covers MDCT, psychoacoustic models, and advanced coding techniques comprehensively.
+**Digital Audio & Codecs**:
+- **Brandenburg (1999). "MP3 and AAC Explained"**:
+  - One of clearest explanations of psychoacoustic coding principles
+- **Bosi & Goldberg (2003). "Introduction to Digital Audio Coding and Standards"**:
+  - Covers MDCT, psychoacoustic models, and advanced coding techniques comprehensively
 
-For forensic audio practice, the Scientific Working Group on Digital Evidence (SWGDE) publishes authoritative best practices documents. "Best Practices for Forensic Audio" (2022) covers evidence handling, processing, and documentation. "Core Competencies for Forensic Audio" (2025) defines required knowledge, skills, and ethical standards for practitioners. Fraser and Stevenson's 2014 paper "The power and persistence of contextual priming" is essential reading for understanding how transcripts and case knowledge bias perception—directly relevant to preventing wrongful convictions.
+**Forensic Audio Practice**:
+- **Scientific Working Group on Digital Evidence (SWGDE)**:
+  - Publishes authoritative best practices documents
+- **"Best Practices for Forensic Audio" (2022)**:
+  - Covers evidence handling, processing, and documentation
+- **"Core Competencies for Forensic Audio" (2025)**:
+  - Defines required knowledge, skills, and ethical standards for practitioners
+- **Fraser & Stevenson (2014). "The power and persistence of contextual priming"**:
+  - Essential reading for understanding how transcripts and case knowledge bias perception
+  - Directly relevant to preventing wrongful convictions
 
-For standards, ISO 226:2003 defines equal-loudness contours and serves as the modern reference for human auditory sensitivity. ITU-R BS.1770 standardizes loudness measurement for broadcast and forensic applications.
+**Standards**:
+- **ISO 226:2003**:
+  - Defines equal-loudness contours
+  - Modern reference for human auditory sensitivity
+- **ITU-R BS.1770**:
+  - Standardizes loudness measurement for broadcast and forensic applications
 
 **Image Sources**:
 - [Equal-loudness contours](https://en.wikipedia.org/wiki/Equal-loudness_contour)
