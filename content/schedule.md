@@ -52,9 +52,9 @@ Find a news story from the past few years and discuss how it uses audio forensic
 - [Psychoacoustics and Digital Audio Fundamentals](../lectures/week-3/psychoacoustics-and-digital-audio-fundamentals/)
 
 
-{{< homework >}}
+<!-- {{< homework >}}
 Lab: Turn in Lab Report for Masking and Intelligibility Lab.
-{{< /homework >}}
+{{< /homework >}} -->
 
 <!-- 
 # Week 4
