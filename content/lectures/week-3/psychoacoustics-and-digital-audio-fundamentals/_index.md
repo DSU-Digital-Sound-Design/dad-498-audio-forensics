@@ -905,6 +905,18 @@ How sampling, quantization, and perceptual coding affect forensic evidence
 
 ---
 
+## The Hybrid Filter Bank
+
+![](fig2_eartosubband.gif)
+
+{{% note %}}
+The purpose of the filter bank is to divide the audio signal into 32 equal-width frequency subbands. Empirical evidence has shown that the human ear has a limited resolution that can be expressed in terms of critical bandwidths less than 100Hz and more than 4kHz. Within a critical bandwidth the human ear blurs frequencies. Thus the filter bank creates equal-width frequency subbands that correlate to the critical bandwidths in a method diagrammed in the following figure.
+**Image source**: https://cs.stanford.edu/people/eroberts/courses/soco/projects/data-compression/lossy/mp3/hybrid_filter.htm
+
+{{% /note %}}
+
+---
+
 ## Advanced Codec Techniques
 
 <div style="font-size: 0.6em;">
