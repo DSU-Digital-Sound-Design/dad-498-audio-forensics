@@ -56,16 +56,17 @@ Find a news story from the past few years and discuss how it uses audio forensic
 Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 {{< /homework >}} -->
 
-<!-- 
 # Week 4
 
 **The Forensic Workbench**
 
 ## Tuesday (2/3)
 
-- Waveform vs. spectrogram
-- Critical listening
+- [Handling Forensic Audio Evidence](../lectures/week-4/handling-forensic-audio-evidence/)
+  - Waveform and Spectral Analysis Techniques
+  - Critical Listening Skills
 
+<!-- 
 ## Thursday (2/5)
 
 - Lab: Spectrographic analysis
