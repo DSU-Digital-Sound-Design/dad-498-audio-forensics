@@ -65,6 +65,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 - [Handling Forensic Audio Evidence](../lectures/week-4/handling-forensic-audio-evidence/)
   - Waveform and Spectral Analysis Techniques
   - Critical Listening Skills
+- [Lab: Handling Forensic Audio Evidence](../lectures/week-4/handling-forensic-audio-evidence-lab/lab.md)
 
 <!-- 
 ## Thursday (2/5)

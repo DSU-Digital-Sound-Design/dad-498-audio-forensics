@@ -77,7 +77,7 @@ All typically performed on desktop or laptop computer
 
 ## Waveform View
 
-**[IMAGE PLACEHOLDER: Fig 4.1 - Individual samples with connect-the-dots]**
+![](figures/fig4.1.png)
 
 Time on horizontal axis, amplitude on vertical axis
 
@@ -94,7 +94,9 @@ Time on horizontal axis, amplitude on vertical axis
 
 ## Waveform Display Features
 
-**[IMAGE PLACEHOLDER: Fig 4.2 - Waveform envelope display]**
+<!-- ![](figures/fig4.2.png) -->
+
+<img src="figures/fig4.4.png" width="700px" />
 
 - Zoom controls for time and amplitude
 - Playback with cursor positioning
@@ -132,7 +134,7 @@ MP3 and similar formats are **lossy**
 
 ## Spectrographic View
 
-**[IMAGE PLACEHOLDER: Fig 4.3 - Short-time Fourier transform concept]**
+<img src="figures/fig4.3.png" width="600px" />
 
 - Horizontal axis: time
 - Vertical axis: frequency (Hz)
@@ -152,7 +154,9 @@ MP3 and similar formats are **lossy**
 
 ## Reading Spectrograms
 
-**[IMAGE PLACEHOLDER: Fig 4.5 - Click and tone spectrogram]**
+<!-- ![](figures/fig4.5.png) -->
+
+<img src="figures/fig4.5.png" width="700px" />
 
 - Impulsive sounds (clicks): vertical lines
 - Continuous tones (whistles): horizontal lines
@@ -169,13 +173,17 @@ MP3 and similar formats are **lossy**
 
 ## Time-Frequency Trade-off
 
-**[IMAGE PLACEHOLDER: Fig 4.6 - Two spectrograms showing trade-off]**
+<!-- ![](figures/fig4.6.png) -->
 
-- Longer blocks = better frequency resolution, worse time resolution
-- Shorter blocks = better time resolution, worse frequency resolution
-- Fundamental mathematical limitation
+<img src="figures/fig4.6.png" width="600px" />
+
+
 
 {{% note %}}
+- Content
+  - Longer blocks = better frequency resolution, worse time resolution
+  - Shorter blocks = better time resolution, worse frequency resolution
+  - Fundamental mathematical limitation
 - It is crucial to understand that there is a fundamental mathematical trade-off between signal resolution in time and in frequency.
 - Zooming in on a very short-time duration of a signal inherently prevents simultaneously fine frequency resolution, while zooming out for a longer time duration allows finer resolution of frequency detail, but the longer time observation "window" prevents knowing details about when in time a particular signal occurred.
 - In other words, the spectrogram has a trade-off between how selective the display can be in separating signal components of similar frequency and how detailed the timing can be.
@@ -322,7 +330,9 @@ Detailed notes must include:
 
 ## Waveform Analysis Approach
 
-**[IMAGE PLACEHOLDER: Fig 4.2 or 4.4 - Waveform display]**
+<!-- ![](figures/fig4.2.png) -->
+
+<img src="figures/fig4.4.png" width="700px" />
 
 - Start with broad time range overview
 - Zoom in successively on intervals of interest
@@ -343,7 +353,9 @@ Detailed notes must include:
 
 ## Spectral Analysis Strategy
 
-**[IMAGE PLACEHOLDER: Fig 4.7 - Time-frequency trade-offs]**
+<!-- ![](figures/fig4.7.png) -->
+
+<img src="figures/fig4.7.png" width="500px" />
 
 - Experiment with different block lengths
 - Try various window functions (Hann, Hamming, Kaiser)
