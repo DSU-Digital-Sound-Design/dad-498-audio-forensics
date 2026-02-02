@@ -46,12 +46,11 @@ Download the following audio files and save them to a folder on your desktop cal
 
 ### Required Files
 
-- [forensic_speech_clean.wav](/audio/forensic_speech_clean.wav) - A clean speech recording
-- [forensic_speech_clean.mp3](/audio/forensic_speech_clean.mp3) - The same recording encoded as MP3
-- [forensic_background_noise.wav](/audio/forensic_background_noise.wav) - Recording with background noise
-- [forensic_with_artifacts.wav](/audio/forensic_with_artifacts.wav) - Recording with audio artifacts
-- [forensic_tones.wav](/audio/forensic_tones.wav) - Test tones for spectrogram analysis
-
+- [forensic_speech_clean.wav](../audio/forensic_speech_clean.wav) - A clean speech recording
+- [forensic_speech_clean.mp3](../audio/forensic_speech_clean.mp3) - The same recording encoded as MP3
+- [forensic_background_noise.wav](../audio/forensic_background_noise.wav) - Recording with background noise
+- [forensic_with_artifacts.wav](../audio/forensic_with_artifacts.wav) - Recording with audio artifacts
+- [forensic_tones.wav](../audio/forensic_tones.wav) - Test tones for spectrogram analysis
 **Setup**: Create a folder on your desktop called `AudioForensicsLab` and save all downloaded files there.
 
 ---
