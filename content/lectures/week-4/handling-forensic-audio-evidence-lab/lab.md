@@ -57,8 +57,6 @@ Download the following audio files and save them to a folder on your desktop cal
 - [forensic_with_artifacts.wav](/media/handling-forensic-audio-lab/forensic_with_artifacts.wav) - Recording with audio artifacts
 - [forensic_tones.wav](/media/handling-forensic-audio-lab/forensic_tones.wav) - Test tones for spectrogram analysis
   
-**Setup**: Create a folder on your desktop called `AudioForensicsLab` and save all downloaded files there.
-
 > If those links don't work click [here](https://dakotastateuniversity-my.sharepoint.com/:u:/g/personal/tate_carson_dsu_edu/IQBAxqNqBSg1Qr5-mAkB8uClAVHkiRAmeofXxVwG4a3giLw?e=iu9svr)
 
 ---
