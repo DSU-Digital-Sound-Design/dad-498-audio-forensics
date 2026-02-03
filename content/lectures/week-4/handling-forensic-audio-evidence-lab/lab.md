@@ -282,32 +282,107 @@ Even in this practice lab, get in the habit of proper forensic procedures:
 
 ---
 
-## Wrap-Up and Reflection
+## Assessment — What to Turn In
 
-### What You've Learned
+Submit **two** items before the next class:
 
-- How to install and navigate Adobe Audition
-- Using waveform view to identify discontinuities and artifacts
-- Using spectrogram view to analyze frequency content
-- Understanding the time-frequency trade-off
-- The difference between lossy and lossless formats
-- Basic forensic audio handling procedures
+1. **A folder of screenshots** — one or more per exercise, as described below
+2. **A Word document (.docx)** — answers to the questions listed below, organized by exercise number
 
-### Going Further
+> **Screenshot tips:** Capture the full Adobe Audition window so the file name, view mode (waveform/spectrogram), and any markers or zoom level are visible. Label each screenshot with the exercise number and a short description (e.g., `Ex2_artifact_at_3.4s.png`).
 
-As you continue in this course, you'll learn:
-- Advanced audio enhancement techniques
-- Authentication and tampering detection
-- Speaker identification
-- Detailed spectral analysis techniques
-- Preparing forensic reports
+---
 
-### Practice Tip
+### Exercise 1 — Basic Waveform Navigation
 
-The best way to develop forensic audio skills is practice. Try analyzing:
-- Different types of recordings (phone calls, surveillance, interviews)
-- Various quality levels (high-quality vs. poor-quality recordings)
-- Different acoustic environments (indoors, outdoors, vehicles)
+**Screenshots:**
+- One screenshot zoomed in far enough to see individual samples
+- One screenshot zoomed out showing the full waveform envelope
+
+**Word document questions:**
+1. What does the vertical axis represent in waveform view, and what unit is it measured in?
+2. Describe what changed visually as you zoomed from the full envelope down to individual samples.
+
+---
+
+### Exercise 2 — Identifying Discontinuities
+
+**Screenshots:**
+- At least **two** screenshots zoomed in on artifacts you identified, with the playhead or marker placed at the artifact location
+
+**Word document questions:**
+1. How many artifacts did you find, and at what time positions (timestamps) are they located?
+2. Classify each artifact you found (click, dropout, discontinuity, or edit). Explain how the waveform shape told you which type it was.
+
+---
+
+### Exercise 3 — Critical Listening
+
+**Screenshots:**
+- Not required for this exercise
+
+**Word document questions:**
+1. Find a 30 second section with speech. What is being said in the recording? Transcribe as much as you can.
+2. Describe the background sounds you identified. Are they constant or intermittent? Give specific examples.
+
+---
+
+### Exercise 4 — Opening the Spectrogram View
+
+**Screenshots:**
+- One screenshot of `forensic_tones.wav` displayed in spectrogram view
+
+**Word document questions:**
+1. What do the three axes (horizontal, vertical, and color/brightness) represent in a spectrogram?
+
+---
+
+### Exercise 5 — Identifying Sounds in the Spectrogram
+
+**Screenshots:**
+- One screenshot for each of the three sound types you identified: the pure tone, the click/impulse, and the frequency sweep. Annotate or label each one.
+
+**Word document questions:**
+1. At what frequency does the pure tone appear? How did you determine this?
+2. Explain why a click/impulse appears as a vertical line in the spectrogram.
+3. Describe the shape of the frequency sweep and the direction it moves.
+
+---
+
+### Exercise 6 — Time-Frequency Trade-off
+
+**Screenshots:**
+- One screenshot with a **small** FFT size (e.g., 1024)
+- One screenshot with a **large** FFT size (e.g., 8192)
+
+**Word document questions:**
+1. How did the appearance of the clicks change between the small and large FFT sizes?
+2. How did the appearance of the tones change?
+3. In your own words, explain the time-frequency trade-off. Why can't you get perfect resolution in both dimensions at the same time?
+
+---
+
+### Exercise 7 — Real-World Spectrogram Analysis
+
+**Screenshots:**
+- One screenshot of `forensic_background_noise.wav` in spectrogram view, zoomed into a region where you can clearly see both speech and background noise
+
+**Word document questions:**
+1. Describe how the speech appears in the spectrogram. What visual pattern does it form?
+2. Identify at least one background noise source visible in the spectrogram. At what frequencies does it appear, and is it constant or intermittent?
+
+---
+
+### Exercise 8 — Comparing WAV and MP3
+
+**Screenshots:**
+- One side-by-side or paired screenshot of the **waveform** view for both `forensic_speech_clean.wav` and `forensic_speech_clean.mp3`
+- One side-by-side or paired screenshot of the **spectrogram** view for both files, zoomed into the high-frequency region (above 8 kHz)
+
+**Word document questions:**
+1. What differences, if any, did you notice in the waveform view between the WAV and MP3 files?
+2. What did you observe in the high-frequency region of the spectrogram for the MP3 file? Describe any artifacts or missing content.
+3. Why is re-encoding an MP3 a problem in forensic audio work?
 
 ---
 
@@ -324,7 +399,7 @@ The best way to develop forensic audio skills is practice. Try analyzing:
 - Check that a file is actually open
 
 **Audio playback issues?**
-- Go to Edit > Preferences > Audio Hardware
+- Go to Adobe Audition 2026 > Settings > Audio Hardware
 - Make sure the correct audio device is selected
 - Check that your headphones/speakers are connected
 
