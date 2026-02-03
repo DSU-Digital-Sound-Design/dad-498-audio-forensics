@@ -51,11 +51,11 @@ Download the following audio files and save them to a folder on your desktop cal
 
 ### Required Files
 
-- [forensic_speech_clean.wav](/media/handling-forensic-audio-lab/forensic_speech_clean.wav) - A clean speech recording
-- [forensic_speech_clean.mp3](/media/handling-forensic-audio-lab/forensic_speech_clean.mp3) - The same recording encoded as MP3
-- [forensic_background_noise.wav](/media/handling-forensic-audio-lab/forensic_background_noise.wav) - Recording with background noise
-- [forensic_with_artifacts.wav](/media/handling-forensic-audio-lab/forensic_with_artifacts.wav) - Recording with audio artifacts
-- [forensic_tones.wav](/media/handling-forensic-audio-lab/forensic_tones.wav) - Test tones for spectrogram analysis
+- [forensic_speech_clean.wav](./media/handling-forensic-audio-lab/forensic_speech_clean.wav) - A clean speech recording
+- [forensic_speech_clean.mp3](./media/handling-forensic-audio-lab/forensic_speech_clean.mp3) - The same recording encoded as MP3
+- [forensic_background_noise.wav](./media/handling-forensic-audio-lab/forensic_background_noise.wav) - Recording with background noise
+- [forensic_with_artifacts.wav](./media/handling-forensic-audio-lab/forensic_with_artifacts.wav) - Recording with audio artifacts
+- [forensic_tones.wav](./media/handling-forensic-audio-lab/forensic_tones.wav) - Test tones for spectrogram analysis
   
 > If those links don't work click [here](https://dakotastateuniversity-my.sharepoint.com/:u:/g/personal/tate_carson_dsu_edu/IQBAxqNqBSg1Qr5-mAkB8uClAVHkiRAmeofXxVwG4a3giLw?e=iu9svr)
 
