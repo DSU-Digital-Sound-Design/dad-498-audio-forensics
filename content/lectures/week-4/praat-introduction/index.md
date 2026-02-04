@@ -7,7 +7,7 @@ title: "Introduction to Praat"
 
 **Duration:** 60 minutes  
 **Objective:** Install Praat, navigate its interface, explore acoustic features of speech, and create a labeled annotation with formant measurements  
-**Deliverable:** A TextGrid file with labeled phonetic segments, completed discovery questions, and a formant measurement table
+**Deliverable:** A TextGrid file with labeled phonetic segments, completed discovery questions, and a formant measurement table  
 **Answer sheet:** [📄 Praat Introduction — Answer Sheet](praat-intro-answer-sheet.docx) — download this now and fill it in as you go
 
 Praat (Dutch for "talk") is free, open-source software developed by Paul Boersma and David Weenink at the University of Amsterdam. It's a standard tool in phonetics research and sees regular use in forensic speaker comparison, voice analysis, and audio authentication work. Today we're getting comfortable with the software itself—later we'll apply these skills to forensic contexts.
