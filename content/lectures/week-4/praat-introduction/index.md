@@ -259,6 +259,3 @@ The annotation and measurement skills you practiced today are exactly what foren
 - [Praat User Guide](https://www.fon.hum.uva.nl/praat/manual/Intro.html) — comprehensive built-in manual (Help menu)
 - Will Styler's [Praat Tutorial](http://wstyler.ucsd.edu/praat/) — excellent walkthrough aimed at linguistics students
 
----
-
-*Questions? Trouble with installation or boundaries? Flag me down during lab time.*
