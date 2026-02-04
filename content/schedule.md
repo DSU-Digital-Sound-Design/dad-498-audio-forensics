@@ -66,12 +66,12 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
   - Waveform and Spectral Analysis Techniques
   - Critical Listening Skills
 - [Lab: Handling Forensic Audio Evidence](../lectures/week-4/handling-forensic-audio-evidence-lab/lab.md)
-
-<!-- 
 ## Thursday (2/5)
 
-- Lab: Spectrographic analysis
+- [Lab: Praat Introduction](../lectures/week-4/praat-introduction)
+  - Doing phonetics by computer 
 
+<!-- 
 # Week 5
 
 **Authenticity I: Analog Methods**
