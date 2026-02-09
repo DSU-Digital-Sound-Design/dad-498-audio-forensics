@@ -182,11 +182,7 @@ Download the following audio files and save them to a folder on your desktop cal
 
 ### Required Files
 
-- [edit_butt_splice.wav](/media/splices-and-edit-detection-lab/edit_butt_splice.wav) - Speech with a butt splice edit
-- [edit_crossfade_short.wav](/media/splices-and-edit-detection-lab/edit_crossfade_short.wav) - Speech with a short cross-fade edit
-- [edit_crossfade_long.wav](/media/splices-and-edit-detection-lab/edit_crossfade_long.wav) - Speech with a long cross-fade edit
-- [edit_reverb_mismatch.wav](/media/splices-and-edit-detection-lab/edit_reverb_mismatch.wav) - Reverberant speech with a dry insertion
-- [edit_noise_inconsistency.wav](/media/splices-and-edit-detection-lab/edit_noise_inconsistency.wav) - Speech with background noise changes
+One Drive [link here](https://dakotastateuniversity-my.sharepoint.com/:u:/g/personal/tate_carson_dsu_edu/IQAbjykQdWWCQokk0B0zXYo3AYOp5GVOSEPmoy6KNPbMEHY?e=XHxbfy)
 ---
 
 ## Part 2: Detecting Butt Splices (8 minutes)
