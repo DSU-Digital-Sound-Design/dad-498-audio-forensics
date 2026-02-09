@@ -71,20 +71,20 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 - [Lab: Praat Introduction](../lectures/week-4/praat-introduction)
   - Doing phonetics by computer 
 
-<!-- 
 # Week 5
 
 **Authenticity I: Analog Methods**
 
 ## Tuesday (2/10)
 
-- Analog tape
-- Splices and edit detection
+- Out of town
 
 ## Thursday (2/12)
 
+- [Splices and edit detection](../lectures/week-5/splices-and-edit-detection/)
 - Lab: Identifying edits
 
+<!-- 
 # Week 6
 
 **Authenticity II: Digital Methods**
