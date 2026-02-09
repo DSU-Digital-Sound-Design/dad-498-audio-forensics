@@ -82,7 +82,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 ## Thursday (2/12)
 
 - [Splices and edit detection](../lectures/week-5/splices-and-edit-detection/)
-- Lab: Identifying edits
+- [Lab: Identifying Edits](../lectures/week-5/splices-and-edit-detection-lab/lab.md)
 
 <!-- 
 # Week 6
