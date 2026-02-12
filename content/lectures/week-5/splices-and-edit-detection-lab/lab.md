@@ -282,7 +282,7 @@ Open `edit_reverb_mismatch.wav` in Adobe Audition.
 
 4. Switch to spectrogram view (`Shift+D`)
 5. Adjust your spectrogram settings for better visibility:
-   - Right-click the spectrogram > **Spectrogram Display Settings**
+   - **Settings** > **Spectrogram Display Settings**
    - Set FFT Size to **4096** or **8192** (larger FFT gives better frequency resolution for seeing reverb tails)
 6. Look at the gaps between words and phrases. In the reverberant portions of the recording, you should see energy trailing off gradually after each speech segment (the reverb tail)
 7. Find the inserted segment — it will show clean, dark gaps between words with no trailing energy
