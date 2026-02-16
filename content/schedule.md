@@ -84,16 +84,15 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 - [Splices and edit detection](../lectures/week-5/splices-and-edit-detection/)
 - [Lab: Identifying Edits](../lectures/week-5/splices-and-edit-detection-lab/lab.md)
 
-<!-- 
 # Week 6
 
 **Authenticity II: Digital Methods**
 
 ## Tuesday (2/17)
 
-- ENF analysis
-- Metadata consistency
+- [ENF analysis and Metadata consistency](../lectures/week-6/enf-analysis-and-metadata-consistency/)
 
+<!-- 
 ## Thursday (2/19)
 
 - Reverberation continuity
