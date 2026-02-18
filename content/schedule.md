@@ -92,12 +92,11 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [ENF analysis and Metadata consistency](../lectures/week-6/enf-analysis-and-metadata-consistency/)
 
-<!-- 
 ## Thursday (2/19)
 
-- Reverberation continuity
-- Labs: ENF and metadata
+- [Lab: ENF and metadata](../lectures/week-6/enf-analysis-and-metadata-consistency-lab/)
 
+<!-- 
 # Week 7
 
 **Midterm**
