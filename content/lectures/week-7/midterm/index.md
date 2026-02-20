@@ -1,7 +1,7 @@
 ---
 title: "Midterm: Operation Blind Spot"
 date: 2026-02-20
-draft: true
+draft: false
 ---
 
 <!--
@@ -398,8 +398,10 @@ Copy and fill out for your evidence package:
 ## Resources
 
 - [Adobe Audition User Guide](https://helpx.adobe.com/audition/user-guide.html)
-- Week 3 slides — Ethics and bias avoidance, LSU protocol
-- Week 5 slides + lab — Edit detection techniques
-- Week 6 slides + lab — ENF analysis and metadata
+- [Week 3 slides — Ethics and false convictions (bias avoidance, LSU protocol)](../../week-3/ethics-and-false-convictions/)
+- [Week 5 slides — Splices and edit detection](../../week-5/splices-and-edit-detection/)
+- [Week 5 lab — Identifying edits](../../week-5/splices-and-edit-detection-lab/lab.md)
+- [Week 6 slides — ENF analysis and metadata consistency](../../week-6/enf-analysis-and-metadata-consistency/)
+- [Week 6 lab — ENF and metadata](../../week-6/enf-analysis-and-metadata-consistency-lab/)
 
 **Questions about the midterm format?** Ask before Tuesday's class.
