@@ -96,19 +96,19 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Lab: ENF and metadata](../lectures/week-6/enf-analysis-and-metadata-consistency-lab/)
 
-<!-- 
 # Week 7
 
 **Midterm**
 
 ## Tuesday (2/24)
 
-- Midterm examination
+- [Midterm: Operation Blind Spot — Fabrication Session](../lectures/week-7/midterm/)
 
 ## Thursday (2/26)
 
-- Midterm project work
+- [Midterm: Operation Blind Spot — Analysis Session](../lectures/week-7/midterm/)
 
+<!-- 
 # Week 8
 
 **Audio Enhancement I**
