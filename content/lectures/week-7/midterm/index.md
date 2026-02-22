@@ -1,13 +1,12 @@
 ---
 title: "Midterm: Operation Blind Spot"
-date: 2026-02-20
+date: 2026-02-20T00:00:00.000Z
 draft: false
 ---
-
 <!--
-================================================================
+========
 INSTRUCTOR NOTES — Not visible to students
-================================================================
+========
 
 ## Overview
 
@@ -90,27 +89,24 @@ tests methodological restraint and avoidance of confirmation bias.
 This team should note in their answer key: "No manipulations —
 authentic recording."
 
-================================================================
+========
 END INSTRUCTOR NOTES
-================================================================
+========
 -->
 
 ## Overview
 
 The midterm for this course is an adversarial simulation. You will work in two teams: each team builds a fake audio evidence package on Tuesday and analyzes the other team's package on Thursday.
 
-By the end of Thursday you will have played both roles that define real forensic audio work — attacker and defender. The goal is not just to detect forgeries, but to understand how and why they are made.
-
-**Teams are assigned by the instructor and posted before Tuesday's class.**
-
+By the end of Thursday, you will have played both roles that define real forensic audio work — investigator and perpetrator. 
 ---
 
 ## What You Are Being Graded On
 
-You receive **two separate grades** for this midterm:
+You receive two separate grades for this midterm:
 
 | Role | Weight | When |
-|---|---|---|
+| --- | --- | --- |
 | Fabrication (building the fake case) | 30 pts | Assessed after Thursday via your Answer Key |
 | Analysis (forensic report on the other team's case) | 70 pts | Assessed from your submitted report |
 
@@ -136,7 +132,7 @@ You must apply at least one technique from each category below.
 **Edit Technique (choose ≥ 1):**
 
 | Technique | What to Do | Key Artifact |
-|---|---|---|
+| --- | --- | --- |
 | Butt splice | Cut and rejoin two segments with zero crossfade | Click + waveform discontinuity |
 | Crossfade edit | Delete a segment with a 5–100 ms crossfade | Subtle spectral smearing |
 | Reverb mismatch | Insert a dry segment into a reverberant recording | Missing reverb tails in spectrogram |
@@ -145,7 +141,7 @@ You must apply at least one technique from each category below.
 **Authentication Element (choose ≥ 1):**
 
 | Technique | What to Do |
-|---|---|
+| --- | --- |
 | Metadata manipulation | After saving, open the file in ImHex and alter the timestamp, device info, or sample rate field in the file header. Alternatively, re-encode the file to a different format and back to create inconsistent codec history. |
 | ENF-based claim | Write a scenario that makes a specific claim about *when or where* the recording was made (e.g., "recorded indoors in the evening on Feb 24"). The analysis team will attempt ENF extraction or metadata inspection to verify the claim. |
 
@@ -176,9 +172,9 @@ Create a folder called `Team_[A or B]_Evidence` containing:
 - [ ] `case_brief.pdf` or `case_brief.docx` — your one-page Case Brief
 - [ ] `chain_of_custody.docx` — filled out (template below)
 
-Submit this folder to the instructor. **Do not share it with the other team yet** — they receive it Thursday morning.
+Submit this folder to D2L. Each team member may submit the same fabrication package. **Do not share it with the other team yet** — they receive it Thursday morning.
 
-### Step 5 — Submit Your Answer Key (to instructor only)
+### Step 5 — Submit Your Answer Key 
 
 In a **separate document** (not shared with the other team), record:
 
@@ -186,17 +182,17 @@ In a **separate document** (not shared with the other team), record:
 - How you attempted to conceal each manipulation
 - Whether the correct authenticity determination is "authentic," "not authentic," or "could be either" (if you used the red herring approach)
 
-Submit the Answer Key directly to the instructor via D2L or e-mail before leaving Tuesday's class.
+Submit the Answer Key directly to D2L.
 
 ---
 
 ## Thursday: Forensic Analysis (75 min)
 
-You receive the opposing team's evidence package at the start of class. Your task is to conduct a systematic forensic examination and submit a formal report by the end of class.
+You receive the opposing team's evidence package at the start of class. Your task is to conduct a systematic forensic examination and submit a formal report by the end of class. You may work together as a team during the analysis, but **each team member must submit their own individual report.**
 
 ### Your Job
 
-Analyze the package as a **neutral forensic examiner** — not as an advocate for any position. Follow the methods from Weeks 4–6. Your report must be grounded in technical evidence, not intuition.
+Analyze the package as a neutral forensic examiner — not as an advocate for any position. Follow the methods from Weeks 4–6. Your report must be grounded in technical evidence, not intuition.
 
 ### Required Analysis Methods
 
@@ -204,7 +200,7 @@ You must demonstrate at least one method from each of the following categories. 
 
 **1. Aural Evaluation**
 
-- Listen to the full recording once in quiet conditions at moderate level
+- Listen to the full recording once in quiet conditions at a moderate level
 - Note preliminary impressions (foreground sounds, background environment, overall quality)
 - Avoid looping sections before completing the full listen — this can create false percepts
 
@@ -321,25 +317,23 @@ Number all screenshots and reference them from the Findings section (e.g., "Fig.
 
 ## Post-Class Debrief
 
-After reports are submitted, the instructor will reveal each team's Answer Key. Each fabrication team will walk the class through what they embedded and how they tried to conceal it. Then the analysis teams share what they found versus what was actually there.
-
-This is worth paying attention to — understanding the attacker's perspective is one of the fastest ways to improve as a forensic examiner.
+After reports are submitted, I will reveal each team's Answer Key. Each fabrication team will walk the class through what they embedded and how they tried to conceal it. Then the analysis teams share what they found versus what was actually there.
 
 ---
 
 ## Submission Checklist
 
-**Tuesday (before leaving class):**
+**Tuesday (before leaving class) — one submission per team member (identical submissions OK):**
 
-- [ ] `Team_[A or B]_Evidence` folder submitted to instructor
+- [ ] `Team_[A or B]_Evidence` folder submitted to D2L
   - [ ] `recording.wav`
   - [ ] `case_brief.pdf` or `case_brief.docx`
   - [ ] `chain_of_custody.docx`
-- [ ] Answer Key submitted to instructor separately (not in the evidence folder)
+- [ ] Answer Key submitted to D2L separately (not in the evidence folder)
 
-**Thursday (before leaving class):**
+**Thursday (before leaving class) — individual submission required:**
 
-- [ ] Forensic report `.docx` submitted to D2L
+- [ ] Forensic report `.docx` submitted to D2L (each team member submits their own)
 
 ---
 
@@ -352,21 +346,20 @@ Copy and fill out for your evidence package:
 **CHAIN OF CUSTODY FORM**
 
 | Field | Value |
-|---|---|
-| File name | |
-| File format | |
-| File size | |
-| MD5 or SHA-256 hash (if generated) | |
-| Date and time of creation | |
-| Created by (team name) | |
-| Storage location (e.g., USB drive, OneDrive folder) | |
-| Transferred to instructor on | |
-| Transferred to analysis team on | |
-| Notes | |
+| --- | --- |
+| File name |  |
+| File format |  |
+| File size |  |
+| Date and time of creation |  |
+| Created by (team name) |  |
+| Storage location (e.g., USB drive, OneDrive folder) |  |
+| Transferred to instructor on |  |
+| Transferred to analysis team on |  |
+| Notes |  |
 
-*Signature (fabrication team lead):* __________________________ *Date:* __________
+*Signature (fabrication team lead):* ***\_\_\_\_\_ Date: \_***______
 
-*Received by (instructor):* __________________________ *Date:* __________
+*Received by (instructor):* ***\_\_\_\_\_ Date: \_***______
 
 ---
 
@@ -375,7 +368,7 @@ Copy and fill out for your evidence package:
 ### Fabrication (30 pts)
 
 | Criterion | Points |
-|---|---|
+| --- | --- |
 | At least one required edit technique applied and documentable | 10 |
 | At least one required authentication element included | 10 |
 | Case Brief is plausible, complete, and follows LSU principles (no priming) | 5 |
@@ -384,7 +377,7 @@ Copy and fill out for your evidence package:
 ### Forensic Report (70 pts)
 
 | Criterion | Points |
-|---|---|
+| --- | --- |
 | Aural evaluation documented | 5 |
 | Waveform analysis with screenshots | 10 |
 | Spectrogram analysis with screenshots | 10 |
@@ -400,7 +393,7 @@ Copy and fill out for your evidence package:
 - [Adobe Audition User Guide](https://helpx.adobe.com/audition/user-guide.html)
 - [Week 3 slides — Ethics and false convictions (bias avoidance, LSU protocol)](../../week-3/ethics-and-false-convictions/)
 - [Week 5 slides — Splices and edit detection](../../week-5/splices-and-edit-detection/)
-- [Week 5 lab — Identifying edits](../../week-5/splices-and-edit-detection-lab/lab.md)
+- [Splices and Edit Detection Lab](./../../week-5/splices-and-edit-detection-lab/lab.md)
 - [Week 6 slides — ENF analysis and metadata consistency](../../week-6/enf-analysis-and-metadata-consistency/)
 - [Week 6 lab — ENF and metadata](../../week-6/enf-analysis-and-metadata-consistency-lab/)
 
