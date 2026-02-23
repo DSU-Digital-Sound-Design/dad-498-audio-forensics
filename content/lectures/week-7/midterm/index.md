@@ -232,7 +232,7 @@ You must demonstrate at least one method from each of the following categories. 
 Run the ENF analysis or write a reasoned explanation:
 
 *If openENF is working:*
-- Run: `enf recording.wav --grids GB DE --start 2025-01-01 --end 2026-12-31`
+- Run: `enf recording.wav`
 - Report the match score, estimated timestamp, and grid identified (or "no match found")
 - Compare to the scenario's claimed date and location
 
@@ -247,10 +247,10 @@ Submit a single Word document (`.docx`) structured as follows:
 
 **FORENSIC AUDIO EXAMINATION REPORT**
 
-**Case Reference:** [receiving team name] — Midterm Examination
-**Examiner(s):** [your team names]
-**Date of Examination:** February 26, 2026
-**Evidence Received:** [file name, format, duration, chain of custody notes]
+**Case Reference:** [receiving team name] — Midterm Examination  
+**Examiner(s):** [your team names].   
+**Date of Examination:** February 26, 2026.   
+**Evidence Received:** [file name, format, duration, chain of custody notes]. 
 
 ---
 
@@ -280,7 +280,7 @@ Brief list of tools and techniques applied (e.g., "Adobe Audition waveform/spect
 Organized by analysis type. Include screenshots annotated with timestamps or arrows where relevant.
 
 **4a. Aural Evaluation**
-What you heard. Note any preliminary indicators, foreground/background sounds, quality assessments.
+What you heard. Note any preliminary indicators, foreground/background sounds, and quality assessments.
 
 **4b. Waveform Analysis**
 Document any findings. Screenshot waveform at relevant points.
@@ -357,10 +357,6 @@ Copy and fill out for your evidence package:
 | Transferred to analysis team on |  |
 | Notes |  |
 
-*Signature (fabrication team lead):* ***\_\_\_\_\_ Date: \_***______
-
-*Received by (instructor):* ***\_\_\_\_\_ Date: \_***______
-
 ---
 
 ## Grading Rubric
@@ -393,8 +389,7 @@ Copy and fill out for your evidence package:
 - [Adobe Audition User Guide](https://helpx.adobe.com/audition/user-guide.html)
 - [Week 3 slides — Ethics and false convictions (bias avoidance, LSU protocol)](../../week-3/ethics-and-false-convictions/)
 - [Week 5 slides — Splices and edit detection](../../week-5/splices-and-edit-detection/)
-- [Splices and Edit Detection Lab](./../../week-5/splices-and-edit-detection-lab/lab.md)
+- [lab.md](./../../week-5/splices-and-edit-detection-lab/lab.md)
 - [Week 6 slides — ENF analysis and metadata consistency](../../week-6/enf-analysis-and-metadata-consistency/)
 - [Week 6 lab — ENF and metadata](../../week-6/enf-analysis-and-metadata-consistency-lab/)
 
-**Questions about the midterm format?** Ask before Tuesday's class.
