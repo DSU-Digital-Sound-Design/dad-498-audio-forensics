@@ -108,20 +108,21 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Midterm: Operation Blind Spot — Analysis Session](../lectures/week-7/midterm/)
 
-<!-- 
 # Week 8
 
 **Audio Enhancement I**
 
 ## Tuesday (3/3)
 
-- Filtering and dynamics
+- [Basic Audio enhancement](../lectures/week-8/audio-enhancement-techniques/)
 - Intelligibility vs. quality
+- Equalization and dynamics
 
 ## Thursday (3/5)
 
 - Enhancement lab
 
+<!-- 
 # Week 9
 
 **Audio Enhancement II**
