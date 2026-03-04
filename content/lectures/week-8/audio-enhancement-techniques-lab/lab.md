@@ -1,6 +1,5 @@
 ---
 title: "Workshop: Audio Enhancement with STI Validation"
-date: 2026-03-05
 draft: false
 ---
 
@@ -30,13 +29,13 @@ reverb, clipping distortion, or nonlinear artifacts requiring AI denoise.
 Start with a clean baseline clip from OpenSLR 12:
 https://www.openslr.org/12/
 
-1) High-STI clip (minimal processing needed)
+1) High-STI clip (minimal processing needed) - clip_2_unknown.wav
 - Keep mostly clean.
 - Optional: add very light low-frequency rumble around -40 to -45 dB
   (below ~80 Hz) so a gentle highpass can improve slightly.
 - Target: already clearly intelligible; likely needs little/no work.
 
-2) Mid-STI clip (moderate processing needed)
+2) Mid-STI clip (moderate processing needed) - clip_3_unknown.wav
 - Add low-frequency hum + harmonics:
   - 60 Hz at about -34 to -38 dB
   - 120 Hz at about -38 to -42 dB
@@ -46,11 +45,11 @@ https://www.openslr.org/12/
   compression helps stabilize audibility.
 - Target: intelligible but distracted by hum/hiss and uneven level.
 
-3) Low-STI clip (careful iterative processing needed)
+3) Low-STI clip (careful iterative processing needed) - clip_1_unknown.wav
 - Add stronger hum + harmonics:
   - 60 Hz at about -28 to -34 dB
   - 120 Hz at about -32 to -38 dB
-  - 180 Hz at about -36 to -42 dB
+  - 180 Hz at about -36 to -42 dB  
   - optional 240 Hz very light
 - Add stronger hiss around -36 to -40 dB.
 - Apply a broad low-mid masking bump around 250-500 Hz (+3 to +6 dB)
@@ -69,9 +68,9 @@ https://www.openslr.org/12/
 ### Suggested Answer Key (for instructor use only)
 
 Maintain a private mapping table, e.g.:
-- clip_1_unknown.wav -> [High or Mid or Low]
-- clip_2_unknown.wav -> [High or Mid or Low]
-- clip_3_unknown.wav -> [High or Mid or Low]
+- clip_1_unknown.wav -> Low
+- clip_2_unknown.wav -> High 
+- clip_3_unknown.wav -> Mid
 
 ================================================================
 END INSTRUCTOR NOTES
@@ -83,14 +82,14 @@ END INSTRUCTOR NOTES
 **Session Date**: Thursday, March 5, 2026  
 **Duration**: ~75 minutes
 
-**Objective**: Classify three instructor-provided unknown speech clips by baseline intelligibility level, then use forensic EQ/filtering and dynamics processing in Adobe Audition with FSTIC STI validation. Students will practice the lecture rule: enhancement decisions must be based on intelligibility metrics, not just perceived quality.
+**Objective**: Classify three repo-provided unknown speech clips by baseline intelligibility level, then use forensic EQ/filtering and dynamics processing in Adobe Audition with FSTIC STI validation. Students will practice the lecture rule: enhancement decisions must be based on intelligibility metrics, not just perceived quality.
 
 **Primary tools**:
-- Adobe Audition
+- Adobe Audition or Reaper (with EQ and dynamics plugins)
 - FSTIC (adapted STI tool): [https://github.com/tatecarson/FSTIC](https://github.com/tatecarson/FSTIC)
 <!-- - Source context (instructor prep): [OpenSLR 12 - LibriSpeech dev-clean](https://www.openslr.org/12/) -->
 
-**What to submit:** Each exercise ends with a **Turn in** block. Submit one Word document (`.docx`) with short answers organized by exercise number. No screenshots are required.
+**What to submit:** Each exercise ends with a **Turn in** block. Submit one Word document (`.docx`) with short answers organized by exercise number, plus your workshop audio files (originals and processed versions), to the D2L assignment. 
 
 ---
 
@@ -99,14 +98,24 @@ END INSTRUCTOR NOTES
 ### Exercise 1: Build Your 3-Clip Case Set and Baseline STI
 
 1. Create a folder on your desktop named `Week8_STI_Workshop`.
-2. Download the three instructor-provided files and place them in your folder:
-   - `clip_1_unknown.wav`
-   - `clip_2_unknown.wav`
-   - `clip_3_unknown.wav`
-3. Run FSTIC (Single File mode) on all three clips and record baseline STI values.
-4. Listen to each clip in Audition and note key audible issues.
-5. Classify each clip as probable **high**, **mid**, or **low** baseline intelligibility.
-6. Assign working labels for your workflow:
+2. Download the course repo as a ZIP from GitHub, then copy the three workshop files from `/speech` into your `Week8_STI_Workshop` folder:
+   - Open: `https://github.com/tatecarson/dad-498-audio-forensics`
+   - Click **Code** (green button) > **Download ZIP**
+   - Extract the ZIP on your computer
+   - Open the extracted folder and go to `/speech`
+     - `clip_1_unknown.wav`
+     - `clip_2_unknown.wav`
+     - `clip_3_unknown.wav`
+3. From the extracted FSTIC folder, run setup **once**:
+   - macOS: `./scripts/mac/setup.command`
+   - Windows: `scripts\windows\setup.bat`
+4. Launch FSTIC:
+   - macOS: `./scripts/mac/launch.command`
+   - Windows: `scripts\windows\launch.bat`
+5. In the FSTIC notebook, choose **Single File** mode, select each clip, click **Run Analysis**, and record baseline STI values.
+6. Listen to each clip in Audition and note key audible issues.
+7. Classify each clip as probable **high**, **mid**, or **low** baseline intelligibility.
+8. Assign working labels for your workflow:
    - `clip_A_high.wav`
    - `clip_B_mid.wav`
    - `clip_C_low.wav`
@@ -187,7 +196,7 @@ Use `clip_B_eq_final.wav` and `clip_C_eq_final.wav` as inputs for this part.
    - Verify onsets are not clipped.
    - Export as `clip_B_comp_expand.wav` and `clip_C_comp_expand.wav`.
    - Run FSTIC and log STI.
-3. Compare all versions in FSTIC Compare mode:
+3. Compare all versions in FSTIC **Compare Two Files** mode:
    - `clip_B_eq_final.wav` vs `clip_B_comp.wav`
    - `clip_B_comp.wav` vs `clip_B_comp_expand.wav`
    - `clip_C_eq_final.wav` vs `clip_C_comp.wav`
@@ -224,33 +233,3 @@ If pumping, chopped consonants, or STI degradation appears, back off settings.
 >   2. Provide a 3-4 sentence defensibility statement for each clip using STI evidence.
 >   3. For A, did STI evidence support doing little or no processing?
 >   4. Would you submit any processed version that lowered STI even if it sounded cleaner? Explain.
-
----
-
-## Quick Rubric (Instructor)
-
-- Correct use of iterative workflow (stepwise exports + STI after each step)
-- Appropriate, documented EQ/filter and dynamics settings
-- Evidence of rollback when STI worsens
-- Final selection justified with objective intelligibility evidence
-
----
-
-## FSTIC Student Launch (Reference)
-
-From the FSTIC repo folder:
-
-```bash
-./setup_student.command
-./launch_student.command
-```
-
-Fallback:
-
-```bash
-./launch_notebook.command
-```
-
-Use FSTIC modes:
-- **Single File** for per-step STI logging
-- **Compare Two Files** for before/after decisions
