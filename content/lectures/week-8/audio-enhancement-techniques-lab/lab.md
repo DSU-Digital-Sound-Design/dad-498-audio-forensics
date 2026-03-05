@@ -99,7 +99,7 @@ END INSTRUCTOR NOTES
 
 1. Create a folder on your desktop named `Week8_STI_Workshop`.
 2. Download the course repo as a ZIP from GitHub, then copy the three workshop files from `/speech` into your `Week8_STI_Workshop` folder:
-   - Open: `https://github.com/tatecarson/dad-498-audio-forensics`
+   - Open: https://github.com/tatecarson/FSTIC
    - Click **Code** (green button) > **Download ZIP**
    - Extract the ZIP on your computer
    - Open the extracted folder and go to `/speech`
