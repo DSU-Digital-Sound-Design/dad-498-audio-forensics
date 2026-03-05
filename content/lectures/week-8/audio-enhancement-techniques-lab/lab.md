@@ -107,6 +107,7 @@ END INSTRUCTOR NOTES
      - `clip_2_unknown.wav`
      - `clip_3_unknown.wav`
 3. From the extracted FSTIC folder, run setup **once**:
+   - Install a Python version lower than 3.13 before running setup. `FSTIC` is not compatible with Python 3.13+.
    - macOS: `./scripts/mac/setup.command`
    - Windows: `scripts\windows\setup.bat`
 4. Launch FSTIC:
