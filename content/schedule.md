@@ -122,21 +122,20 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Enhancement lab](../lectures/week-8/audio-enhancement-techniques-lab/lab)
 
-<!-- 
 # Week 9
 
 **Audio Enhancement II**
 
 ## Tuesday (3/10)
 
-- Spectral subtraction
-- Click removal
+- [Other enhancement techniques](../lectures/week-9/other-enhancement-techniques/)
+  - Spectral subtraction, click removal, dereverberation, etc.
 
 ## Thursday (3/12)
 
-- Artifact evaluation
 - Enhancement lab
 
+<!-- 
 # Week 10
 
 **Forensic Interpretation and Geometry**
