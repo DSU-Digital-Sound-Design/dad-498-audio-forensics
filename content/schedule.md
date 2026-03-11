@@ -133,7 +133,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Thursday (3/12)
 
-- Enhancement lab
+- [Enhancement lab](../lectures/week-9/audio-enhancement-lab/lab)
 
 <!-- 
 # Week 10
