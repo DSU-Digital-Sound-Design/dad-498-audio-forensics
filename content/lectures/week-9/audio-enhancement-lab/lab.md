@@ -1,5 +1,5 @@
 ---
-title: "Lab: Audio Enhancement in Adobe Audition"
+title: "Lab: Advanced Audio Enhancement"
 date: 2026-03-10
 draft: false
 ---
@@ -74,7 +74,7 @@ END INSTRUCTOR NOTES
 **Session Date**: Thursday, March 12, 2026  
 **Duration**: ~60-75 minutes
 
-**Objective**: Practice the advanced enhancement techniques from the Tuesday, March 10 lecture in Adobe Audition. You will repair clicks and pops, reduce steady background noise, test dereverberation, and defend your order of operations on a mixed-problem recording. You will use DNSMOSPro to compare the original and processed versions after each major step.
+**Objective**: Practice the advanced enhancement techniques from Tuesday's lecture in Adobe Audition. You will repair clicks and pops, reduce steady background noise, test dereverberation, and defend your order of operations on a mixed-problem recording. You will use DNSMOSPro to compare the original and processed versions after each major step.
 
 **Primary tools**:
 - Adobe Audition
@@ -82,14 +82,17 @@ END INSTRUCTOR NOTES
 
 **What to submit:** Each exercise ends with a **Turn in** block. Submit one Word document (`.docx`) with short answers organized by exercise number, plus your processed WAV files, to the D2L assignment.
 
+If you do not finish during class, complete the remaining work at home and submit it by the assignment deadline.
+
 ---
 
 ## Part 1: Setup and Baseline (~10 minutes)
 
 ### Exercise 1: Install DNSMOSPro and Inspect the Files
 
-Create a folder on your desktop named `Week9_Enhancement_Lab` and copy these files into it:
+Download the lab files from the D2L assignment page and place them in a folder on your desktop named `Week9_Enhancement_Lab`.
 
+The download includes:
 - `Noise print/clip_1_noise.wav`
 - `Noise print/clip_2_noise.wav`
 - `Noise print/clip_3_noise.wav`
@@ -116,11 +119,6 @@ For each file:
 2. Switch between waveform view and spectral frequency display.
 3. Identify the main problem type.
 4. Decide what tool you would try first.
-
-Use the Tuesday framework from class:
-- waveform restoration first when the waveform itself is damaged
-- filtering / noise reduction after obvious defects are repaired
-- dynamics and normalization last
 
 > **Turn in:**
 > - **Word doc questions:**
@@ -155,6 +153,16 @@ For each file:
    - `clip_3_noise_cleaned.wav`
 9. Run DNSMOSPro on each processed file and compare it with its baseline.
 
+You may also try Audition's **DeNoise** or **Adaptive Noise Reduction** on one or more of the files if you want to compare approaches. If you do, treat those as alternative versions and explain whether they worked better or worse than a captured noise print workflow.
+
+Use this rule of thumb:
+- **Noise Reduction (Process)** is best for relatively constant noise that stays present throughout the waveform, such as hiss, HVAC, or hum. In the context of our Tuesday lecture, this is the closest match to the spectral-subtraction style workflow.
+- **Adaptive Noise Reduction** is better when the background noise changes over time, such as shifting room noise, rumble, or wind.
+- **DeNoise** is a simpler denoising option with fewer controls, so it can be useful for a quick comparison or a light first pass.
+
+Resource:
+- Adobe Audition User Guide, "Reduce noise and restore audio": https://helpx.adobe.com/audition/using/noise-reduction-restoration-effects.html
+
 After processing, compare:
 - original vs processed by listening
 - baseline vs processed DNSMOSPro score
@@ -164,8 +172,9 @@ After processing, compare:
 >   1. For each of the three clips, what noise-only region did you use for the noise print?
 >   2. What settings did you use for each file?
 >   3. Report the original and processed DNSMOSPro scores for all three clips.
->   4. Which of the three files improved the most?
->   5. Did you hear any new artifacts after denoising?
+>   4. If you tried DeNoise or Adaptive Noise Reduction, how did that result compare with Noise Reduction (Process)?
+>   5. Which of the three files improved the most?
+>   6. Did you hear any new artifacts after denoising?
 
 ---
 
@@ -179,6 +188,7 @@ Open `forensic_with_clicks_pops.wav`.
 2. Switch to spectral view to look for short vertical broadband events.
 3. Repair the file using one or both of these approaches:
    - **Automatic Click Remover**
+   - **Click/Pop Eliminator**
    - manual spot repair / healing on isolated defects
 4. Re-listen after each change.
 5. Export your best version as `forensic_with_clicks_pops_repaired.wav`.
@@ -186,10 +196,13 @@ Open `forensic_with_clicks_pops.wav`.
 
 Do not apply broadband denoise first unless you can justify it.
 
+Resource:
+- Adobe Audition User Guide, "Reduce noise and restore audio": https://helpx.adobe.com/audition/using/noise-reduction-restoration-effects.html
+
 > **Turn in:**
 > - **Word doc questions:**
 >   1. How many obvious clicks or pops did you repair?
->   2. Which tool worked better for this file: automatic removal or manual repair?
+>   2. Which tool worked better for this file: Automatic Click Remover, Click/Pop Eliminator, or manual repair?
 >   3. What was the original DNSMOSPro score, and what was the repaired score?
 >   4. Why is click repair usually performed before heavy noise reduction?
 
@@ -207,7 +220,7 @@ Open these three files:
 
 For each file:
 1. Listen for smeared consonants and room tail.
-2. Open Audition's dereverb tool and begin with conservative settings.
+2. Open Audition's DeReverb tool and begin with conservative settings.
 3. Preview carefully.
 4. Apply only enough processing to improve intelligibility.
 5. If the result sounds hollow, phasey, or damaged, back off.
@@ -217,7 +230,7 @@ For each file:
    - `verb 3_dereverb.wav`
 7. Run DNSMOSPro on each processed file and compare it with the original.
 
-Remember: dereverb often has stronger side effects than simple filtering.
+Remember: DeReverb often has stronger side effects than simple filtering.
 
 > **Turn in:**
 > - **Word doc questions:**
