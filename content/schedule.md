@@ -135,34 +135,27 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Enhancement lab](../lectures/week-9/audio-enhancement-lab/lab)
 
-<!-- 
 # Week 10
 
-**Forensic Interpretation and Geometry**
+- Spring break, no class
 
-## Tuesday (3/17)
-
-- TDOA (Time Difference of Arrival)
-- Doppler effect
-
-## Thursday (3/19)
-
-- Distance estimation
-- Problem set
 
 # Week 11
 
-**Speaker Recognition and Probability**
 
 ## Tuesday (3/24)
 
-- Likelihood ratios
-- Biometric variability
+- [Acoustic Event Analysis](../lectures/week-11/acoustic-event-analysis/)
+  - TDOA (Time Difference of Arrival)
+  - Doppler effect
+  - Distance estimation
+  - Likelihood ratios
 
 ## Thursday (3/26)
 
-- Lab: Disguised voice analysis
+- Research Week Symposium, no class
 
+<!-- 
 # Week 12
 
 **Gunshot Acoustics I**
