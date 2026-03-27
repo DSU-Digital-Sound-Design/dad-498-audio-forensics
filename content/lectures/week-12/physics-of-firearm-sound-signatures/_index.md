@@ -46,7 +46,7 @@ Before we can analyze a gunshot recording, we need to understand what is happeni
 
 ## The Cartridge
 
-- **Casing** — brass cylinder, holds components
+- **Casing** — brass cylinder, holds propellant
 - **Primer** — impact-sensitive ignition cap
 - **Propellant** — gunpowder, becomes hot gas
 - **Bullet** — the projectile itself
