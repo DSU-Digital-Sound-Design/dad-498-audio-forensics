@@ -155,15 +155,15 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - Research Week Symposium, no class
 
-<!-- 
 # Week 12
 
 **Gunshot Acoustics I**
 
 ## Tuesday (3/31)
 
-- Physics of firearm sound signatures
+- [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}})
 
+<!-- 
 ## Thursday (4/2)
 
 - Lab: Ballistic spectrogram analysis
@@ -174,6 +174,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Tuesday (4/7)
 
+- [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}}) - 2nd half 
 - Complex shooting incidents
 - Taser analysis
 
