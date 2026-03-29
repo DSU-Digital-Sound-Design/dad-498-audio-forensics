@@ -161,7 +161,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Tuesday (3/31)
 
-- [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}})
+- [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}}) - Sections 1 - III
 
 <!-- 
 ## Thursday (4/2)
@@ -174,7 +174,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Tuesday (4/7)
 
-- [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}}) - 2nd half 
+- [Physics of firearm sound signatures, Part 2]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}}#other-acoustic-components) - begin with Section IV: Other Acoustic Components
 - Complex shooting incidents
 - Taser analysis
 

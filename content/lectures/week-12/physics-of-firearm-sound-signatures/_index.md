@@ -94,10 +94,10 @@ Fig. 9.3 — Internal structure of a shotgun shell. Notice the key differences f
 
 ## Firearm Types
 
-- **Pistol** — closed chamber, single barrel
-- **Revolver** — rotating cylinder, multiple chambers
-- **Rifle** — long barrel with rifling grooves
-- **Shotgun** — smooth bore, large diameter
+- **Pistol** — Glock semiautomatic pistol; closed chamber, single barrel - <audio controls preload="metadata" src="/media/week-12/example-firearm-types/pistol_glock.mp3" style="width: 320px; height: 32px;"></audio>
+- **Revolver** — Ruger .357 Magnum revolver; rotating cylinder, multiple chambers - <audio controls preload="metadata" src="/media/week-12/example-firearm-types/revolver_ruger357.mp3" style="width: 320px; height: 32px;"></audio>
+- **Rifle** — AK-47 pattern rifle; long barrel with rifling grooves - <audio controls preload="metadata" src="/media/week-12/example-firearm-types/rifle_ak47.mp3" style="width: 320px; height: 32px;"></audio>
+- **Shotgun** — Pump-action shotgun; smooth bore, large diameter - <audio controls preload="metadata" src="/media/week-12/example-firearm-types/shotgun_pump_action.mp3" style="width: 320px; height: 32px;"></audio>
 
 {{% note %}}
 Each type produces a different acoustic signature. Pistols have a sealed chamber, so all gas exits through the muzzle. Revolvers have a gap between the cylinder and barrel — gas leaks from that gap, creating an extra acoustic event. Rifles have long barrels, which means the bullet accelerates longer and may reach higher velocities. Shotguns have wide, smooth bores that shape the gas release differently.
@@ -120,6 +120,7 @@ Fig. 9.2 — The four main firearm types: pistol, revolver, rifle, and shotgun. 
 - Bullet diameter in inches or millimeters
 - Same diameter, different cartridges
 - More powder = more acoustic energy
+- Helpful reference: <a href="https://www.sportsmans.com/ammo-caliber-size-chart" target="_blank" rel="noopener noreferrer">Ammo Caliber Size Chart</a>
 
 {{% note %}}
 Caliber refers to the diameter of the bullet. Two cartridges can share the same bullet diameter but use different casing sizes. For example, the .30-06 Springfield and 7.62 NATO both fire a 0.308-inch bullet, but the .30-06 has a larger casing with more propellant. More propellant means a larger gas volume at higher pressure — and that translates directly into a louder, more energetic muzzle blast. So caliber alone does not tell you how loud a gunshot will be; the full cartridge specification matters.
@@ -131,15 +132,37 @@ Caliber refers to the diameter of the bullet. Two cartridges can share the same 
 
 ## Mechanical Actions
 
-{{% fragment %}}**Semiautomatic** — gas/recoil cycles the action{{% /fragment %}}
-
-{{% fragment %}}**Bolt-action** — manual bolt handle{{% /fragment %}}
-
-{{% fragment %}}**Lever-action** — lever near trigger{{% /fragment %}}
-
-{{% fragment %}}**Pump-action** — sliding fore-end{{% /fragment %}}
-
-{{% fragment %}}**Break-action** — hinged barrel opens{{% /fragment %}}
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem;">
+  <div style="flex: 1 1 64%; min-width: 0; font-size: 0.72em; line-height: 1.15;">
+    <div class="fragment">
+      <strong>Percussion lock</strong> - hammer moves from half-cock to full-cock<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=113s" target="_blank" rel="noopener noreferrer">Hear example at 1:53</a></span>
+    </div>
+    <div class="fragment" style="margin-top: 0.28rem;">
+      <strong>Break-action</strong> - hinged barrel opens and locks closed<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=307s" target="_blank" rel="noopener noreferrer">Hear shotgun breech at 5:07</a></span>
+    </div>
+    <div class="fragment" style="margin-top: 0.28rem;">
+      <strong>Pump-action</strong> - sliding fore-end<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=635s" target="_blank" rel="noopener noreferrer">Hear example at 10:35</a></span>
+    </div>
+    <div class="fragment" style="margin-top: 0.28rem;">
+      <strong>Lever-action</strong> - lever near trigger<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=722s" target="_blank" rel="noopener noreferrer">Hear example at 12:02</a></span>
+    </div>
+    <div class="fragment" style="margin-top: 0.28rem;">
+      <strong>Bolt-action</strong> - manual bolt handle<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=897s" target="_blank" rel="noopener noreferrer">Hear example at 14:57</a></span>
+    </div>
+    <div class="fragment" style="margin-top: 0.28rem;">
+      <strong>Semiautomatic</strong> - gas/recoil cycles the action<br>
+      <span style="font-size: 0.78em;"><a href="https://www.youtube.com/watch?v=9V13VxB0v2Y&t=1987s" target="_blank" rel="noopener noreferrer">Hear pistol slide at 33:07</a></span>
+    </div>
+  </div>
+  <div style="flex: 0 0 29%; text-align: right; padding-top: 0.2rem;">
+    <img src="figures/mechanical-action.png" alt="Examples of firearm mechanical actions" style="max-height: 310px; width: 100%; object-fit: contain; display: block;" />
+  </div>
+</div>
 
 {{% note %}}
 The "action" is the mechanism that loads, fires, and ejects. Each of these creates mechanical sounds — the metallic click of a firing pin, the clang of a spent casing being ejected, the rack of a pump shotgun. These sounds are subtle compared to the muzzle blast, but if a microphone is close to the shooter, they can be captured and may help identify the type of firearm. A semiautomatic cycles automatically using recoil energy; everything else requires some manual operation by the shooter.
@@ -149,10 +172,9 @@ The "action" is the mechanism that loads, fires, and ejects. Each of these creat
 
 ## Acoustic Clues from Mechanics
 
-- Firing pin strike
-- Slide or bolt cycling
-- Spent casing ejection
-- Quiet, but detectable at close range
+- Firing pin strike ([example video](https://www.youtube.com/watch?v=aujuq2iJDto))
+- Slide or bolt cycling - ([example video](https://www.youtube.com/watch?v=TXr98sdhS8g))
+- Spent casing ejection - ([example video](https://www.youtube.com/watch?v=2qV0oI83Bjo))
 
 {{% note %}}
 These mechanical sounds are sometimes called "telltale" sounds. In a controlled or close-range recording, you might hear the click of the firing pin just before the blast, or the metallic sound of the slide racking afterward. In most forensic recordings, these sounds are buried under the muzzle blast and environmental noise. But when they are present, they provide valuable clues about the weapon type and firing sequence.
@@ -169,6 +191,8 @@ These mechanical sounds are sometimes called "telltale" sounds. In a controlled 
 
 {{% note %}}
 In a revolver, the cylinder does not form a perfect seal against the barrel. When the gun fires, some high-pressure gas escapes through that gap before the bullet even exits the muzzle. In recordings made off to the side — say at about 98 degrees — you can see two distinct pressure peaks: one from the cylinder gap gas and a second from the muzzle blast. The timing between these peaks depends on the barrel length and bullet acceleration. This means you can potentially distinguish a revolver from a pistol just by looking at the waveform.
+
+We'll see a waveform later. 
 
 - Citation: Maher, R.C. *Principles of Forensic Audio Analysis*, Ch. 9.
 {{% /note %}}
@@ -207,6 +231,10 @@ Now we get to the main acoustic event. The muzzle blast is what most people thin
 
 ## What Causes the Blast?
 
+<div style="margin-right: 20px; margin-bottom: 10px;">
+<iframe width="400" height="225" src="https://www.youtube.com/embed/OXkOKn9UMzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 - Propellant ignites inside the casing
 - Hot gas builds extreme pressure
 - Gas exits the muzzle behind the bullet
@@ -233,12 +261,25 @@ To put 150 dB in perspective, the threshold of pain is around 120-130 dB, and a 
 
 ---
 
+<img src="https://lodge-cdn.ammunitiontogo.com/lodge/wp-content/uploads/ATG_Rifle-Suppressor-Inforgraphic-1024x946.jpg" style="height: 65vh; object-fit: contain;" />
+
+{{% note %}}
+Suppressors — often called silencers in popular media — reduce the muzzle blast by providing a series of expansion chambers that allow the high-pressure gas to cool and slow before exiting the barrel. This drops the peak level by roughly 20–35 dB, bringing a typical rifle shot from around 160 dB down to 125–140 dB — still well above the threshold for hearing damage, and still clearly audible. The sustained "pop" or "crack" that remains comes from both residual gas venting and the supersonic ballistic shockwave, which a suppressor cannot eliminate. Forensically, a suppressed gunshot has a very different waveform signature: a longer, lower-amplitude transient rather than a sharp impulsive spike.
+
+- Citation: Maher, R.C. *Principles of Forensic Audio Analysis*, Ch. 9.
+{{% /note %}}
+
+---
+
+
 ## Duration: Surprisingly Brief
 
 - True muzzle blast lasts only **1-3 ms**
 - That is 0.001 to 0.003 seconds
 - Hollywood gunshots are heavily processed
 - Echoes make it seem much longer
+
+<iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/713017/simple/large/" width="920" height="245"></iframe>
 
 {{% note %}}
 In movies, gunshots echo and reverberate dramatically. The actual muzzle blast — the initial pressure event — is over in one to three milliseconds. Everything you hear after that is environmental: reflections off walls, the ground, buildings. We will discuss this more in the environmental acoustics section, but keep this number in mind: the source event lasts just 1-3 milliseconds.
@@ -273,7 +314,8 @@ For a .308 rifle, the sound measured behind the shooter can be roughly 20 dB low
 
 ---
 
-![](figures/fig9.13.png)
+<img src="figures/fig9.13.png" alt="Sound pressure level plotted as a function of angle around the firearm, showing a peak at 0 degrees and a drop-off toward the rear" style="width: 72%; max-height: 68vh; object-fit: contain; margin: 0 auto; display: block;">
+
 
 {{% note %}}
 Fig. 9.13 — Sound pressure level plotted as a function of angle (azimuth) around the firearm. The peak is at 0 degrees (directly in front of the muzzle) and drops off toward the rear. This confirms the ~20 dB front-to-rear difference for a rifle and shows why microphone position matters so much in forensic analysis.
@@ -293,7 +335,10 @@ Fig. 9.10 — Top-view diagram of a semicircular microphone array placed around 
 
 ---
 
-![](figures/fig9.11.png)
+<img src="figures/fig9.11.png" alt="Photograph of a field recording setup with elevated microphones and a shooter position" style="width: 72%; max-height: 68vh; object-fit: contain; margin: 0 auto; display: block;">
+
+
+<!-- ![](figures/fig9.11.png) -->
 
 {{% note %}}
 Fig. 9.11 — Photograph of a field recording setup with elevated microphones and a shooter position. This shows how quasi-anechoic laboratory data are captured: outdoors, away from reflective surfaces, with the microphones raised to minimize ground reflections. Compare this controlled environment to the chaotic conditions of a real forensic recording.
@@ -367,6 +412,8 @@ The Mach number is simply the bullet's speed divided by the speed of sound. A bu
 - Angle: **theta = arcsin(1/M)**
 - M = 1.8 → 34 degree cone
 - M = 3.5 → 16.6 degree cone
+- Interactive Example: 
+  - https://physics-simulations.org/simulation/sonic-boom-mach-cone
 
 {{% note %}}
 Imagine the bullet as the tip of an expanding cone of pressure. The formula theta equals the arcsine of one over M gives you the half-angle of that cone. The analogy is a boat wake — the faster the boat, the narrower the V-shaped wake. This cone geometry matters because a microphone will only detect the shock wave if it falls within the cone. Behind the bullet or far to its side, the shock wave never arrives.
@@ -409,7 +456,9 @@ The shock wave has a very characteristic shape when plotted as pressure over tim
 
 ---
 
-![](figures/fig9.7.png)
+<!-- ![](figures/fig9.7.png) -->
+
+<img src="figures/fig9.7.png" alt="High-resolution recording of a ballistic shock wave showing the characteristic N-shape" style="width: 72%; max-height: 68vh; object-fit: contain; margin: 0 auto; display: block;">
 
 {{% note %}}
 Fig. 9.7 — A high-resolution recording of a ballistic shock wave showing the characteristic N-shape. Notice the abrupt positive pressure spike followed immediately by an abrupt negative spike. This waveform results from nonlinear propagation in air — the high-pressure peak outruns the rest of the wave and steepens into a discontinuity.
@@ -419,7 +468,9 @@ Fig. 9.7 — A high-resolution recording of a ballistic shock wave showing the c
 
 ---
 
-![](figures/fig9.5.png)
+<!-- ![](figures/fig9.5.png) -->
+
+<img src="figures/fig9.5.png" alt="Time-domain waveform of a supersonic rifle shot showing multiple acoustic components" style="width: 72%; max-height: 68vh; object-fit: contain; margin: 0 auto; display: block;">
 
 {{% note %}}
 Fig. 9.5 — Time-domain waveform of a supersonic rifle shot. This is not a simple impulse — you can see multiple acoustic components: the ballistic shock wave arriving first, followed by the muzzle blast, then reflections. A single gunshot produces a complex, multi-part waveform.
@@ -465,7 +516,7 @@ Fig. 9.8 — The same firearm recorded with a different source-receiver geometry
 
 ## Speed of Sound and Temperature
 
-- **c = 331 * sqrt(1 + T/273)** m/s
+$$c = 331\sqrt{1 + \frac{T}{273}} \text{ m/s}$$
 - T = temperature in Celsius
 - At 20C: c is approximately 343 m/s
 - Must account for this in forensic timing
@@ -495,6 +546,8 @@ Discussion guidance:
 {{% /section %}}
 
 ---
+
+{{< slide id="other-acoustic-components" >}}
 
 {{% section %}}
 
