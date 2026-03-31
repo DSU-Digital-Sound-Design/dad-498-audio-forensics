@@ -117,9 +117,9 @@ Listen to each clip one full time before zooming in on the waveform.
 
 For each clip, make an initial judgment about whether it is more consistent with:
 
-- a **handgun** or a **long gun**
-- a **revolver-like** signature or a **pistol-like** signature, if the evidence seems to support that comparison
-- a **shock wave plus muzzle blast** sequence or **muzzle blast only / unclear**
+- a handgun or a long gun
+- a revolver-like signature or a pistol-like signature, if the evidence seems to support that comparison
+- a shock wave plus muzzle blast sequence or muzzle blast only / unclear
 
 As you listen, focus on broad clues rather than exact identification:
 
@@ -152,9 +152,8 @@ Now choose **three** clips that seemed most informative during your first-pass l
 For each selected clip:
 
 1. Inspect it in **waveform view**
-2. Switch to **Spectral Frequency Display** (`Shift+D`)
-3. Zoom in until the main transient structure is easy to see
-4. Compare the first arrival, any later peak, and the reverberant tail
+2. Zoom in until the main transient structure is easy to see
+3. Compare the first arrival, any later peak, and the reverberant tail
 
 Look for features that may be consistent with the lecture:
 
@@ -228,8 +227,8 @@ Choose the **single clip** from the set that you think is most interpretable.
 Listen one more time, then inspect the waveform and spectrogram one final time. Write a short case-style paragraph that answers the following:
 
 - What broad class of recording is this most consistent with?
-- Is the clip more consistent with **shock wave plus muzzle blast** or **muzzle blast alone**?
-- Does the recording seem more consistent with a **downrange**, **off-axis**, **rear-position**, or **indeterminate** microphone placement?
+- Is the clip more consistent with shock wave plus muzzle blast or muzzle blast alone?
+- Does the recording seem more consistent with a downrange, off-axis, rear-position, or indeterminate microphone placement?
 - What are the strongest limits on your interpretation?
 
 Your answer should read like a cautious forensic note, not like a guess. Focus on what the recording supports and where the uncertainty remains.
