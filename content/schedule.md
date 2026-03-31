@@ -163,11 +163,11 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Physics of firearm sound signatures]({{< relref "lectures/week-12/physics-of-firearm-sound-signatures" >}}) - Sections 1 - III
 
-<!-- 
 ## Thursday (4/2)
 
-- Lab: Ballistic spectrogram analysis
+- [Lab: Firearm sound signature analysis](../lectures/week-12/firearm-sound-signatures-lab/lab)
 
+<!-- 
 # Week 13
 
 **Gunshot Acoustics II**
