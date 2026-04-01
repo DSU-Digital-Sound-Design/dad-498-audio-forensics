@@ -20,24 +20,26 @@ from Sections I-III:
 Adobe Audition is the only required tool. The lab is designed for
 analysis and classification, not for enhancement or restoration.
 
-# Clip Mapping — Mixed Comparison Set
+## Current Clip Mapping
 
-| Clip | Source File | Firearm | Category | Notes |
-|------|-------------|---------|----------|-------|
-| clip_01.wav | `glock/glock_007_SA_214B_S03.wav` | Glock (9mm semi-auto pistol) | **Handgun** | Clean close-range shot; classic semi-auto muzzle blast signature |
-| clip_02.wav | `sw-10-8-38spl-revolver/sw-10-8-38spl-revolver_009_SA_206A_S02.wav` | S&W Model 10-8 (.38 Spl revolver) | **Revolver-like** | Single-action revolver; audible cylinder gap contribution to blast character |
-| clip_03.wav | `pump-action-shotgun/pump-action-shotgun_005_pump_0m_center_1907.wav` | Pump-action shotgun (12 ga) | **Long gun** | Close-range center mic; large bore, low-frequency content; pump rack audible |
-| clip_04.wav | `remington-700/remington-700_003_SA_020B_S01.wav` | Remington 700 (bolt-action rifle) | **Long gun** | Clean close-range reference shot; supersonic crack present; no distance artifacts |
-| clip_05.wav | `m24-sws/m24-sws_001_m24_200m_front_0095.wav` | M24 SWS (7.62×51 sniper rifle) | **Shockwave** | Recorded 200 m directly in front of muzzle; bullet shockwave arrives before muzzle blast — shockwave/muzzle timing separation is clearly audible |
-| clip_06.wav | `m24-sws/m24-sws_009_m24_100m_back_0031.wav` | M24 SWS (7.62×51 sniper rifle) | **Angle/distance** | Recorded 100 m behind the shooter; muzzle blast is attenuated and arrives late; only the supersonic crack precedes; easily misread as a closer, smaller-caliber weapon |
+| Clip | Source File | Category | Notes |
+|------|-------------|----------|-------|
+| clip_01.wav | `colt-1911_001_SA_095B_S05.wav` | Baseline handgun | Added 1911 semiautomatic handgun reference |
+| clip_02.wav | `glock_007_SA_214B_S03.wav` | Baseline handgun | Added Glock semiautomatic handgun reference |
+| clip_03.wav | `pump-action-shotgun_004_pump_0m_center_1910.wav` | Baseline long gun | Added shotgun reference |
+| clip_04.wav | `pump-action-shotgun_005_pump_0m_center_1907.wav` | Baseline long gun | Second shotgun reference for within-category comparison |
+| clip_05.wav | `top_candidates/revolver/01_38sws-dot38-caliber_003_090f69a9-885c-45fb-a807-f2661aaeb165_chan3_v0.wav` | Added revolver-gap | Handgun example with a strong auxiliary event consistent with cylinder-gap behavior |
+| clip_06.wav | `top_candidates/revolver/08_nagant-m1895_001_r1895_0m_center_1953.wav` | Added revolver-gap | Second revolver example with a different dual-impulse structure |
+| clip_07.wav | `top_candidates/shockwave/01_remington-700_002_SA_080A_S04.wav` | Added shock wave | Supersonic long-gun example with a clear shock wave / muzzle-blast sequence |
+| clip_08.wav | `top_candidates/shockwave/03_ruger-ar-556_024_15d53f4b-0e9d-476e-b321-6ca604f89412_chan0_v0.wav` | Added shock wave | Supersonic rifle example from a different long-gun family |
 
 ## Criteria Coverage
 
-- **Handgun:** clip_01 (Glock)
-- **Long gun:** clip_03 (shotgun), clip_04 (Remington 700)
-- **Revolver-like:** clip_02 (S&W .38 revolver)
-- **Shockwave reasoning relevant:** clip_05 (M24 at 200 m front — shockwave/muzzle separation)
-- **Recording angle/distance complicates interpretation:** clip_06 (M24 at 100 m rear — suppressed muzzle, crack-only presentation)
+- Baseline non-revolver / non-curated clips: clip_01, clip_02, clip_03, clip_04
+- Added revolver-gap clips: clip_05, clip_06
+- Added shock-wave clips: clip_07, clip_08
+- Handgun examples: clip_01, clip_02, clip_05, clip_06
+- Long-gun examples: clip_03, clip_04, clip_07, clip_08
 
 
 ## Suggested Design Targets
@@ -45,7 +47,7 @@ analysis and classification, not for enhancement or restoration.
 The clips do not need to support exact model identification. They only
 need to support careful, defensible comparisons such as:
 - handgun versus long gun
-- revolver-like versus semiautomatic-pistol-like behavior
+- revolver-like versus non-revolver-like behavior
 - shock wave plus muzzle blast versus muzzle blast alone
 - cleaner direct arrival versus strong reflections/reverberation
 
@@ -85,23 +87,14 @@ END INSTRUCTOR NOTES
 
 ## Part 1: Download Lab Materials (~5 minutes)
 
-Download the Week 12 lab folder from D2L or the course share link provided in class. Save it to your desktop as `Week12_Firearm_Lab`.
+Download the Week 12 lab files and save them to a folder on your desktop named `Week12_Firearm_Lab`.
 
-Your folder should contain these files:
-
-- `clip_01.wav`
-- `clip_02.wav`
-- `clip_03.wav`
-- `clip_04.wav`
-- `clip_05.wav`
-- `clip_06.wav`
-
-These filenames are intentionally neutral. Your job is to infer what the recordings suggest from the audio itself.
+Your folder should contain eight `.wav` files named `clip_01.wav` through `clip_08.wav`. These are the recordings you will analyze in this lab.
 
 Before you begin:
 
 1. Launch **Adobe Audition**
-2. Open all six clips
+2. Open all eight clips
 3. Listen once through each clip without making any edits
 4. Keep a notebook or a blank Word document open so you can record first impressions
 
@@ -118,7 +111,7 @@ Listen to each clip one full time before zooming in on the waveform.
 For each clip, make an initial judgment about whether it is more consistent with:
 
 - a handgun or a long gun
-- a revolver-like signature or a pistol-like signature, if the evidence seems to support that comparison
+- a revolver-like signature or a non-revolver-like signature, if the evidence seems to support that comparison
 - a shock wave plus muzzle blast sequence or muzzle blast only / unclear
 
 As you listen, focus on broad clues rather than exact identification:
@@ -132,18 +125,18 @@ At this stage, you are making a first-pass classification only. It is acceptable
 
 > **Turn in:**
 > - **Screenshot:**
->   1. One screenshot showing all six clips open in Adobe Audition
+>   1. One screenshot showing all eight clips open in Adobe Audition
 > - **Word doc questions:**
 >   1. For each clip, state your first-pass classification:
 >      - handgun or long gun
->      - revolver-like, pistol-like, or indeterminate
+>      - revolver-like, non-revolver-like, or indeterminate
 >      - shock wave plus muzzle blast, muzzle blast only, or indeterminate
 >   2. For each clip, name one audible clue that led you to that first-pass judgment.
 >   3. Which clip were you least confident about, and why?
 
 ---
 
-## Part 3: Waveform and Spectral Inspection (~15-18 minutes)
+## Part 3: Waveform Inspection (~15-18 minutes)
 
 ### Exercise 2: Looking for Acoustic Components
 
@@ -172,7 +165,7 @@ As you inspect the clips, keep these cautions in mind:
 > - **Screenshots:**
 >   1. Three screenshots total, one from each selected clip, showing the feature you think is most important
 > - **Word doc questions:**
->   1. For each selected clip, describe the most important visible feature in the waveform or spectrogram.
+>   1. For each selected clip, describe the most important visible feature in the waveform.
 >   2. What physical event do you think that feature is most consistent with?
 >   3. Which of the three clips most strongly suggests a dual-impulse or crack-then-boom structure?
 >   4. In at least one example, explain why a later feature is more likely a reflection or reverberant tail than a separate ballistic event.
@@ -187,18 +180,20 @@ You will now compare clips in pairs and defend your interpretation.
 
 Use these comparison pairs:
 
-- **Pair A:** `clip_01.wav` and `clip_02.wav`
-- **Pair B:** `clip_03.wav` and `clip_04.wav`
-- **Pair C:** `clip_05.wav` and `clip_06.wav`
+- **Pair A:** `clip_01.wav` and `clip_04.wav`
+- **Pair B:** `clip_02.wav` and `clip_05.wav`
+- **Pair C:** `clip_03.wav` and `clip_07.wav`
 
-For each pair, listen again and inspect the waveform and spectrogram side by side if possible.
+You may also use `clip_06.wav` and `clip_08.wav` as extra reference clips if they help you support your interpretation.
+
+For each pair, listen again and inspect the waveform side by side if possible.
 
 Your goal is not to force a perfect label. Your goal is to explain what the pair comparison makes more visible.
 
 Possible comparison ideas:
 
-- one clip seems more consistent with revolver-like behavior, while the other seems more consistent with pistol-like behavior
-- one clip seems more consistent with shock wave plus muzzle blast, while the other seems more consistent with muzzle blast alone
+- one clip seems more consistent with semiautomatic or baseline firearm-type behavior, while the other seems more consistent with revolver-gap behavior
+- one clip seems more consistent with a general long-gun recording, while the other seems more consistent with a strong shock-wave long-gun recording
 - one clip seems to have a clearer direct arrival, while the other is more affected by reflections, distance, or off-axis recording geometry
 
 For each pair, explain:
@@ -224,7 +219,7 @@ For each pair, explain:
 
 Choose the **single clip** from the set that you think is most interpretable.
 
-Listen one more time, then inspect the waveform and spectrogram one final time. Write a short case-style paragraph that answers the following:
+Listen one more time, then inspect the waveform one final time. Write a short case-style paragraph that answers the following:
 
 - What broad class of recording is this most consistent with?
 - Is the clip more consistent with shock wave plus muzzle blast or muzzle blast alone?
@@ -244,7 +239,7 @@ Your answer should read like a cautious forensic note, not like a guess. Focus o
 Before you submit, make sure you have:
 
 - one Word document with answers labeled by exercise number
-- one screenshot showing all six clips open in Audition
+- one screenshot showing all eight clips open in Audition
 - three feature screenshots from Exercise 2
 - one screenshot per comparison pair, or one combined comparison screenshot set from Exercise 3
 

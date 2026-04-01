@@ -1,0 +1,66 @@
+Week 12 Firearm Sound Signatures Lab
+Instructor Key
+
+Student-facing file set
+
+clip_01.wav
+- Source: colt-1911_001_SA_095B_S05.wav
+- Expected broad classification: handgun, non-revolver-like baseline reference, semiautomatic pistol character
+
+clip_02.wav
+- Source: glock_007_SA_214B_S03.wav
+- Expected broad classification: handgun, non-revolver-like baseline reference, semiautomatic pistol character
+
+clip_03.wav
+- Source: pump-action-shotgun_004_pump_0m_center_1910.wav
+- Expected broad classification: long gun baseline reference, shotgun character
+
+clip_04.wav
+- Source: pump-action-shotgun_005_pump_0m_center_1907.wav
+- Expected broad classification: long gun baseline reference, shotgun character
+
+clip_05.wav
+- Source: top_candidates/revolver/01_38sws-dot38-caliber_003_090f69a9-885c-45fb-a807-f2661aaeb165_chan3_v0.wav
+- Expected broad classification: handgun, revolver-like, muzzle blast with a pre-blast auxiliary event consistent with cylinder-gap behavior
+
+clip_06.wav
+- Source: top_candidates/revolver/08_nagant-m1895_001_r1895_0m_center_1953.wav
+- Expected broad classification: handgun, revolver-like, dual-impulse structure consistent with cylinder-gap behavior
+
+clip_07.wav
+- Source: top_candidates/shockwave/01_remington-700_002_SA_080A_S04.wav
+- Expected broad classification: long gun, non-revolver-like, shock wave plus muzzle blast
+
+clip_08.wav
+- Source: top_candidates/shockwave/03_ruger-ar-556_024_15d53f4b-0e9d-476e-b321-6ca604f89412_chan0_v0.wav
+- Expected broad classification: long gun, non-revolver-like, shock wave plus muzzle blast
+
+Comparison pairs
+
+Pair A
+- clip_01.wav vs clip_04.wav
+- Main contrast: semiautomatic handgun reference versus shotgun long-gun reference
+
+Pair B
+- clip_02.wav vs clip_05.wav
+- Main contrast: semiautomatic handgun reference versus revolver-gap handgun signature
+
+Pair C
+- clip_03.wav vs clip_07.wav
+- Main contrast: baseline shotgun reference versus shock-wave rifle structure
+
+Extra comparison
+
+- clip_06.wav can be used as a second revolver-gap reference if students need another revolver example
+- clip_08.wav can be used as a second shock-wave reference if students need another shock-wave example
+
+Grading notes
+
+- Reward cautious language over exact firearm-model claims.
+- Do not require students to name exact caliber or exact model.
+- Strong answers should separate:
+  - baseline firearm-type differences (pistol, rifle, shotgun)
+  - revolver-gap dual impulses
+  - shock-wave crack-then-boom timing
+  - later reflections or reverberant tail that are not separate source events
+- The annotated SVGs in `top_candidates/` are useful for a private walkthrough or future answer key refinement.
