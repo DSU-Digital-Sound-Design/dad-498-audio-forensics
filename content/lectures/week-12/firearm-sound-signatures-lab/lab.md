@@ -201,8 +201,6 @@ For each pair, explain:
 - what you still cannot determine confidently from the recording alone
 
 > **Turn in:**
-> - **Screenshots:**
->   1. One screenshot for each pair, or one combined screenshot if you arrange the pair visually in Audition
 > - **Word doc questions:**
 >   1. For Pair A, what is the strongest defensible difference between the two clips?
 >   2. For Pair B, what is the strongest defensible difference between the two clips?
