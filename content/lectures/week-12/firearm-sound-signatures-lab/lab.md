@@ -124,8 +124,6 @@ As you listen, focus on broad clues rather than exact identification:
 At this stage, you are making a first-pass classification only. It is acceptable to mark a clip as **unclear** if the evidence is weak.
 
 > **Turn in:**
-> - **Screenshot:**
->   1. One screenshot showing all eight clips open in Adobe Audition
 > - **Word doc questions:**
 >   1. For each clip, state your first-pass classification:
 >      - handgun or long gun
