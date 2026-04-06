@@ -589,7 +589,7 @@ We introduced the cylinder gap in Section I. Here the forensic application becom
 
 ---
 
-![](figures/fig9.14.png)
+<img src="figures/fig9.14.png" alt="Fig. 9.14 waveform" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.14 — Waveform of a subsonic pistol shot recorded on-axis (in front of the barrel). Notice the short-duration muzzle blast of about 1 ms with no preceding shock wave. This is what a gunshot looks like when the bullet does not break the sound barrier.
@@ -599,7 +599,7 @@ Fig. 9.14 — Waveform of a subsonic pistol shot recorded on-axis (in front of t
 
 ---
 
-![](figures/fig9.15.png)
+<img src="figures/fig9.15.png" alt="Fig. 9.15 waveform" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.15 — The same pistol shot recorded off-axis. The waveform structure changes because the microphone is no longer in front of the barrel. The muzzle blast amplitude is reduced due to directivity, and the overall shape differs from the on-axis recording. Same gun, same shot, different perspective.
@@ -609,7 +609,7 @@ Fig. 9.15 — The same pistol shot recorded off-axis. The waveform structure cha
 
 ---
 
-![](figures/fig9.16.png)
+<img src="figures/fig9.16.png" alt="Fig. 9.16 waveform" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.16 — Waveform of a revolver shot recorded on-axis. When viewed from directly in front, the revolver waveform looks similar to the pistol — a single, brief muzzle blast. The cylinder gap signature is not visible from this angle because the gap faces sideways, not forward.
@@ -619,7 +619,7 @@ Fig. 9.16 — Waveform of a revolver shot recorded on-axis. When viewed from dir
 
 ---
 
-![](figures/fig9.17.png)
+<img src="figures/fig9.17.png" alt="Fig. 9.17 waveform" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.17 — Revolver shot recorded off-axis. Now two distinct peaks appear: the first from gas escaping the cylinder gap, the second from the muzzle blast. This dual-impulse pattern is the key distinguishing feature of revolvers and is only visible in off-axis recordings. Compare this to Fig. 9.15 — the pistol shows no such double peak.
@@ -636,8 +636,12 @@ Fig. 9.17 — Revolver shot recorded off-axis. Now two distinct peaks appear: th
 - At least **5x faster** than airborne sound
 - Can help resolve location ambiguities
 
+Paper: [Gunshot acoustic event identification and shooter localization in a WSN of asynchronous multichannel acoustic ground sensors](https://link.springer.com/article/10.1007/s11045-017-0479-7)
+
 {{% note %}}
 The intense pressure pulse from a gunshot does not just travel through air. It can vibrate the ground, walls, vehicles, and other solid surfaces. These vibrations propagate through solid materials at least five times faster than sound travels through air. If a recording device is resting on a surface — a dashcam on a car hood, a phone on a table — it may capture the surface vibration before the airborne sound arrives. By comparing these two arrival times, investigators can gain additional information about the shooter's location.
+
+The book doesn't give much information about this. 
 
 - Citation: Maher, R.C. *Principles of Forensic Audio Analysis*, Ch. 9.
 {{% /note %}}
@@ -1077,15 +1081,3 @@ Discussion guidance:
 Four essential points from today's lecture. First, a gunshot is not a single sound — it is a combination of muzzle blast, possible shock wave, mechanical sounds, cylinder gap effects, and surface vibrations. Second, the muzzle blast lasts just 1-3 ms and is strongly directional. Third, supersonic ammunition adds a second major acoustic event with its own geometry. And fourth, the recording environment reshapes everything, turning a 3 ms event into a 700 ms recording. Forensic analysis requires understanding all of these layers.
 {{% /note %}}
 
----
-
-## Summary
-
-- Next week: complex shooting incidents
-- Taser analysis and case studies
-- Applying these physics to real casework
-- Read: Maher, Ch. 9 (continued)
-
-{{% note %}}
-Next Tuesday we continue with Gunshot Acoustics II, where we apply these physical principles to complex, multi-shot scenarios. We will look at how to count shots, measure inter-shot timing, and synchronize multiple unsynchronized recordings. We will also examine a case involving Taser pulse analysis overlaid with gunshots. The physics we covered today are the foundation for all of that applied work.
-{{% /note %}}

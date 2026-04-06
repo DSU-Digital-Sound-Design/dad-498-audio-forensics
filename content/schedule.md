@@ -167,7 +167,6 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Lab: Firearm sound signature analysis](../lectures/week-12/firearm-sound-signatures-lab/lab)
 
-<!-- 
 # Week 13
 
 **Gunshot Acoustics II**
@@ -180,8 +179,9 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Thursday (4/9)
 
-- Case study
+- https://www.montana.edu/rmaher/publications/maher_jaes_1125_782-790.pdf
 
+<!-- 
 # Week 14
 
 **Cockpit Voice Recorders**
