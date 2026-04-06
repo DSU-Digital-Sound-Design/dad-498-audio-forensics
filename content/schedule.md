@@ -179,7 +179,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Thursday (4/9)
 
-- https://www.montana.edu/rmaher/publications/maher_jaes_1125_782-790.pdf
+- [Lab: Case Study — Trump Rally Assassination Attempt](../lectures/week-13/trump-rally-case-study-lab/lab)
 
 <!-- 
 # Week 14
