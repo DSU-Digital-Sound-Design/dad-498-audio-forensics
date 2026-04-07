@@ -1032,7 +1032,7 @@ This second case study shows how to overcome a poor-quality recording by combini
 
 ---
 
-![](figures/fig9.27.png)
+<img src="figures/fig9.27.png" alt="Fig. 9.27 — Clipped and distorted waveform from an officer's vest camera" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.27 — A highly clipped and distorted waveform from an officer's vest camera positioned close to the gunfire. The microphone and preamplifier were so overloaded that the first several shots are unresolvable — they merge into a solid block of clipping. This is the limitation of forensic recordings at close range: the evidence you most need is the evidence most likely to be destroyed by the recording conditions.
@@ -1042,7 +1042,7 @@ Fig. 9.27 — A highly clipped and distorted waveform from an officer's vest cam
 
 ---
 
-![](figures/fig9.28.png)
+<img src="figures/fig9.28.png" alt="Fig. 9.28 — Multiple recordings synchronized using a common reference shot" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.28 — Multiple recordings from different devices aligned using a common reference shot. Four dashcam recordings and the vest camera were synchronized by shifting their time bases to align the last clearly audible shot. The more distant dashcam recordings, though quieter, were not clipped — and they resolved four early shots that were buried in the vest camera's distortion. The final synchronized timeline showed Shot 1 occurred 4.329 seconds before the last shot.
