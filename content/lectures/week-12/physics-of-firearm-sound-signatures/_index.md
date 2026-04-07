@@ -910,7 +910,7 @@ This case study shows the complexity of real forensic evidence. A single recordi
 
 ---
 
-![](figures/fig9.18.png)
+<img src="figures/fig9.18.png" alt="Fig. 9.18 — Forensic recording showing gunshots, Taser pulses, and speech" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.18 — A 14-second forensic recording showing gunshots, Taser pulses, and speech in both waveform and spectrogram views. This is what real forensic evidence looks like: multiple overlapping sound sources, background noise, and reverberation all captured on a single device. The examiner must untangle each component.
@@ -920,7 +920,7 @@ Fig. 9.18 — A 14-second forensic recording showing gunshots, Taser pulses, and
 
 ---
 
-![](figures/fig9.19.png)
+<img src="figures/fig9.19.png" alt="Fig. 9.19 — Zoomed excerpt of one gunshot showing reverberant structure" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.19 — A zoomed excerpt centered on one gunshot, showing the reverberant structure. The initial blast is brief, but reflections from the surrounding environment stretch the acoustic energy over hundreds of milliseconds. This is the 3 ms to 700+ ms transformation we discussed earlier, visible in actual forensic evidence.
@@ -930,7 +930,7 @@ Fig. 9.19 — A zoomed excerpt centered on one gunshot, showing the reverberant 
 
 ---
 
-![](figures/fig9.20.png)
+<img src="figures/fig9.20.png" alt="Fig. 9.20 — Smoothed RMS energy envelopes of multiple gunshots" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.20 — Smoothed RMS energy envelopes of multiple gunshots from the recording. Examiners calculated these by squaring the waveform, smoothing with a 100 ms window, and taking the square root. The envelopes allow comparison of shot timing and relative energy levels across the sequence.
@@ -940,7 +940,7 @@ Fig. 9.20 — Smoothed RMS energy envelopes of multiple gunshots from the record
 
 ---
 
-![](figures/fig9.21.png)
+<img src="figures/fig9.21.png" alt="Fig. 9.21 — Shot envelopes aligned and overlaid" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.21 — The shot envelopes aligned and overlaid. When the six shots are time-aligned at their onsets, their shapes are strikingly similar — consistent with a single firearm. Subtle variations in the tails reflect slightly different environmental reflection patterns as the shooter or scene changed between shots.
@@ -950,7 +950,7 @@ Fig. 9.21 — The shot envelopes aligned and overlaid. When the six shots are ti
 
 ---
 
-![](figures/fig9.22.png)
+<img src="figures/fig9.22.png" alt="Fig. 9.22 — Waveform and spectrogram showing Taser pulses overlapping with gunfire" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.22 — Combined waveform and spectrogram showing where Taser electrical pulses overlap with gunfire. The Taser emits pulses with a 50 ms period for a 5-second cycle, but only 3.4 seconds of pulses were detected. The first gunshot likely occurred at the same moment as Taser deployment, with the blast overwhelming the start of the pulse sequence.
@@ -960,7 +960,7 @@ Fig. 9.22 — Combined waveform and spectrogram showing where Taser electrical p
 
 ---
 
-![](figures/fig9.23.png)
+<img src="figures/fig9.23.png" alt="Fig. 9.23 — Expanded view of Shot 1 with Taser pulse timing extrapolated" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.23 — Expanded view of Shot 1 with Taser pulse timing extrapolated. By extending the regular 50 ms pulse pattern backward, examiners inferred the precise moment the Taser was deployed relative to the first gunshot. This kind of timing reconstruction is central to establishing the sequence of events.
@@ -970,7 +970,7 @@ Fig. 9.23 — Expanded view of Shot 1 with Taser pulse timing extrapolated. By e
 
 ---
 
-![](figures/fig9.24.png)
+<img src="figures/fig9.24.png" alt="Fig. 9.24 — Spectrogram of a shouted speech utterance" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.24 — Spectrogram of a shouted speech utterance captured in the forensic recording. The fundamental frequency measured 340-355 Hz — far above the normal male range of 85-180 Hz. Despite the high pitch, critical listening confirmed the speaker was male. Emotional stress and shouting significantly raise fundamental frequency.
@@ -980,7 +980,7 @@ Fig. 9.24 — Spectrogram of a shouted speech utterance captured in the forensic
 
 ---
 
-![](figures/fig9.25.png)
+<img src="figures/fig9.25.png" alt="Fig. 9.25 — Normal conversational male speech with fundamental frequency around 147 Hz" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.25 — Baseline example of normal conversational male speech with a fundamental frequency around 147 Hz. Compare this to the shouted speech in the forensic recording. The difference is dramatic — stress and vocal effort can more than double the fundamental frequency, which has implications for speaker identification.
@@ -990,7 +990,7 @@ Fig. 9.25 — Baseline example of normal conversational male speech with a funda
 
 ---
 
-![](figures/fig9.26.png)
+<img src="figures/fig9.26.png" alt="Fig. 9.26 — Shouted male speech with fundamental frequency around 340 Hz" style="display: block; margin: 0 auto; max-width: 72%; max-height: 100vh; width: auto; height: auto;" />
 
 {{% note %}}
 Fig. 9.26 — Shouted male speech with a fundamental frequency around 340 Hz. Side by side with Fig. 9.25, you can see how dramatically vocal effort shifts the pitch. An examiner who relied only on pitch to determine gender would misidentify this speaker. Critical listening and contextual analysis are essential complements to acoustic measurement.
