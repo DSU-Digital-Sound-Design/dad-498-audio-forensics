@@ -70,7 +70,7 @@ Refer to the figures in the paper as you answer the questions below.
 > 1. **Figures 4 and 5** show the waveform and spectrogram of the lectern microphone for the first three shots (A, B, C), with the crack and pop impulses labeled. Describe what you see for a single shot event: how many distinct impulses are visible, and what physical event does each correspond to?
 > 2. The muzzle blast is often described as a very brief impulse — typically 1 to 3 milliseconds — yet in the waveforms it appears to last much longer. What acoustic phenomenon explains this, and why does it matter for forensic analysis?
 > 3. **Figure 10** shows five user-generated recordings stacked vertically, time-aligned to Shot A. Shots A through H appear at consistent relative positions across all five tracks. Shots I and J do not. Based on the paper's explanation, what does this inconsistency tell you about the origin of shots I and J?
-> 4. **Figure 11** plots the time-of-arrival for all ten shots across all 13 recordings. Shot I arrives approximately 200 ms earlier than expected at one location, and Shot J arrives approximately 400 ms earlier than expected at another. What does "arriving earlier than expected" mean in this context, and why would a shot from a different position produce an offset arrival time?
+> 4. **Figure 11** plots the time-of-arrival for all ten shots across all 13 recordings. After the recordings are aligned to a common reference event, Shot I shows up to ~200 ms variation in relative arrival time across recordings, and Shot J shows up to ~400 ms variation. What does it mean for a shot to deviate from the relative timing pattern established by shots A-H, and why would a shot from a different position produce that offset?
 
 ---
 
