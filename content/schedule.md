@@ -181,14 +181,13 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 - [Lab: Case Study — Trump Rally Assassination Attempt](../lectures/week-13/trump-rally-case-study-lab/lab)
 
-<!-- 
 # Week 14
 
 **Cockpit Voice Recorders**
 
 ## Tuesday (4/14)
 
-- Aviation investigations
+- [Cockpit Voice Recorders]({{< relref "lectures/week-14/cockpit-voice-recorders" >}})
 
 ## Thursday (4/16)
 
@@ -196,24 +195,34 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 # Week 15
 
-**The Expert Witness**
+**Final Project**
 
 ## Tuesday (4/21)
 
-- Expert reports
-- Testimony standards
+- Final project kickoff
+- Team formation and case planning
 
 ## Thursday (4/23)
 
-- Cross-examination
-- Final project workshop
+- Evidence production workshop
+- Case packet development
 
 # Week 16
 
-**Final Examination**
+**Final Project**
 
 ## Tuesday (4/28)
 
-- Final examination
+- Case exchange
+- Analysis work session
+
+## Thursday (4/30)
+
+- Analysis workshop
+- Presentation prep
+
+# Final Exam Day
+
+- Team presentations
+- Case reveal and discussion
 - Course wrap-up
- -->
