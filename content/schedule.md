@@ -191,7 +191,7 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Thursday (4/16)
 
-- Major case studies
+- [Lab: Southern Airways Flight 932 — A CVR Investigation](../lectures/week-14/southern-airways-cvr-lab/lab)
 
 # Week 15
 
