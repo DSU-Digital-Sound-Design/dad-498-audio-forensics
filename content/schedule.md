@@ -199,13 +199,17 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Tuesday (4/21)
 
-- Final project kickoff
-- Team formation and case planning
+- [Final Project: Operation Deep Cut](../lectures/week-15/final-project/) — kickoff
+- Choose scenario type (shooting or CVR) — teams must pick different types
+- Research real cases in your scenario type to ground your case brief and fabrication choices
+- Begin scenario planning
+- **Check-in before leaving:** one sentence on the real case(s) you found most useful and how it shaped your plan
 
 ## Thursday (4/23)
 
-- Evidence production workshop
-- Case packet development
+- [Final Project: Operation Deep Cut](../lectures/week-15/final-project/) — fabrication day 2
+- Finish manipulations, complete case brief, assemble evidence package
+- **Submit before leaving:** evidence folder + answer key to D2L (separately)
 
 # Week 16
 
@@ -213,13 +217,17 @@ Lab: Turn in Lab Report for Masking and Intelligibility Lab.
 
 ## Tuesday (4/28)
 
-- Case exchange
-- Analysis work session
+- Receive opposing team's evidence package — [analysis begins](../lectures/week-15/final-project/#week-16-analysis-two-days)
+- Independent analysis only — no consulting teammates
+- **Check-in before leaving:** each examiner states one finding (no collaboration yet)
 
 ## Thursday (4/30)
 
-- Analysis workshop
-- Presentation prep
+- Finish independent analysis
+- **Submit individual report to D2L before team discussion begins**
+- Team inter-examiner comparison meeting; write Examiner Comparison Memo
+- **Submit Examiner Comparison Memo before leaving**
+- Remaining time: presentation prep
 
 # Final Exam Day
 
