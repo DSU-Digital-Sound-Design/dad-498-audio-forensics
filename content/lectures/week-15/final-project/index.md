@@ -150,6 +150,8 @@ Before recording or editing anything, spend the first part of Tuesday researchin
 
 > Your goal is plausibility. A case brief or scenario that couldn't happen in the real world will be easy to dismiss. Research first, build second.
 
+**Research documentation requirement:** each team must submit a short `research_notes.pdf` or `research_notes.docx` with at least 2 real sources that informed the scenario. These may include academic papers, investigative reports, court documents, NTSB materials, or credible news coverage. For each source, include 1-2 sentences explaining what it contributed to your case design.
+
 **Check-in at end of Day 1:** each team gives a one-sentence summary of the real case(s) they found most useful and how it shaped their scenario plan.
 
 ---
@@ -192,6 +194,7 @@ Shooting teams must include:
 CVR recordings are official flight records — not something a party would realistically fabricate. CVR teams build a realistic degraded recording and a contested scenario claim. No fabricated edits required. Include:
 
 - **At least 3–5 minutes** of cockpit-style dialogue (you may use public domain speech from [LibriVox](https://librivox.org) or record your own)
+- A **plausible CVR-style source structure**: one mixed recording is acceptable, but teams are encouraged to simulate multiple sources or channels (for example, pilot headset, copilot headset, and cockpit area mic) if it helps support the scenario
 - **Degradation** sufficient to require enhancement before interpretation — apply noise, clipping, or heavy reverb
 - A case brief with a **specific claim** about what was said at a particular moment, or when a key statement was made
 - An **answer key** submitted to the instructor only — including a full transcript and the correct interpretation of the contested claim
@@ -217,6 +220,7 @@ Create a folder called `Team_[A or B]_Evidence` containing:
 
 - [ ] Your audio file(s) (WAV format)
 - [ ] `case_brief.pdf` or `case_brief.docx`
+- [ ] `research_notes.pdf` or `research_notes.docx` with at least 2 cited sources and a brief note on how each source informed the scenario
 
 Submit to D2L. **Answer key goes to the instructor separately — not in the evidence folder.**
 
